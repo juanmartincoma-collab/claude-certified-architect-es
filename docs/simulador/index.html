@@ -676,6 +676,7 @@ input, select, textarea, option, .opt .k, .row select, .weightbar, .track,
     <b id="barCode">CCAR</b><span id="barTitle">Simulacro de certificación</span>
   </div>
   <div class="spacer"></div>
+  <a class="btn sm ghost" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/" style="text-decoration:none">Guías</a>
   <button class="btn sm ghost" id="btnGloss" title="Glosario EN→ES · tecla G">Glosario</button>
   <div class="clock num" id="clock" hidden>00:00</div>
   <button class="btn sm ghost" id="btnRestart" hidden>Reiniciar</button>
@@ -710,8 +711,8 @@ input, select, textarea, option, .opt .k, .row select, .weightbar, .track,
 <footer class="credits wrap">
   <p><b>Material no oficial.</b> Este proyecto no está afiliado a Anthropic PBC, ni patrocinado ni avalado por Anthropic. <i>Claude</i> y <i>Claude Certified Architect</i> son marcas de Anthropic, usadas aquí solo para identificar el examen para el que este material prepara.</p>
   <p><b>No es contenido del examen.</b> Las preguntas son originales, escritas contra los objetivos publicados en la guía oficial. No reproducen ni derivan de ningún ítem del examen real, cuyo contenido es confidencial. Ningún simulacro garantiza aprobar.</p>
-  <p><b>Privacidad.</b> Todo corre en tu navegador. No hay servidor, ni analítica, ni envío de datos. Tu progreso queda en el almacenamiento local de este equipo.</p>
-  <p><a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y material en GitHub</a> · Contenido CC BY 4.0 · Código MIT</p>
+  <p><b>Privacidad.</b> Todo corre en tu navegador. No hay servidor, ni analítica, ni envío de datos. Tu progreso queda en el almacenamiento local de este navegador.</p>
+  <p><a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">Guías de razonamiento</a> · <a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/faq/">Preguntas frecuentes</a> · <a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y material en GitHub</a> · Contenido CC BY 4.0 · Código MIT</p>
 </footer>
 
 <script>
@@ -1969,7 +1970,7 @@ function renderStart(){
   app.innerHTML = `
   <div class="screen">
     <div class="hero">
-      <p class="eyebrow">JXBS · preparación interna · material no oficial</p>
+      <p class="eyebrow">Gratis y abierto · material no oficial</p>
       <h1>Claude Certified Architect</h1>
       <p class="lede">Simulacro de las dos certificaciones de arquitecto de Anthropic. Cada set se sortea respetando los pesos oficiales del blueprint y la mezcla de formatos, y el cronómetro se ajusta al ritmo real del examen.</p>
       <div class="facts">
@@ -2004,24 +2005,6 @@ function renderStart(){
             <li>${poolAll(e).length} preguntas disponibles en el banco</li>
           </ul>
         </button>`).join("")}
-    </div>
-
-    <div class="panel">
-      <header><h2>Quién sos</h2><span class="note" style="margin-left:auto">queda en este navegador y viaja en tu resultado</span></header>
-      <div class="body" style="padding-top:16px; padding-bottom:20px; display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
-        <label style="display:flex; flex-direction:column; gap:5px">
-          <span class="eyebrow">Nombre</span>
-          <input class="fld" id="whoName" placeholder="Nombre y apellido" value="${esc(readWho().name||"")}">
-        </label>
-        <label style="display:flex; flex-direction:column; gap:5px">
-          <span class="eyebrow">Correo</span>
-          <input class="fld" id="whoMail" type="email" placeholder="nombre@jxbs.ai" value="${esc(readWho().mail||"")}">
-        </label>
-        <label style="display:flex; flex-direction:column; gap:5px">
-          <span class="eyebrow">Correo del coordinador</span>
-          <input class="fld" id="whoCoord" type="email" placeholder="para compartir tu resultado" value="${esc(readWho().coord||COORD_DEFAULT)}">
-        </label>
-      </div>
     </div>
 
     <div class="panel" id="config">
@@ -2094,7 +2077,7 @@ function renderStart(){
     ${recoPanel()}
 
     <div class="panel">
-      <header><h2>Resultados del equipo</h2><span class="note" style="margin-left:auto">pegá los códigos que comparte cada persona</span></header>
+      <header><h2>Resultados del grupo de estudio</h2><span class="note" style="margin-left:auto">si estudian en grupo, pegá acá los códigos de cada uno</span></header>
       <div class="body" style="padding-top:14px; padding-bottom:20px; display:flex; flex-direction:column; gap:12px">
         <textarea class="codebox" id="teamIn" placeholder="JXBS1:... (uno por línea, o pegá los correos completos que te llegaron)"></textarea>
         <div><button class="btn sm" data-act="team">Armar tabla</button></div>
@@ -2502,7 +2485,7 @@ function renderResults(){
       return `  ${String(k+1).padStart(2)} ${q.i.padEnd(6)} D${domOf(q,ex)} ${v===100?"correcta":v===0?(answered(q,S.answers[q.i])?"incorrecta":"sin responder"):"parcial "+v+"%"}`;
     }),
     ``,
-    `--- código para la tabla del equipo ---`,
+    `--- código para la tabla del grupo ---`,
     code
   ].join("\n");
 
@@ -2545,12 +2528,12 @@ function renderResults(){
     ${recoPanel()}
 
     <div class="panel">
-      <header><h2>Registrar tu resultado</h2><span class="note" style="margin-left:auto">queda asociado a tu correo</span></header>
+      <header><h2>Registrar tu resultado</h2><span class="note" style="margin-left:auto">se guarda solo en tu navegador</span></header>
       <div class="body" style="padding-top:16px; padding-bottom:20px; display:flex; flex-direction:column; gap:12px">
         <div style="display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
           <input class="fld" id="who" placeholder="Tu nombre" value="${esc(S.who||"")}">
           <input class="fld" id="mail" type="email" placeholder="tu correo" value="${esc(S.mail||"")}">
-          <input class="fld" id="coord" type="email" value="${esc(readWho().coord||COORD_DEFAULT)}">
+          <input class="fld" id="coord" type="email" placeholder="correo de quien lleva la cuenta (opcional)" value="${esc(readWho().coord||COORD_DEFAULT)}">
         </div>
         <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
           <button class="btn primary sm" data-mail>Enviar por correo</button>
@@ -2559,7 +2542,7 @@ function renderResults(){
           <span class="note" id="copied"></span>
         </div>
         <textarea class="codebox" id="mycode" readonly>${code}</textarea>
-        <p class="note">El correo lleva tu score, el desglose por dominio y <b>el resultado pregunta por pregunta</b>. El código de abajo es lo que se pega en la tabla del equipo.</p>
+        <p class="note">El correo lleva tu score, el desglose por dominio y <b>el resultado pregunta por pregunta</b>. El código de abajo es lo que se pega en la tabla del grupo.</p>
       </div>
     </div>
 
@@ -2606,8 +2589,13 @@ function renderResults(){
     const to = coordEl.value.trim();
     const subj = `[CCAR] ${S.who||"sin nombre"} — ${ex.code} — ${sc}/1000`;
     const url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(mailBody())}`;
-    if(url.length > 1900){ put(mailBody()); flash("detalle copiado: pegalo en el correo"); }
-    window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(mailBody().slice(0, 1400))}`;
+    if(url.length > 1900){
+      put(mailBody());
+      flash("detalle copiado: pegalo en el correo");
+      window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subj)}`;
+    } else {
+      window.location.href = url;
+    }
   });
   const again = app.querySelector("[data-again]");
   if(again) again.addEventListener("click", () => { clearSave(); S = null; reviewFilter = "all"; renderStart(); window.scrollTo({top:0}); });
@@ -2738,7 +2726,7 @@ function renderTeam(){
     </div>
     ${["F","P"].filter(k => agg[k].length).map(k => `
       <div style="margin-top:22px">
-        <p class="eyebrow" style="margin-bottom:8px">Promedio del equipo · ${esc(EXAMS[k].code)}</p>
+        <p class="eyebrow" style="margin-bottom:8px">Promedio del grupo · ${esc(EXAMS[k].code)}</p>
         <div class="dombars">
           ${agg[k].map(x => `
             <div class="dombar">

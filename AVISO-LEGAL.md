@@ -44,7 +44,7 @@ El contenido —guías, preguntas, respuestas, glosario y documentación— se p
 
 ## 10. Retirada de contenido
 
-Si usted es titular de derechos y considera que algún elemento de este repositorio infringe sus derechos o las políticas de su programa de certificación, escriba a través de un [issue](../../issues) o a los datos de contacto del autor: el elemento será revisado y, de corresponder, retirado con prontitud.
+Si usted es titular de derechos y considera que algún elemento de este repositorio infringe sus derechos o las políticas de su programa de certificación, escriba a través de un [issue](../../issues) o por mensaje directo al autor en [LinkedIn](https://www.linkedin.com/in/juanmartincordero/): el elemento será revisado y, de corresponder, retirado con prontitud.
 
 ---
 

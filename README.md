@@ -1,17 +1,17 @@
 # Claude Certified Architect — preparación en español
 
-Simulacros y guías de razonamiento para las dos certificaciones de arquitecto de Anthropic: **Foundations (CCAR-F)** y **Professional (CCAR-P)**. Gratis, sin registro, con 123 preguntas originales y un simulador que corrige y explica cada respuesta.
+Simulacros y guías de razonamiento para las dos certificaciones de arquitecto de Anthropic: **Foundations (CCAR-F)** y **Professional (CCAR-P)**. Gratis, sin registro, con 163 preguntas originales y un simulador que corrige y explica cada respuesta.
 
 Escrito por alguien que rindió el Professional y lo aprobó.
 
 [![Licencia: CC BY 4.0](https://img.shields.io/badge/contenido-CC%20BY%204.0-blue.svg)](LICENSE)
 [![Código: MIT](https://img.shields.io/badge/código-MIT-green.svg)](LICENSE-CODE)
-[![Preguntas](https://img.shields.io/badge/preguntas-123-e11d48.svg)](#qué-hay-acá-adentro)
+[![Preguntas](https://img.shields.io/badge/preguntas-163-e11d48.svg)](#qué-hay-acá-adentro)
 [![Exámenes](https://img.shields.io/badge/exámenes-CCAR--F%20%C2%B7%20CCAR--P-111.svg)](#los-dos-exámenes)
 
-[![Claude Certified Architect — preparación en español](docs/og.png)](https://juanmartincoma-collab.github.io/claude-certified-architect-es/)
+[![Claude Certified Architect — preparación en español](docs/og.png)](https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/)
 
-### ▶︎ [Abrir el simulador](https://juanmartincoma-collab.github.io/claude-certified-architect-es/)
+### ▶︎ [Abrir el simulador](https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/)
 
 Elegís examen y longitud, el sorteo respeta los pesos oficiales de cada dominio, corre el cronómetro al ritmo real, y al final te dice en qué dominio estás flojo y cuál de los dos exámenes te conviene rendir.
 
@@ -52,7 +52,7 @@ Las guías son lo que más se usa. No son resúmenes de la documentación: está
 
 ## Cómo usarlo en 30 segundos
 
-1. Abrí el [simulador](https://juanmartincoma-collab.github.io/claude-certified-architect-es/) y hacé 30 preguntas con corrección al responder. Vas a ver en qué dominio estás flojo.
+1. Abrí el [simulador](https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/) y hacé 30 preguntas con corrección al responder. Vas a ver en qué dominio estás flojo.
 2. Leé la guía de ese dominio.
 3. Volvé al simulador y hacé el examen completo con cronómetro y corrección al final.
 

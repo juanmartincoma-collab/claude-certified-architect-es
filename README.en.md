@@ -1,10 +1,10 @@
 # Claude Certified Architect — Spanish-language prep
 
-Practice exams and reasoning guides for Anthropic's two architect certifications: **Foundations (CCAR-F)** and **Professional (CCAR-P)**. Free, no signup, 123 original questions and an interactive simulator that grades and explains every answer.
+Practice exams and reasoning guides for Anthropic's two architect certifications: **Foundations (CCAR-F)** and **Professional (CCAR-P)**. Free, no signup, 163 original questions and an interactive simulator that grades and explains every answer.
 
 Written by someone who sat the Professional exam and passed it.
 
-### ▶︎ [Open the simulator](https://juanmartincoma-collab.github.io/claude-certified-architect-es/)
+### ▶︎ [Open the simulator](https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/)
 
 ---
 

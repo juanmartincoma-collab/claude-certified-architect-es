@@ -5,7 +5,7 @@
 
 Material no oficial. Preguntas originales escritas contra los objetivos publicados en la guía del examen. No reproducen contenido del examen real. [Ver aviso completo](../README.md#aviso-legal).
 
-Las respuestas están en [respuestas.md](respuestas.md). Para practicar con corrección automática y cronómetro, usá el [simulador](https://juanmartincoma-collab.github.io/claude-certified-architect-es/).
+Las respuestas están en [respuestas.md](respuestas.md). Para practicar con corrección automática y cronómetro, usá el [simulador](https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/).
 
 ---
 
