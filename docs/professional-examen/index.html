@@ -1,0 +1,835 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Examen de práctica CCAR-P · 63 preguntas</title>
+<meta name="description" content="Simulacro completo del Claude Certified Architect Professional: 63 preguntas originales ponderadas por el blueprint oficial.">
+<meta name="keywords" content="claude certified architect, examen de práctica, simulacro, español">
+<meta name="author" content="Juan Martín Cordero">
+<link rel="canonical" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional-examen/">
+<meta property="og:type" content="article"><meta property="og:title" content="Examen de práctica CCAR-P · 63 preguntas">
+<meta property="og:description" content="Simulacro completo del Claude Certified Architect Professional: 63 preguntas originales ponderadas por el blueprint oficial."><meta property="og:url" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional-examen/">
+<meta property="og:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png"><meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png">
+<style>
+:root{--bg:#FAFAFA;--surface:#fff;--ink:#252525;--ink-2:#484848;--muted:#656565;--line:#E5E5E5;--line-2:#D4D4D4;--accent:#E11D48;--soft:rgba(225,29,72,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0F0F0F;--surface:#1A1A1A;--ink:#FAFAFA;--ink-2:rgba(255,255,255,.86);--muted:#A1A1A1;--line:#2A2A2A;--line-2:#3D3D3D;--accent:#FF6B6B;--soft:rgba(255,107,107,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;text-align:justify;hyphens:auto;-webkit-font-smoothing:antialiased}
+.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:860px;margin:0 auto;padding:12px 22px;display:flex;gap:18px;align-items:center;font-size:14px;text-align:left}
+.top a{color:var(--ink-2);text-decoration:none}.top a:hover{color:var(--accent)}
+.top .home{font-weight:650;color:var(--ink)}
+.top .cta{margin-left:auto;background:var(--accent);color:#fff;padding:7px 14px;border-radius:8px;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:44px 22px 96px}
+h1,h2,h3,h4{text-align:left;hyphens:manual;letter-spacing:-.022em;line-height:1.2;font-weight:650;margin:2em 0 .6em}
+h1{font-size:clamp(30px,4.6vw,42px);margin-top:0;letter-spacing:-.035em}
+h2{font-size:25px;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:19px}
+p,li{color:var(--ink-2)}
+a{color:var(--accent)}
+code{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:.1em .35em;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;text-align:left}
+pre code{border:0;background:none;padding:0}
+blockquote{margin:1.4em 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0}
+blockquote p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:1.4em 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;hyphens:manual}
+th{background:var(--surface);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:650}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+.lede{font-size:18.5px;color:var(--ink-2);margin-bottom:2em}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 0;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head><body>
+<header class="top"><div class="in">
+<a class="home" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">Claude Certified Architect · ES</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">Professional</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">Foundations</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/glosario/">Glosario</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/faq/">FAQ</a>
+<a class="cta" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/">Simulador</a>
+</div></header><main><!-- Generado desde el banco de preguntas. No editar a mano: abrí un issue. -->
+<h1 id="ccar-p-examen-de-practica">CCAR-P · Examen de práctica</h1>
+<p><strong>63 preguntas · 120 minutos · corte 720/1000</strong></p>
+<p>Material no oficial. Preguntas originales escritas contra los objetivos publicados en la guía del examen. No reproducen contenido del examen real. <a href="../README#aviso-legal">Ver aviso completo</a>.</p>
+<p>Las respuestas están en <a href="respuestas">respuestas.md</a>. Para practicar con corrección automática y cronómetro, usá el <a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">simulador</a>.</p>
+<hr />
+<h3 id="1-selecciona-2">1. Selecciona 2</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>An application's system prompt is stable but its cache hit rate sits at only 40%. Which TWO changes are most likely to raise it?</p>
+<ul>
+<li><strong>A.</strong> Move the session identifier from the top of the prompt to the end</li>
+<li><strong>B.</strong> Shorten the static policy block so that it takes up rather fewer tokens</li>
+<li><strong>C.</strong> Keep the tool definitions in a fixed order across every request</li>
+<li><strong>D.</strong> Raise the maximum output tokens allowed on each of the requests</li>
+<li><strong>E.</strong> Send all requests from a single region so they stay grouped</li>
+</ul>
+<h3 id="2-selecciona-una">2. Selecciona UNA</h3>
+<p><code>D7 · Productividad del desarrollador</code></p>
+<p>Reviews of AI-authored pull requests almost never raise findings, yet defects keep reaching production. What is the most likely cause?</p>
+<ul>
+<li><strong>A.</strong> The reviewer shares the context and assumptions that produced the code</li>
+<li><strong>B.</strong> The review prompt is too short to describe what quality means here</li>
+<li><strong>C.</strong> The model used for the review is smaller than the one used for authoring</li>
+<li><strong>D.</strong> The team merges before the automated review has finished running</li>
+</ul>
+<h3 id="3-selecciona-una">3. Selecciona UNA</h3>
+<p><code>D7 · Productividad del desarrollador</code></p>
+<p>An agent in production starts calling an unexpected tool on a minority of requests. What does the on-call engineer do first?</p>
+<ul>
+<li><strong>A.</strong> Read traces of the affected sessions to locate where the choice diverges</li>
+<li><strong>B.</strong> Rewrite the tool descriptions, since ambiguity is the most usual explanation</li>
+<li><strong>C.</strong> Disable the tool until someone can reproduce the behaviour in staging</li>
+<li><strong>D.</strong> Roll the whole service back to the release from the previous quarter</li>
+</ul>
+<h3 id="4-selecciona-una">4. Selecciona UNA</h3>
+<p><code>D7 · Productividad del desarrollador</code></p>
+<p>A developer joins a team that works with AI assistance daily. What gets them productive fastest?</p>
+<ul>
+<li><strong>A.</strong> The shared project configuration and standards the team already uses</li>
+<li><strong>B.</strong> A training session covering prompt techniques and their trade-offs</li>
+<li><strong>C.</strong> Read-only access for the first weeks, until they know the codebase</li>
+<li><strong>D.</strong> Their own configuration, so they can work the way they prefer</li>
+</ul>
+<h3 id="5-selecciona-2">5. Selecciona 2</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>A fixed workflow for supplier onboarding now fails on roughly a fifth of cases, where staff step in manually to finish the job. Which TWO signals would justify moving this stage to an autonomous agent?</p>
+<ul>
+<li><strong>A.</strong> The number of onboarding requests per week has roughly doubled since launch</li>
+<li><strong>B.</strong> The manual interventions follow no repeatable pattern the team can list</li>
+<li><strong>C.</strong> The steps differ per supplier and only become clear part-way through</li>
+<li><strong>D.</strong> Leadership wants the solution to look more advanced to the board</li>
+<li><strong>E.</strong> The cost per request has risen along with the added volume</li>
+</ul>
+<h3 id="6-selecciona-2">6. Selecciona 2</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>A supervisor coordinates four specialist agents in a regulated claims process. Which TWO responsibilities belong to the supervisor rather than to the specialists?</p>
+<ul>
+<li><strong>A.</strong> Deciding the order the specialists run in and when to stop the chain</li>
+<li><strong>B.</strong> Applying the rules that determine whether a claim is fraudulent</li>
+<li><strong>C.</strong> Recording the ordered outcome of every step for the audit trail</li>
+<li><strong>D.</strong> Formatting each specialist's own output for its internal use</li>
+<li><strong>E.</strong> Choosing which model version each specialist should call at runtime</li>
+</ul>
+<h3 id="7-selecciona-2">7. Selecciona 2</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>An architect is splitting a long analysis task into sequenced subtasks. Which TWO practices make the decomposition real rather than cosmetic?</p>
+<ul>
+<li><strong>A.</strong> Passing structured output between steps so each one can be checked</li>
+<li><strong>B.</strong> Giving every step only the context that step actually needs</li>
+<li><strong>C.</strong> Running each of the steps on the largest model in the family</li>
+<li><strong>D.</strong> Keeping the original prompt intact and appending the steps</li>
+<li><strong>E.</strong> Merging the steps back into one call once quality has improved</li>
+</ul>
+<h3 id="8-selecciona-2">8. Selecciona 2</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>A sponsor asks the architect to justify the investment in business terms. Which TWO framings belong in that justification?</p>
+<ul>
+<li><strong>A.</strong> Hours of manual handling removed from the process each month</li>
+<li><strong>B.</strong> The number of tools currently registered in the agent's catalogue</li>
+<li><strong>C.</strong> Improvement measured against a contractual response-time SLA</li>
+<li><strong>D.</strong> The parameter count of the model the team ended up selecting</li>
+<li><strong>E.</strong> The number of prompt variants the team wrote during the build</li>
+</ul>
+<h3 id="9-selecciona-2">9. Selecciona 2</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>Which TWO conditions indicate that a single augmented model call is enough, with no workflow or agent around it?</p>
+<ul>
+<li><strong>A.</strong> The task is one transformation whose context can be supplied up front</li>
+<li><strong>B.</strong> Several specialists must contribute before the output is complete</li>
+<li><strong>C.</strong> Any reference material needed fits alongside the request itself</li>
+<li><strong>D.</strong> The next step depends entirely on what the previous step happened to return</li>
+<li><strong>E.</strong> Each step has to be recorded separately for an external auditor</li>
+</ul>
+<h3 id="10-selecciona-una">10. Selecciona UNA</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>A quoting solution was designed as input, processing, and output, with no further stage. Six months in, nobody can say whether quote accuracy has improved or degraded. What is missing from the architecture?</p>
+<ul>
+<li><strong>A.</strong> A feedback stage that captures outcomes into an evaluable dataset</li>
+<li><strong>B.</strong> A caching layer that lowers the cost of repeated quotes</li>
+<li><strong>C.</strong> A second model that reviews every quote before it goes out</li>
+<li><strong>D.</strong> A dashboard reporting quote volume and average processing time</li>
+</ul>
+<h3 id="11-clasifica-cada-fila">11. Clasifica cada fila</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>For each situation, identify who should decide the next step.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The five stages of a monthly regulatory report that has not changed in two years.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Which log query to run next while diagnosing a production outage.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Whether to release a payment that exceeds the agreed approval threshold.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>The order in which four specialist agents run inside a regulated pipeline.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>How many sources to consult before answering an open research question.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>the architect, at design time</code> · <code>the model, at run time</code> · <code>a human reviewer, per case</code></p>
+<h3 id="12-selecciona-una">12. Selecciona UNA</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>An assistant handles two kinds of request: simple status lookups that arrive constantly, and complex disputes that need deep analysis. Which design serves both?</p>
+<ul>
+<li><strong>A.</strong> A router that classifies the request and sends it down the fitting path</li>
+<li><strong>B.</strong> One agent with every tool available, deciding what to do per request</li>
+<li><strong>C.</strong> A single prompt long enough to cover lookups and disputes together</li>
+<li><strong>D.</strong> Two separate products, each with its own interface and its own login</li>
+</ul>
+<h3 id="13-selecciona-una">13. Selecciona UNA</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>A pipeline extracts data, transforms it and writes it to a system of record. Where does validation belong?</p>
+<ul>
+<li><strong>A.</strong> After each step, so a bad result never reaches the following one</li>
+<li><strong>B.</strong> At the very end, right before the write to the system of record</li>
+<li><strong>C.</strong> Only at the start, validating the input document that arrived</li>
+<li><strong>D.</strong> Nowhere: the model is instructed to check its own work as it goes</li>
+</ul>
+<h3 id="14-selecciona-2">14. Selecciona 2</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>A due-diligence review must cover environmental, legal and financial angles. Which TWO facts justify separate agents rather than one?</p>
+<ul>
+<li><strong>A.</strong> Each angle needs its own sources, tools and specialist context</li>
+<li><strong>B.</strong> The three reviews do not depend on each other and can run at once</li>
+<li><strong>C.</strong> The client is paying enough to cover the extra orchestration cost</li>
+<li><strong>D.</strong> The board asked for the most advanced architecture on the market</li>
+<li><strong>E.</strong> The volume of reviews per quarter has grown steadily since last year</li>
+</ul>
+<h3 id="15-clasifica-cada-fila">15. Clasifica cada fila</h3>
+<p><code>D1 · Diseño de solución y arquitectura</code></p>
+<p>For each situation, identify the architecture that fits.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Turning each inbound invoice into a ledger entry, with the vendor record supplied.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A quarterly audit pack produced through the same six steps every quarter.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chasing why a shipment was mis-routed, where each answer opens the next query.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>A plant expansion review needing environmental, legal and civil assessments.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Rewriting each job advert into the company tone, with the style guide attached.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>single augmented call</code> · <code>fixed workflow</code> · <code>autonomous agent</code> · <code>multi-agent system</code></p>
+<h3 id="16-selecciona-2">16. Selecciona 2</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>Which TWO practices make the guardrails written into a system prompt more likely to hold?</p>
+<ul>
+<li><strong>A.</strong> Stating explicitly what takes precedence when two instructions conflict</li>
+<li><strong>B.</strong> Placing the guardrails at the start or end, apart from reference material</li>
+<li><strong>C.</strong> Writing the guardrails in a noticeably more emphatic and commanding tone</li>
+<li><strong>D.</strong> Repeating each guardrail once inside every section of the prompt</li>
+<li><strong>E.</strong> Assuming the guardrail also covers the cases it does not mention</li>
+</ul>
+<h3 id="17-selecciona-2">17. Selecciona 2</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>A team must cut token spend on a retrieval-heavy assistant without losing answer quality. Which TWO moves fit that goal?</p>
+<ul>
+<li><strong>A.</strong> Retrieve fewer but better-targeted passages for each question asked</li>
+<li><strong>B.</strong> Drop the citations from the answer so the output comes out shorter</li>
+<li><strong>C.</strong> Cache the stable instruction block that every request shares already</li>
+<li><strong>D.</strong> Switch every workload in the product to the smallest model available</li>
+<li><strong>E.</strong> Truncate each retrieved passage to its first two sentences</li>
+</ul>
+<h3 id="18-selecciona-2">18. Selecciona 2</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>Which TWO tasks are the best candidates for chain-of-thought prompting?</p>
+<ul>
+<li><strong>A.</strong> Pulling the invoice number and the issue date out of a scanned paper document</li>
+<li><strong>B.</strong> Deciding whether a contract clause conflicts with three internal policies</li>
+<li><strong>C.</strong> Translating a paragraph with a supplied glossary of approved terms</li>
+<li><strong>D.</strong> Estimating a project's risk from several partly conflicting signals</li>
+<li><strong>E.</strong> Converting a list of names into a fixed JSON structure for import</li>
+</ul>
+<h3 id="19-selecciona-una">19. Selecciona UNA</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>A summarisation feature runs on the largest model in the family. Evaluation shows a mid-tier model matches its quality on this task at a third of the cost. What should the architect do?</p>
+<ul>
+<li><strong>A.</strong> Move the feature to the mid-tier model and keep the evaluation running</li>
+<li><strong>B.</strong> Stay on the largest model, since summary quality varies a lot with the input</li>
+<li><strong>C.</strong> Split the traffic evenly between both models to hedge against a drop</li>
+<li><strong>D.</strong> Move to the smallest model, since the mid-tier one is not the cheapest</li>
+</ul>
+<h3 id="20-clasifica-cada-fila">20. Clasifica cada fila</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>For each symptom, identify the technique that fixes it.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Output format is close but inconsistent from one run to the next.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A critical rule buried in 12,000 tokens of context is followed erratically.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>The same 9,000-token policy block is re-sent and re-charged on every call.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Answers about the middle of a large document are unreliable and expensive.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>The house table layout is described in prose but never reproduced exactly.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>few-shot examples</code> · <code>move the rule to an edge</code> · <code>prompt caching</code> · <code>retrieve only what is relevant</code></p>
+<h3 id="21-selecciona-una">21. Selecciona UNA</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>A classification task has eight well-defined categories and clear written definitions for each. Accuracy is already high without examples. What follows?</p>
+<ul>
+<li><strong>A.</strong> Keep it zero-shot and spend the tokens on the definitions instead</li>
+<li><strong>B.</strong> Add few-shot examples anyway, since they always improve accuracy</li>
+<li><strong>C.</strong> Add one example per category to make the prompt more consistent</li>
+<li><strong>D.</strong> Move to a larger model to protect the accuracy already achieved</li>
+</ul>
+<h3 id="22-selecciona-una">22. Selecciona UNA</h3>
+<p><code>D2 · Modelos, prompting e ingeniería de contexto</code></p>
+<p>A support conversation runs long and the earliest messages start falling out of the window. What preserves quality?</p>
+<ul>
+<li><strong>A.</strong> Summarise the older turns and keep the decisive facts verbatim</li>
+<li><strong>B.</strong> Let the oldest turns drop, since recent context matters more</li>
+<li><strong>C.</strong> Move to the model with the largest window and keep everything</li>
+<li><strong>D.</strong> Start a new conversation whenever the window gets close to full</li>
+</ul>
+<h3 id="23-selecciona-2">23. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>A support agent has a tool that can delete customer records. Which TWO changes reduce the blast radius without removing the capability from the platform?</p>
+<ul>
+<li><strong>A.</strong> Scope the tool's credentials so it can only reach the support dataset</li>
+<li><strong>B.</strong> Require an explicit approval step before any delete call executes</li>
+<li><strong>C.</strong> Add the word 'careful' to the tool description so that the model hesitates</li>
+<li><strong>D.</strong> Log every delete after the fact so the team can review them weekly</li>
+<li><strong>E.</strong> Rename the tool so the model is less likely to select it by mistake</li>
+</ul>
+<h3 id="24-selecciona-2">24. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>An architect is choosing between MCP and direct API integration for a new internal system. Which TWO facts about the situation point to MCP?</p>
+<ul>
+<li><strong>A.</strong> Three separate AI applications will need the same access to this system</li>
+<li><strong>B.</strong> The team owning the system will keep adding and retiring endpoints</li>
+<li><strong>C.</strong> The integration is a single deterministic call inside a nightly job</li>
+<li><strong>D.</strong> The system is only ever queried by one service the team owns</li>
+<li><strong>E.</strong> Only the data engineering team will ever query this system directly</li>
+</ul>
+<h3 id="25-selecciona-2">25. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>A platform team is defining what every agent session must emit for observability. Which TWO elements matter most for finding failures later?</p>
+<ul>
+<li><strong>A.</strong> A correlation identifier that ties every step of one session together</li>
+<li><strong>B.</strong> The retrieved context and tool inputs and outputs for each step</li>
+<li><strong>C.</strong> The colour-coded severity level of each message shown to the end user today</li>
+<li><strong>D.</strong> A copy of the full prompt and response stored for all sessions</li>
+<li><strong>E.</strong> The name of the engineer who last deployed the service version</li>
+</ul>
+<h3 id="26-selecciona-2">26. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>A RAG assistant returns passages that are topically related but rarely answer the question. Which TWO changes address this directly?</p>
+<ul>
+<li><strong>A.</strong> Add a re-ranking stage that reorders candidates before they are used</li>
+<li><strong>B.</strong> Tune chunk boundaries so each passage carries one complete idea</li>
+<li><strong>C.</strong> Increase the number of passages retrieved from five up to fifty</li>
+<li><strong>D.</strong> Raise the temperature so the model paraphrases the sources more</li>
+<li><strong>E.</strong> Replace the vector index with a keyword index built over document titles</li>
+</ul>
+<h3 id="27-selecciona-2">27. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>An assistant reads documents that belong to individual users. Which TWO conditions make per-user credentials mandatory rather than optional?</p>
+<ul>
+<li><strong>A.</strong> Each user may only see the subset of documents assigned to them</li>
+<li><strong>B.</strong> A prompt injection in a document could redirect what the agent asks for</li>
+<li><strong>C.</strong> All documents in the corpus are already public in the company</li>
+<li><strong>D.</strong> The assistant is used by a single administrator with full access</li>
+<li><strong>E.</strong> The corpus is small enough to fit entirely in the context window</li>
+</ul>
+<h3 id="28-selecciona-2">28. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>Which TWO symptoms suggest that a RAG pipeline's chunking strategy is the problem, rather than the model or the prompt?</p>
+<ul>
+<li><strong>A.</strong> Answers cite a rule but miss the exception stated in the next paragraph</li>
+<li><strong>B.</strong> Retrieved passages start mid-sentence and end before the point lands</li>
+<li><strong>C.</strong> The same question returns different answers on repeated and identical runs</li>
+<li><strong>D.</strong> Latency rises sharply whenever the corpus grows past a certain size</li>
+<li><strong>E.</strong> The assistant refuses questions that fall outside the indexed corpus</li>
+</ul>
+<h3 id="29-selecciona-una">29. Selecciona UNA</h3>
+<p><code>D3 · Integración</code></p>
+<p>A team wants to expose forty internal endpoints to an agent. Tool-selection accuracy in testing drops sharply past roughly a dozen tools. What is the sound design response?</p>
+<ul>
+<li><strong>A.</strong> Group the endpoints into task-oriented tools and load them on demand</li>
+<li><strong>B.</strong> Register all forty tools and rely on a more capable model to choose</li>
+<li><strong>C.</strong> Register all forty and instruct the model to think before selecting one</li>
+<li><strong>D.</strong> Expose one generic tool that accepts the endpoint name as a parameter</li>
+</ul>
+<h3 id="30-clasifica-cada-fila">30. Clasifica cada fila</h3>
+<p><code>D3 · Integración</code></p>
+<p>For each failure, identify which stage of the retrieval pipeline is at fault.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A clause is retrieved without the definition it depends on, which sits two sections away.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Answers still quote a policy that was replaced during last night's refresh.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>An exact serial number returns visually similar but incorrect products.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>A contractor receives a passage from a document restricted to full employees.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Passages consistently break in the middle of a numbered list of conditions.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>chunking</code> · <code>indexing</code> · <code>search strategy</code> · <code>access control</code></p>
+<h3 id="31-selecciona-una">31. Selecciona UNA</h3>
+<p><code>D3 · Integración</code></p>
+<p>A retrieval index holds documents from many client organisations. What keeps one client from ever seeing another's content?</p>
+<ul>
+<li><strong>A.</strong> Filter by tenant at query time using metadata on every chunk</li>
+<li><strong>B.</strong> Instruct the model to answer only from the requesting client's files</li>
+<li><strong>C.</strong> Keep one index and rely on relevance to surface the right documents</li>
+<li><strong>D.</strong> Ask the model to check the client name before quoting a passage</li>
+</ul>
+<h3 id="32-selecciona-una">32. Selecciona UNA</h3>
+<p><code>D3 · Integración</code></p>
+<p>A knowledge base gets edits all day long, and the assistant must reflect them within minutes. What indexing approach fits?</p>
+<ul>
+<li><strong>A.</strong> Incremental indexing triggered by each change, with a periodic full rebuild</li>
+<li><strong>B.</strong> A nightly full rebuild, which is simpler to operate and to reason about</li>
+<li><strong>C.</strong> Cache answers for an hour so the load on the index stays predictable</li>
+<li><strong>D.</strong> Retrieve straight from the source database and skip the index entirely</li>
+</ul>
+<h3 id="33-selecciona-2">33. Selecciona 2</h3>
+<p><code>D3 · Integración</code></p>
+<p>An agent confuses three tools whose descriptions all begin with 'Looks up records'. Which TWO changes fix the selection?</p>
+<ul>
+<li><strong>A.</strong> State what each tool returns and where its boundary sits</li>
+<li><strong>B.</strong> Merge or retire the tools whose scope genuinely overlaps</li>
+<li><strong>C.</strong> Order the catalogue so the most used tool appears first</li>
+<li><strong>D.</strong> Split each tool further so every case has a dedicated one</li>
+<li><strong>E.</strong> Have the agent call all three and compare what comes back</li>
+</ul>
+<h3 id="34-clasifica-cada-fila">34. Clasifica cada fila</h3>
+<p><code>D3 · Integración</code></p>
+<p>For each need, identify the connection mechanism that fits.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Four internal products need the same standard access to the payroll system.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A scheduled job copies yesterday's transactions into the data warehouse.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>A carrier's agent and a retailer's agent negotiate delivery windows.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>A new compliance archive should be reachable by any future agent.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>A billing service calls the model once to tag each incoming invoice.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>MCP server</code> · <code>direct API integration</code> · <code>agent-to-agent protocol</code></p>
+<h3 id="35-selecciona-2">35. Selecciona 2</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>A team is adding production evaluation to a live assistant. Which TWO practices give a trustworthy ongoing signal?</p>
+<ul>
+<li><strong>A.</strong> Score a sampled slice of real production outputs on a fixed schedule</li>
+<li><strong>B.</strong> Capture downstream user corrections and feed them into the dataset</li>
+<li><strong>C.</strong> Re-run the pre-launch suite unchanged every quarter and compare</li>
+<li><strong>D.</strong> Ask the support team whether the assistant feels better than last month</li>
+<li><strong>E.</strong> Count how many sessions ended without the user asking again</li>
+</ul>
+<h3 id="36-selecciona-2">36. Selecciona 2</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>A latency-sensitive feature must get faster without a measurable quality loss. Which TWO levers fit?</p>
+<ul>
+<li><strong>A.</strong> Cache the stable prefix so repeated content is not reprocessed</li>
+<li><strong>B.</strong> Drop chain-of-thought on the steps that are simple extraction</li>
+<li><strong>C.</strong> Cut the evaluation suite so releases can ship more frequently</li>
+<li><strong>D.</strong> Reduce the maximum output tokens on every endpoint by half</li>
+<li><strong>E.</strong> Move all of the reasoning-heavy steps to the smallest available model</li>
+</ul>
+<h3 id="37-selecciona-2">37. Selecciona 2</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>Quality has slipped over three weeks with no deploys. Which TWO findings would confirm input drift as the cause?</p>
+<ul>
+<li><strong>A.</strong> A new customer segment started sending queries in a second language</li>
+<li><strong>B.</strong> Average query length has doubled since the start of the period</li>
+<li><strong>C.</strong> The billing total for the month came in above the usual range</li>
+<li><strong>D.</strong> The p95 latency of the endpoint has stayed flat throughout</li>
+<li><strong>E.</strong> The number of daily sessions has grown steadily week over week</li>
+</ul>
+<h3 id="38-selecciona-2">38. Selecciona 2</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>A team is standing up an LLM-as-judge to score tone at scale. Which TWO steps keep the judge trustworthy over time?</p>
+<ul>
+<li><strong>A.</strong> Calibrate its scores periodically against a sample rated by experts</li>
+<li><strong>B.</strong> Write the rubric from the same guidelines the humans apply</li>
+<li><strong>C.</strong> Use the same model version that generated the output that is being scored</li>
+<li><strong>D.</strong> Let the judge revise its own rubric whenever agreement drops</li>
+<li><strong>E.</strong> Score only the outputs that the assistant flagged as uncertain</li>
+</ul>
+<h3 id="39-selecciona-2">39. Selecciona 2</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>A canary is running for a new model version. Which TWO signals should gate the decision to widen the rollout?</p>
+<ul>
+<li><strong>A.</strong> Task-level scores on the evaluation suite for the canary traffic</li>
+<li><strong>B.</strong> Guardrail violations and refusal rates compared with the baseline</li>
+<li><strong>C.</strong> The number of engineers who reviewed the release notes ahead of time</li>
+<li><strong>D.</strong> The reduction in cost per request the newer version delivers</li>
+<li><strong>E.</strong> The size of the canary slice relative to total production traffic</li>
+</ul>
+<h3 id="40-selecciona-una">40. Selecciona UNA</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>A prompt change scored six points better offline. The team wants production evidence before switching everyone. Which mechanism answers the question they are actually asking?</p>
+<ul>
+<li><strong>A.</strong> An A/B test splitting live traffic between the current and new prompt</li>
+<li><strong>B.</strong> A canary that exposes the new prompt to a small slice and watches errors</li>
+<li><strong>C.</strong> A third offline run of the same suite to confirm the six-point gap</li>
+<li><strong>D.</strong> A review session where senior staff compare sample outputs side by side</li>
+</ul>
+<h3 id="41-clasifica-cada-fila">41. Clasifica cada fila</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>For each metric, identify what it tells you about a production system.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Share of answers where retrieval found no grounded passage.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Number of formal complaints filed through the support portal.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Average tokens consumed per completed session.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Percentage of requests that returned a server error.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Average relevance score of the passages passed to the model.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>leading indicator of quality</code> · <code>lagging indicator of quality</code> · <code>cost signal</code> · <code>availability signal</code></p>
+<h3 id="42-selecciona-una">42. Selecciona UNA</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>A summarisation feature needs a quality metric that can run on every output. What is the sound choice?</p>
+<ul>
+<li><strong>A.</strong> A rubric scored against the source, checking coverage and faithfulness</li>
+<li><strong>B.</strong> Length of the summary compared with the length of the source text</li>
+<li><strong>C.</strong> How closely the summary matches one reference summary word for word</li>
+<li><strong>D.</strong> How many users clicked to expand the full document after reading</li>
+</ul>
+<h3 id="43-selecciona-una">43. Selecciona UNA</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>Prompts change several times a week. Running the full evaluation suite on each change takes two hours. What is the sensible arrangement?</p>
+<ul>
+<li><strong>A.</strong> A fast subset on every change and the full suite before each release</li>
+<li><strong>B.</strong> The full suite on every change, since quality cannot be compromised</li>
+<li><strong>C.</strong> The full suite once a week, regardless of how many changes shipped</li>
+<li><strong>D.</strong> Manual spot checks per change, with the suite reserved for incidents</li>
+</ul>
+<h3 id="44-selecciona-2">44. Selecciona 2</h3>
+<p><code>D4 · Evaluación, testing y optimización</code></p>
+<p>An assistant will operate in a regulated insurance context. Which TWO components must the pre-launch evaluation include?</p>
+<ul>
+<li><strong>A.</strong> A set labelled by experts covering routine and high-risk cases</li>
+<li><strong>B.</strong> Adversarial cases probing policy violations and prompt injection</li>
+<li><strong>C.</strong> A comparison of the model against the benchmarks of competing vendors</li>
+<li><strong>D.</strong> A demonstration to the executive committee with chosen examples</li>
+<li><strong>E.</strong> A satisfaction survey run with users after the system is launched</li>
+</ul>
+<h3 id="45-selecciona-2">45. Selecciona 2</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>A drafting assistant must never state a delivery date that is not in the logistics system. Which TWO controls enforce that?</p>
+<ul>
+<li><strong>A.</strong> Block any response containing a date that no lookup call returned</li>
+<li><strong>B.</strong> Require the model to cite the record its date came from, or omit it</li>
+<li><strong>C.</strong> Instruct the assistant in the prompt to avoid inventing dates</li>
+<li><strong>D.</strong> Review a weekly sample of sent messages for invented delivery dates</li>
+<li><strong>E.</strong> Lower the temperature so the assistant improvises less on its own</li>
+</ul>
+<h3 id="46-selecciona-una">46. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>An agent that books travel has a tool that can cancel existing reservations. Where does the human approval gate belong?</p>
+<ul>
+<li><strong>A.</strong> Before a cancellation executes, while searches and drafts run freely</li>
+<li><strong>B.</strong> Before every tool call the agent makes during the booking session</li>
+<li><strong>C.</strong> After the cancellation, so that a person can reinstate it if it was wrong</li>
+<li><strong>D.</strong> On a random tenth of sessions, sampled for quality assurance</li>
+</ul>
+<h3 id="47-selecciona-una">47. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>A customer exercises their right to erasure. The company keeps full conversation traces for auditing. How is that resolved at design time?</p>
+<ul>
+<li><strong>A.</strong> Separate identity from content so the person can be erased from traces</li>
+<li><strong>B.</strong> Delete every trace touching that customer, accepting the audit gap</li>
+<li><strong>C.</strong> Refuse the request, since audit obligations override the erasure right</li>
+<li><strong>D.</strong> Keep the traces and simply stop associating them with any customer</li>
+</ul>
+<h3 id="48-selecciona-una">48. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>A guardrail is blocking legitimate requests along with the harmful ones, and users are complaining. What is the correct response?</p>
+<ul>
+<li><strong>A.</strong> Measure both error types on labelled cases and tune where the harm is worse</li>
+<li><strong>B.</strong> Loosen the guardrail until users stop complaining about the blocks</li>
+<li><strong>C.</strong> Keep it as is: blocking too much is always safer than blocking too little</li>
+<li><strong>D.</strong> Move the check into the prompt so the model can use its own judgement</li>
+</ul>
+<h3 id="49-selecciona-una">49. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>An architecture routes customer data through three third-party services. What does the risk assessment have to cover?</p>
+<ul>
+<li><strong>A.</strong> Each provider's data handling, plus what happens when one of them fails</li>
+<li><strong>B.</strong> The provider with the largest share of the traffic that flows through</li>
+<li><strong>C.</strong> Only the provider that stores data, since the others merely pass it on</li>
+<li><strong>D.</strong> The contractual penalties agreed with each of the three providers</li>
+</ul>
+<h3 id="50-selecciona-una">50. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>An automated decision affects whether a person receives a benefit. What does the design owe that person?</p>
+<ul>
+<li><strong>A.</strong> An explanation of the basis for the decision and a route to human review</li>
+<li><strong>B.</strong> A notice that the decision involved an automated system in some way</li>
+<li><strong>C.</strong> The confidence score the model produced when it made the decision</li>
+<li><strong>D.</strong> The full system prompt, so the criteria applied are fully transparent</li>
+</ul>
+<h3 id="51-selecciona-una">51. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>A subsidiary streams full patient support chats, names included, to a quality-analytics vendor abroad. The data protection officer objects.</p>
+<ul>
+<li><strong>A.</strong> Strip or pseudonymise personal data before it leaves the boundary</li>
+<li><strong>B.</strong> Encrypt the stream in transit to the analytics vendor's own endpoint</li>
+<li><strong>C.</strong> Shorten retention at the vendor from three years down to one year</li>
+<li><strong>D.</strong> Add a line to the privacy notice saying that chats may be analysed</li>
+</ul>
+<h3 id="52-selecciona-una">52. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>A scholarship-scoring assistant rates applicants from certain school districts lower. Names and demographic fields were already stripped from the input.</p>
+<ul>
+<li><strong>A.</strong> Proxies still carry the signal: evaluate by segment and remediate</li>
+<li><strong>B.</strong> The system is behaving correctly, since no protected field was used</li>
+<li><strong>C.</strong> The base model is at fault and the application layer cannot help it</li>
+<li><strong>D.</strong> It is a presentation problem: stop showing the score to reviewers</li>
+</ul>
+<h3 id="53-selecciona-una">53. Selecciona UNA</h3>
+<p><code>D5 · Gobernanza, seguridad y riesgo</code></p>
+<p>A security review finds that a sentence inside an indexed supplier document changed how the agent behaved.</p>
+<ul>
+<li><strong>A.</strong> Retrieved text is untrusted data and holds no instruction authority</li>
+<li><strong>B.</strong> Indexes should only contain documents written inside the company</li>
+<li><strong>C.</strong> Retrieval must stop whenever a document contains an imperative</li>
+<li><strong>D.</strong> System prompts must be encrypted wherever they are stored at rest</li>
+</ul>
+<h3 id="54-selecciona-2">54. Selecciona 2</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A discovery workshop is being planned with a client who has already chosen a solution. Which TWO outcomes make the workshop worth running?</p>
+<ul>
+<li><strong>A.</strong> A written statement of the business problem behind the requested tool</li>
+<li><strong>B.</strong> Agreement on how success will be measured and at what threshold</li>
+<li><strong>C.</strong> A signed fixed-price quote for the solution the client asked for</li>
+<li><strong>D.</strong> A wireframe of the interface the client pictured beforehand</li>
+<li><strong>E.</strong> A shortlist of the model versions the team intends to benchmark</li>
+</ul>
+<h3 id="55-selecciona-una">55. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A client asks for a firm launch date before the evaluation dataset exists. What does the architect commit to?</p>
+<ul>
+<li><strong>A.</strong> A date for the evaluation to be ready, and a launch decision gated on it</li>
+<li><strong>B.</strong> The requested launch date, with the evaluation work compressed to fit around it</li>
+<li><strong>C.</strong> No date at all until every acceptance criterion has been measured</li>
+<li><strong>D.</strong> A launch date for a reduced scope chosen by the delivery team alone</li>
+</ul>
+<h3 id="56-selecciona-una">56. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A client's risk committee asks to see exactly how the assistant reaches its answers. What does the architect provide?</p>
+<ul>
+<li><strong>A.</strong> The decision flow, the guardrails and the evaluation results, in their language</li>
+<li><strong>B.</strong> The system prompt and the model parameters, as the literal answer</li>
+<li><strong>C.</strong> A statement that large language models are not fully explainable</li>
+<li><strong>D.</strong> A live demonstration, which shows the behaviour better than documents</li>
+</ul>
+<h3 id="57-selecciona-una">57. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A pilot exceeded its targets and the sponsor wants to roll it out to the whole organisation next month. What does the architect raise first?</p>
+<ul>
+<li><strong>A.</strong> What changes at production scale: load, edge cases, support and cost</li>
+<li><strong>B.</strong> That the pilot results will not hold, so expectations must come down</li>
+<li><strong>C.</strong> That a second pilot is needed before committing to any rollout</li>
+<li><strong>D.</strong> The additional budget the wider rollout is going to require</li>
+</ul>
+<h3 id="58-selecciona-una">58. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>During design, a promising approach was evaluated and discarded. Should that appear in the documentation?</p>
+<ul>
+<li><strong>A.</strong> Yes: recording why it was rejected stops the team revisiting it blindly</li>
+<li><strong>B.</strong> No: documentation should describe the system as it was finally built</li>
+<li><strong>C.</strong> Only if the client asks specifically about that particular alternative</li>
+<li><strong>D.</strong> Only when the rejected option was the more expensive of the two</li>
+</ul>
+<h3 id="59-selecciona-una">59. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A client wants an SLA that covers answer accuracy the same way it covers uptime. How should the architect respond?</p>
+<ul>
+<li><strong>A.</strong> Commit to accuracy measured on an agreed test set, reviewed periodically</li>
+<li><strong>B.</strong> Commit to uptime only, since accuracy cannot be guaranteed by contract</li>
+<li><strong>C.</strong> Accept the accuracy target and manage it through internal monitoring</li>
+<li><strong>D.</strong> Propose a penalty regime, which is what an SLA really comes down to</li>
+</ul>
+<h3 id="60-selecciona-una">60. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A finance director orders the cheapest model for a filing that feeds the regulator. Testing shows it errs materially more often on that task.</p>
+<ul>
+<li><strong>A.</strong> Show the evidence and let the accountable owner choose informed</li>
+<li><strong>B.</strong> Use the better model quietly and absorb the difference elsewhere</li>
+<li><strong>C.</strong> Comply without comment, since the budget belongs to that director</li>
+<li><strong>D.</strong> Take it over their head to the audit committee for a final ruling</li>
+</ul>
+<h3 id="61-selecciona-una">61. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>A client demands answers in under a second from a pipeline that retrieves, reasons and verifies. Engineering measures three seconds.</p>
+<ul>
+<li><strong>A.</strong> Show the latency budget, agree a realistic SLA and add streaming</li>
+<li><strong>B.</strong> Accept the target now and count on later optimisation to close it</li>
+<li><strong>C.</strong> Remove the retrieval and verification stages so the target is met</li>
+<li><strong>D.</strong> Promise sub-second timing for demonstrations to the client only</li>
+</ul>
+<h3 id="62-selecciona-una">62. Selecciona UNA</h3>
+<p><code>D6 · Comunicación con stakeholders y ciclo de vida</code></p>
+<p>Three months after launch the sponsor is losing interest: the monthly report shows tokens, uptime and average latency.</p>
+<ul>
+<li><strong>A.</strong> Lead with the criteria agreed at discovery, technical data behind</li>
+<li><strong>B.</strong> Report weekly instead of monthly so the project stays more visible</li>
+<li><strong>C.</strong> Add further technical indicators so the report looks more complete</li>
+<li><strong>D.</strong> Drop the report and rely on conversations with the sponsor instead</li>
+</ul>
+<h3 id="63-selecciona-una">63. Selecciona UNA</h3>
+<p><code>D7 · Productividad del desarrollador</code></p>
+<p>An AI coding assistant needs access to a service that requires an API key. How is that handled?</p>
+<ul>
+<li><strong>A.</strong> An environment variable the tooling reads, never a file under version control</li>
+<li><strong>B.</strong> A configuration file kept out of the repository through the ignore list</li>
+<li><strong>C.</strong> A note in the project documentation explaining where to find the key</li>
+<li><strong>D.</strong> A key with a short expiry, pasted into the session when it is needed</li>
+</ul></main><footer>
+<p><b>Material no oficial.</b> No afiliado a Anthropic PBC ni patrocinado ni avalado por Anthropic. <i>Claude</i> y <i>Claude Certified Architect</i> son marcas de Anthropic. Las preguntas son originales, escritas contra los objetivos publicados; no reproducen contenido del examen real. Ningún simulacro garantiza aprobar.</p>
+<p>Por <a href="https://www.linkedin.com/in/juanmartincordero/">Juan Martín Cordero</a> · <a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y contenido en GitHub</a> · Contenido CC BY 4.0</p>
+</footer></body></html>

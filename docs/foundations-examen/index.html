@@ -1,0 +1,831 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Examen de práctica CCAR-F · 60 preguntas</title>
+<meta name="description" content="Simulacro completo del Claude Certified Architect Foundations: 60 preguntas originales ponderadas por el blueprint oficial.">
+<meta name="keywords" content="claude certified architect, examen de práctica, simulacro, español">
+<meta name="author" content="Juan Martín Cordero">
+<link rel="canonical" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations-examen/">
+<meta property="og:type" content="article"><meta property="og:title" content="Examen de práctica CCAR-F · 60 preguntas">
+<meta property="og:description" content="Simulacro completo del Claude Certified Architect Foundations: 60 preguntas originales ponderadas por el blueprint oficial."><meta property="og:url" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations-examen/">
+<meta property="og:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png"><meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png">
+<style>
+:root{--bg:#FAFAFA;--surface:#fff;--ink:#252525;--ink-2:#484848;--muted:#656565;--line:#E5E5E5;--line-2:#D4D4D4;--accent:#E11D48;--soft:rgba(225,29,72,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0F0F0F;--surface:#1A1A1A;--ink:#FAFAFA;--ink-2:rgba(255,255,255,.86);--muted:#A1A1A1;--line:#2A2A2A;--line-2:#3D3D3D;--accent:#FF6B6B;--soft:rgba(255,107,107,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;text-align:justify;hyphens:auto;-webkit-font-smoothing:antialiased}
+.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:860px;margin:0 auto;padding:12px 22px;display:flex;gap:18px;align-items:center;font-size:14px;text-align:left}
+.top a{color:var(--ink-2);text-decoration:none}.top a:hover{color:var(--accent)}
+.top .home{font-weight:650;color:var(--ink)}
+.top .cta{margin-left:auto;background:var(--accent);color:#fff;padding:7px 14px;border-radius:8px;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:44px 22px 96px}
+h1,h2,h3,h4{text-align:left;hyphens:manual;letter-spacing:-.022em;line-height:1.2;font-weight:650;margin:2em 0 .6em}
+h1{font-size:clamp(30px,4.6vw,42px);margin-top:0;letter-spacing:-.035em}
+h2{font-size:25px;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:19px}
+p,li{color:var(--ink-2)}
+a{color:var(--accent)}
+code{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:.1em .35em;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;text-align:left}
+pre code{border:0;background:none;padding:0}
+blockquote{margin:1.4em 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0}
+blockquote p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:1.4em 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;hyphens:manual}
+th{background:var(--surface);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:650}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+.lede{font-size:18.5px;color:var(--ink-2);margin-bottom:2em}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 0;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head><body>
+<header class="top"><div class="in">
+<a class="home" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">Claude Certified Architect · ES</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">Professional</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">Foundations</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/glosario/">Glosario</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/faq/">FAQ</a>
+<a class="cta" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/">Simulador</a>
+</div></header><main><!-- Generado desde el banco de preguntas. No editar a mano: abrí un issue. -->
+<h1 id="ccar-f-examen-de-practica">CCAR-F · Examen de práctica</h1>
+<p><strong>60 preguntas · 120 minutos · corte 720/1000</strong></p>
+<p>Material no oficial. Preguntas originales escritas contra los objetivos publicados en la guía del examen. No reproducen contenido del examen real. <a href="../README#aviso-legal">Ver aviso completo</a>.</p>
+<p>Las respuestas están en <a href="respuestas">respuestas.md</a>. Para practicar con corrección automática y cronómetro, usá el <a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">simulador</a>.</p>
+<hr />
+<h3 id="1-selecciona-2">1. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>A platform team is enabling AI-assisted development across twelve squads. Which TWO measures scale the practice without scaling the risk?</p>
+<ul>
+<li><strong>A.</strong> Keep shared configuration and prompt standards under version control</li>
+<li><strong>B.</strong> Define which commands automated tooling may run and on which branches</li>
+<li><strong>C.</strong> Grant the tooling broad credentials so squads are never blocked</li>
+<li><strong>D.</strong> Let each squad publish its own standards independently</li>
+<li><strong>E.</strong> Adopt every new assistant tool in the week it becomes available</li>
+</ul>
+<h3 id="2-selecciona-una">2. Selecciona UNA</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>Reviews of AI-authored pull requests almost never raise findings, yet defects keep reaching production. What is the most likely cause?</p>
+<ul>
+<li><strong>A.</strong> The reviewer shares the context and assumptions that produced the code</li>
+<li><strong>B.</strong> The review prompt is too short to describe what quality means here</li>
+<li><strong>C.</strong> The model used for the review is smaller than the one used for authoring</li>
+<li><strong>D.</strong> The team merges before the automated review has finished running</li>
+</ul>
+<h3 id="3-selecciona-una">3. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>An agent in production starts calling an unexpected tool on a minority of requests. What does the on-call engineer do first?</p>
+<ul>
+<li><strong>A.</strong> Read traces of the affected sessions to locate where the choice diverges</li>
+<li><strong>B.</strong> Rewrite the tool descriptions, since ambiguity is the most usual explanation</li>
+<li><strong>C.</strong> Disable the tool until someone can reproduce the behaviour in staging</li>
+<li><strong>D.</strong> Roll the whole service back to the release from the previous quarter</li>
+</ul>
+<h3 id="4-clasifica-cada-fila">4. Clasifica cada fila</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>For each situation, identify the practice that applies.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Two squads produce different code style from the same assistant.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>AI-written changes pass review, yet defects keep reaching production.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>An agent begins calling an unexpected tool on a subset of requests.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>An unattended pipeline job could run a destructive command.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>A new hire should inherit the team's prompt standards on day one.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>shared configuration in version control</code> · <code>review from an independent context</code> · <code>inspect the traces first</code> · <code>restrict what automation may execute</code></p>
+<h3 id="5-selecciona-2">5. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A fixed workflow for supplier onboarding now fails on roughly a fifth of cases, where staff step in manually to finish the job. Which TWO signals would justify moving this stage to an autonomous agent?</p>
+<ul>
+<li><strong>A.</strong> The number of onboarding requests per week has roughly doubled since launch</li>
+<li><strong>B.</strong> The manual interventions follow no repeatable pattern the team can list</li>
+<li><strong>C.</strong> The steps differ per supplier and only become clear part-way through</li>
+<li><strong>D.</strong> Leadership wants the solution to look more advanced to the board</li>
+<li><strong>E.</strong> The cost per request has risen along with the added volume</li>
+</ul>
+<h3 id="6-selecciona-2">6. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A supervisor coordinates four specialist agents in a regulated claims process. Which TWO responsibilities belong to the supervisor rather than to the specialists?</p>
+<ul>
+<li><strong>A.</strong> Deciding the order the specialists run in and when to stop the chain</li>
+<li><strong>B.</strong> Applying the rules that determine whether a claim is fraudulent</li>
+<li><strong>C.</strong> Recording the ordered outcome of every step for the audit trail</li>
+<li><strong>D.</strong> Formatting each specialist's own output for its internal use</li>
+<li><strong>E.</strong> Choosing which model version each specialist should call at runtime</li>
+</ul>
+<h3 id="7-selecciona-2">7. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>An architect is splitting a long analysis task into sequenced subtasks. Which TWO practices make the decomposition real rather than cosmetic?</p>
+<ul>
+<li><strong>A.</strong> Passing structured output between steps so each one can be checked</li>
+<li><strong>B.</strong> Giving every step only the context that step actually needs</li>
+<li><strong>C.</strong> Running each of the steps on the largest model in the family</li>
+<li><strong>D.</strong> Keeping the original prompt intact and appending the steps</li>
+<li><strong>E.</strong> Merging the steps back into one call once quality has improved</li>
+</ul>
+<h3 id="8-selecciona-2">8. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>Which TWO conditions indicate that a single augmented model call is enough, with no workflow or agent around it?</p>
+<ul>
+<li><strong>A.</strong> The task is one transformation whose context can be supplied up front</li>
+<li><strong>B.</strong> Several specialists must contribute before the output is complete</li>
+<li><strong>C.</strong> Any reference material needed fits alongside the request itself</li>
+<li><strong>D.</strong> The next step depends entirely on what the previous step happened to return</li>
+<li><strong>E.</strong> Each step has to be recorded separately for an external auditor</li>
+</ul>
+<h3 id="9-clasifica-cada-fila">9. Clasifica cada fila</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>For each situation, identify who should decide the next step.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The five stages of a monthly regulatory report that has not changed in two years.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Which log query to run next while diagnosing a production outage.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Whether to release a payment that exceeds the agreed approval threshold.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>The order in which four specialist agents run inside a regulated pipeline.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>How many sources to consult before answering an open research question.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>the architect, at design time</code> · <code>the model, at run time</code> · <code>a human reviewer, per case</code></p>
+<h3 id="10-selecciona-una">10. Selecciona UNA</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>An assistant handles two kinds of request: simple status lookups that arrive constantly, and complex disputes that need deep analysis. Which design serves both?</p>
+<ul>
+<li><strong>A.</strong> A router that classifies the request and sends it down the fitting path</li>
+<li><strong>B.</strong> One agent with every tool available, deciding what to do per request</li>
+<li><strong>C.</strong> A single prompt long enough to cover lookups and disputes together</li>
+<li><strong>D.</strong> Two separate products, each with its own interface and its own login</li>
+</ul>
+<h3 id="11-selecciona-una">11. Selecciona UNA</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A pipeline extracts data, transforms it and writes it to a system of record. Where does validation belong?</p>
+<ul>
+<li><strong>A.</strong> After each step, so a bad result never reaches the following one</li>
+<li><strong>B.</strong> At the very end, right before the write to the system of record</li>
+<li><strong>C.</strong> Only at the start, validating the input document that arrived</li>
+<li><strong>D.</strong> Nowhere: the model is instructed to check its own work as it goes</li>
+</ul>
+<h3 id="12-selecciona-una">12. Selecciona UNA</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>In a four-stage chain, the third stage fails on about one request in twenty. What belongs in the design?</p>
+<ul>
+<li><strong>A.</strong> A defined behaviour for that failure: retry, fall back, or stop and report</li>
+<li><strong>B.</strong> A fifth stage that reviews the output and repairs whatever looks wrong</li>
+<li><strong>C.</strong> A larger model in stage three so the failures become less frequent</li>
+<li><strong>D.</strong> A rule telling the model to skip stage three when it cannot complete</li>
+</ul>
+<h3 id="13-selecciona-una">13. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>A summarisation feature runs on the largest model in the family. Evaluation shows a mid-tier model matches its quality on this task at a third of the cost. What should the architect do?</p>
+<ul>
+<li><strong>A.</strong> Move the feature to the mid-tier model and keep the evaluation running</li>
+<li><strong>B.</strong> Stay on the largest model, since summary quality varies a lot with the input</li>
+<li><strong>C.</strong> Split the traffic evenly between both models to hedge against a drop</li>
+<li><strong>D.</strong> Move to the smallest model, since the mid-tier one is not the cheapest</li>
+</ul>
+<h3 id="14-clasifica-cada-fila">14. Clasifica cada fila</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>For each symptom, identify the technique that fixes it.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Output format is close but inconsistent from one run to the next.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A critical rule buried in 12,000 tokens of context is followed erratically.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>The same 9,000-token policy block is re-sent and re-charged on every call.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Answers about the middle of a large document are unreliable and expensive.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>The house table layout is described in prose but never reproduced exactly.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>few-shot examples</code> · <code>move the rule to an edge</code> · <code>prompt caching</code> · <code>retrieve only what is relevant</code></p>
+<h3 id="15-selecciona-una">15. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>A classification task has eight well-defined categories and clear written definitions for each. Accuracy is already high without examples. What follows?</p>
+<ul>
+<li><strong>A.</strong> Keep it zero-shot and spend the tokens on the definitions instead</li>
+<li><strong>B.</strong> Add few-shot examples anyway, since they always improve accuracy</li>
+<li><strong>C.</strong> Add one example per category to make the prompt more consistent</li>
+<li><strong>D.</strong> Move to a larger model to protect the accuracy already achieved</li>
+</ul>
+<h3 id="16-selecciona-una">16. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>A support conversation runs long and the earliest messages start falling out of the window. What preserves quality?</p>
+<ul>
+<li><strong>A.</strong> Summarise the older turns and keep the decisive facts verbatim</li>
+<li><strong>B.</strong> Let the oldest turns drop, since recent context matters more</li>
+<li><strong>C.</strong> Move to the model with the largest window and keep everything</li>
+<li><strong>D.</strong> Start a new conversation whenever the window gets close to full</li>
+</ul>
+<h3 id="17-selecciona-una">17. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>A team wants to expose forty internal endpoints to an agent. Tool-selection accuracy in testing drops sharply past roughly a dozen tools. What is the sound design response?</p>
+<ul>
+<li><strong>A.</strong> Group the endpoints into task-oriented tools and load them on demand</li>
+<li><strong>B.</strong> Register all forty tools and rely on a more capable model to choose</li>
+<li><strong>C.</strong> Register all forty and instruct the model to think before selecting one</li>
+<li><strong>D.</strong> Expose one generic tool that accepts the endpoint name as a parameter</li>
+</ul>
+<h3 id="18-selecciona-una">18. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>A retrieval index holds documents from many client organisations. What keeps one client from ever seeing another's content?</p>
+<ul>
+<li><strong>A.</strong> Filter by tenant at query time using metadata on every chunk</li>
+<li><strong>B.</strong> Instruct the model to answer only from the requesting client's files</li>
+<li><strong>C.</strong> Keep one index and rely on relevance to surface the right documents</li>
+<li><strong>D.</strong> Ask the model to check the client name before quoting a passage</li>
+</ul>
+<h3 id="19-selecciona-una">19. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>A knowledge base gets edits all day long, and the assistant must reflect them within minutes. What indexing approach fits?</p>
+<ul>
+<li><strong>A.</strong> Incremental indexing triggered by each change, with a periodic full rebuild</li>
+<li><strong>B.</strong> A nightly full rebuild, which is simpler to operate and to reason about</li>
+<li><strong>C.</strong> Cache answers for an hour so the load on the index stays predictable</li>
+<li><strong>D.</strong> Retrieve straight from the source database and skip the index entirely</li>
+</ul>
+<h3 id="20-selecciona-una">20. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>An internal API exposes forty endpoints. The team is deciding how to expose it to the agent. What should drive the tool boundaries?</p>
+<ul>
+<li><strong>A.</strong> The tasks the agent needs to accomplish, not the endpoints that exist</li>
+<li><strong>B.</strong> One tool per endpoint, so the whole surface stays available to it</li>
+<li><strong>C.</strong> A single tool that receives the endpoint name and its parameters</li>
+<li><strong>D.</strong> The endpoints the backend team considers most stable over time</li>
+</ul>
+<h3 id="21-selecciona-una">21. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>An agent platform needs alerting. Which signal deserves a page to the on-call engineer?</p>
+<ul>
+<li><strong>A.</strong> Tool error rate crossing a threshold sustained over several minutes</li>
+<li><strong>B.</strong> Any single request that took longer than the median to complete</li>
+<li><strong>C.</strong> Daily token spend rising above the same day of the previous week</li>
+<li><strong>D.</strong> A user rating one individual answer as unhelpful in the interface</li>
+</ul>
+<h3 id="22-selecciona-una">22. Selecciona UNA</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A report needs four independent sections researched and then written as one document. How should the work be split across agents?</p>
+<ul>
+<li><strong>A.</strong> Four subagents research in parallel, one agent writes the document</li>
+<li><strong>B.</strong> Four subagents each research and write their own section</li>
+<li><strong>C.</strong> A single agent researches and then writes everything in one long pass</li>
+<li><strong>D.</strong> Four subagents write, and a fifth merges their four drafts</li>
+</ul>
+<h3 id="23-selecciona-una">23. Selecciona UNA</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>An orchestrator dispatches subagents whose number is only known once the problem is read. Which pattern is this?</p>
+<ul>
+<li><strong>A.</strong> Orchestrator–workers</li>
+<li><strong>B.</strong> Routing across a fixed menu</li>
+<li><strong>C.</strong> Parallelization over fixed sections</li>
+<li><strong>D.</strong> Prompt chaining in a fixed sequence</li>
+</ul>
+<h3 id="24-selecciona-2">24. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A subagent receives its assignment from an orchestrator. Which TWO parts of that assignment should a person define in advance, not the orchestrator at runtime?</p>
+<ul>
+<li><strong>A.</strong> The output format every subagent must return</li>
+<li><strong>B.</strong> The hard limits and the tools it may use</li>
+<li><strong>C.</strong> The specific question this subagent must answer</li>
+<li><strong>D.</strong> The portion of the problem it has been given</li>
+<li><strong>E.</strong> The order in which it should consult its sources</li>
+</ul>
+<h3 id="25-selecciona-2">25. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A team is deciding whether a multi-agent design is worth its overhead. Which TWO conditions make it pay off?</p>
+<ul>
+<li><strong>A.</strong> The subtasks are independent and do not need to talk to each other</li>
+<li><strong>B.</strong> Each subtask produces bulk material that is better summarised apart</li>
+<li><strong>C.</strong> Several subtasks must run in a strict order, each using the last result</li>
+<li><strong>D.</strong> Two agents need to read and update the same shared state as they go</li>
+<li><strong>E.</strong> The team wants the architecture to look more capable to the client</li>
+</ul>
+<h3 id="26-selecciona-2">26. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>Results from parallel subagents come back in incompatible shapes and cannot be combined. Which TWO fixes address the cause?</p>
+<ul>
+<li><strong>A.</strong> Define one output contract that every subagent must fill in</li>
+<li><strong>B.</strong> Validate each subagent's return against that contract before use</li>
+<li><strong>C.</strong> Ask the orchestrator to reformat whatever each subagent sent</li>
+<li><strong>D.</strong> Increase each subagent's context so it can see all the others' work</li>
+<li><strong>E.</strong> Run the subagents sequentially so later ones copy the first</li>
+</ul>
+<h3 id="27-selecciona-2">27. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>A PreToolUse hook exits with code 2 after a blocked command. Which TWO things happen next?</p>
+<ul>
+<li><strong>A.</strong> The tool call never executes</li>
+<li><strong>B.</strong> What the hook wrote to stderr goes back to the model</li>
+<li><strong>C.</strong> The session ends and has to be restarted by the user</li>
+<li><strong>D.</strong> PostToolUse still runs so the block can be recorded</li>
+<li><strong>E.</strong> The model retries the same command automatically</li>
+</ul>
+<h3 id="28-selecciona-2">28. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>A monorepo holds twelve applications, each with its own conventions. Which TWO practices keep context usage sane?</p>
+<ul>
+<li><strong>A.</strong> Put app-specific conventions in a CLAUDE.md inside each app folder</li>
+<li><strong>B.</strong> Keep only shared, repo-wide conventions in the root CLAUDE.md</li>
+<li><strong>C.</strong> Concatenate every app's conventions into the single root file for clarity</li>
+<li><strong>D.</strong> Move all conventions into settings.json so they load on demand</li>
+<li><strong>E.</strong> Ask developers to paste the relevant conventions at session start</li>
+</ul>
+<h3 id="29-selecciona-una">29. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>A downstream service parses the model's output as JSON and crashes when a field is missing. What is the correct fix?</p>
+<ul>
+<li><strong>A.</strong> Enforce the shape with a schema instead of asking for it in the prompt</li>
+<li><strong>B.</strong> Add a sentence to the prompt insisting the JSON must be complete</li>
+<li><strong>C.</strong> Wrap the parser in a try block and skip records that fail</li>
+<li><strong>D.</strong> Post-process the text with a regular expression to patch the gaps</li>
+</ul>
+<h3 id="30-selecciona-una">30. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>A prompt mixes instructions, a reference document and a user question, and the model keeps confusing them. What is the most direct improvement?</p>
+<ul>
+<li><strong>A.</strong> Delimit each part with explicit tags so the boundaries are unambiguous</li>
+<li><strong>B.</strong> Repeat the instructions again after the reference document ends</li>
+<li><strong>C.</strong> Shorten the reference document until the confusion disappears</li>
+<li><strong>D.</strong> Raise the temperature so that the model interprets the layout more loosely</li>
+</ul>
+<h3 id="31-selecciona-una">31. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>An output will be read by a person, not parsed by a program. What follows for its format?</p>
+<ul>
+<li><strong>A.</strong> Prose is fine; a strict schema adds cost without buying anything</li>
+<li><strong>B.</strong> A schema should still be enforced for consistency across responses</li>
+<li><strong>C.</strong> The output should be JSON so it can be reused programmatically later</li>
+<li><strong>D.</strong> The format should change per request to suit the reader's preference</li>
+</ul>
+<h3 id="32-selecciona-una">32. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>Few-shot examples were added to a classification prompt and accuracy on one rare category got worse. What is the likely cause?</p>
+<ul>
+<li><strong>A.</strong> The examples over-represent the common categories and skew the model</li>
+<li><strong>B.</strong> The examples are too short for the model to learn the whole pattern from</li>
+<li><strong>C.</strong> Few-shot prompting does not work for classification tasks at all</li>
+<li><strong>D.</strong> The temperature is too low for the examples to have any influence</li>
+</ul>
+<h3 id="33-selecciona-una">33. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>An extraction step must return a consistent output shape. Prose instructions describing the format keep producing variations. What works better?</p>
+<ul>
+<li><strong>A.</strong> Two to four worked input and output examples in the prompt</li>
+<li><strong>B.</strong> A longer written description of the format</li>
+<li><strong>C.</strong> A reminder at the end of the prompt to respect the format</li>
+<li><strong>D.</strong> A lower temperature so the output varies less between runs</li>
+</ul>
+<h3 id="34-selecciona-una">34. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>A review prompt says 'be conservative and report only high-confidence findings'. Results are inconsistent between runs. What is the defect?</p>
+<ul>
+<li><strong>A.</strong> The criterion is vague, so each run interprets it differently</li>
+<li><strong>B.</strong> The prompt is too short for the model to apply judgement</li>
+<li><strong>C.</strong> The model needs a larger context to be consistent about it</li>
+<li><strong>D.</strong> Confidence cannot really be expressed in a prompt in any useful way</li>
+</ul>
+<h3 id="35-selecciona-una">35. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>A tool wraps an internal API with eleven optional parameters. The agent fills them inconsistently. What is the better design?</p>
+<ul>
+<li><strong>A.</strong> Expose a task-oriented tool that takes only what the task needs</li>
+<li><strong>B.</strong> Document all eleven parameters more thoroughly in the description</li>
+<li><strong>C.</strong> Add validation that rejects calls with unusual parameter combinations</li>
+<li><strong>D.</strong> Let the agent send free-form text and parse the parameters out of it</li>
+</ul>
+<h3 id="36-selecciona-una">36. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>A tool returns an empty list when the underlying service times out. What is wrong with that?</p>
+<ul>
+<li><strong>A.</strong> The model reads it as 'no results' and answers confidently from nothing</li>
+<li><strong>B.</strong> The empty list uses more tokens than an explicit error would use</li>
+<li><strong>C.</strong> Timeouts should always be retried inside the tool without informing anyone</li>
+<li><strong>D.</strong> Empty lists are valid only when the query itself was malformed</li>
+</ul>
+<h3 id="37-selecciona-una">37. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>Two agents from different companies must exchange work without either exposing internal tools. Which mechanism fits?</p>
+<ul>
+<li><strong>A.</strong> An agent-to-agent protocol, each side mediating its own systems</li>
+<li><strong>B.</strong> An MCP server published by one of the companies for the other to use</li>
+<li><strong>C.</strong> A shared tool catalogue registered in both agents at once</li>
+<li><strong>D.</strong> A direct API integration between the two internal systems</li>
+</ul>
+<h3 id="38-selecciona-una">38. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>Two tools share the description 'Retrieves information' and the agent keeps picking the wrong one. What fixes it?</p>
+<ul>
+<li><strong>A.</strong> Rename each tool and state the concrete data each one returns</li>
+<li><strong>B.</strong> Add an instruction telling the model to think before choosing</li>
+<li><strong>C.</strong> Merge both tools into one that takes a mode parameter</li>
+<li><strong>D.</strong> Remove one of the two tools from the agent's catalogue</li>
+</ul>
+<h3 id="39-selecciona-una">39. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>A project's MCP server needs an API token, and the configuration file is committed to the repository. How is that handled?</p>
+<ul>
+<li><strong>A.</strong> Reference an environment variable from the configuration file</li>
+<li><strong>B.</strong> Commit the token and rotate it whenever someone leaves</li>
+<li><strong>C.</strong> Keep the whole configuration out of version control instead</li>
+<li><strong>D.</strong> Store the token in the project CLAUDE.md so it is documented</li>
+</ul>
+<h3 id="40-selecciona-una">40. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>A developer wants to try an MCP server on their own, without affecting teammates. Where does that configuration go?</p>
+<ul>
+<li><strong>A.</strong> In the user-level configuration in their home directory</li>
+<li><strong>B.</strong> In the project configuration, disabled by default</li>
+<li><strong>C.</strong> In a branch of the repository that is never merged</li>
+<li><strong>D.</strong> In the project configuration, with a comment explaining it</li>
+</ul>
+<h3 id="41-selecciona-una">41. Selecciona UNA</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>An agent burns several tool calls each session just discovering what data is available. What reduces that?</p>
+<ul>
+<li><strong>A.</strong> Expose a resource that maps the available data up front</li>
+<li><strong>B.</strong> Increase the agent's context so it can remember prior sessions</li>
+<li><strong>C.</strong> Add a tool that lists every other tool and what it does</li>
+<li><strong>D.</strong> Instruct the agent to guess the structure before querying</li>
+</ul>
+<h3 id="42-selecciona-una">42. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>A long agent session degrades as it goes: earlier facts get dropped and answers drift. What is the sound response?</p>
+<ul>
+<li><strong>A.</strong> Re-inject the facts that must survive, instead of trusting the history</li>
+<li><strong>B.</strong> Increase the temperature so the model explores the history more</li>
+<li><strong>C.</strong> Ask the model to summarise the conversation and continue</li>
+<li><strong>D.</strong> Start over from scratch each time the drift becomes noticeable</li>
+</ul>
+<h3 id="43-selecciona-una">43. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>A retrieval step returns nothing relevant for a user question. What should the system do?</p>
+<ul>
+<li><strong>A.</strong> Say it has no grounded answer and offer the next step</li>
+<li><strong>B.</strong> Answer from the model's own knowledge without citing anything</li>
+<li><strong>C.</strong> Return the closest passages anyway and let the user judge</li>
+<li><strong>D.</strong> Retry the same query until something relevant comes back</li>
+</ul>
+<h3 id="44-selecciona-una">44. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>In a long support conversation, the order number and the amount keep getting lost after the history is summarised. What fixes it?</p>
+<ul>
+<li><strong>A.</strong> Keep a case-facts block outside the history and resend it every turn</li>
+<li><strong>B.</strong> Summarise less aggressively so more of the history survives</li>
+<li><strong>C.</strong> Ask the model to repeat the key facts at the end of each reply</li>
+<li><strong>D.</strong> Raise the context window so summarisation happens later</li>
+</ul>
+<h3 id="45-selecciona-una">45. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>A long input is processed reliably at the beginning and the end, but details in the middle are missed. What is the mitigation?</p>
+<ul>
+<li><strong>A.</strong> Place the decisive information near the start or the end</li>
+<li><strong>B.</strong> Repeat the whole input twice so the middle appears elsewhere</li>
+<li><strong>C.</strong> Increase the temperature so more of the input is considered</li>
+<li><strong>D.</strong> Split the input into random chunks and process them apart</li>
+</ul>
+<h3 id="46-selecciona-una">46. Selecciona UNA</h3>
+<p><code>D5 · Manejo de contexto y fiabilidad</code></p>
+<p>A long investigation will span several sessions. How are the findings preserved?</p>
+<ul>
+<li><strong>A.</strong> Write key findings to a file and reference it in the next session</li>
+<li><strong>B.</strong> Keep the session open indefinitely so nothing is ever lost</li>
+<li><strong>C.</strong> Rely on compaction to retain the important parts of the history</li>
+<li><strong>D.</strong> Repeat the discovery steps at the start of each new session</li>
+</ul>
+<h3 id="47-selecciona-2">47. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>A coordinator spawns subagents with the Task tool. Which TWO statements about their context are correct?</p>
+<ul>
+<li><strong>A.</strong> A subagent does not inherit the coordinator's conversation history</li>
+<li><strong>B.</strong> Everything the subagent needs must be stated in its own prompt</li>
+<li><strong>C.</strong> Subagents share a memory space that persists across separate Task calls</li>
+<li><strong>D.</strong> A subagent can read the coordinator's context window on demand</li>
+<li><strong>E.</strong> Subagents inherit the coordinator's allowed tools automatically</li>
+</ul>
+<h3 id="48-selecciona-2">48. Selecciona 2</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>Which TWO situations call for starting a fresh session rather than continuing the current one?</p>
+<ul>
+<li><strong>A.</strong> The tool results in context are stale and no longer reflect reality</li>
+<li><strong>B.</strong> A long stretch of unrelated work has degraded the working context</li>
+<li><strong>C.</strong> The next task needs the same repository and the same conventions</li>
+<li><strong>D.</strong> A teammate wants to explore an alternative branch of that same task later</li>
+<li><strong>E.</strong> The conversation is long but every earlier fact is still accurate</li>
+</ul>
+<h3 id="49-clasifica-cada-fila">49. Clasifica cada fila</h3>
+<p><code>D1 · Arquitectura agéntica y orquestación</code></p>
+<p>For each stop_reason value, identify what the loop should do next.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>tool_use</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>end_turn</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>max_tokens</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>stop_sequence</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>tool_use returned after appending previous results</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>execute the requested tools and continue</code> · <code>show the result to the user</code> · <code>raise the output budget and retry</code> · <code>treat the custom stop sequence as the boundary</code></p>
+<h3 id="50-selecciona-2">50. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>Which TWO statements about hook security are accurate?</p>
+<ul>
+<li><strong>A.</strong> A hook runs locally with the user's own permissions, without asking</li>
+<li><strong>B.</strong> A hook from an untrusted repository is arbitrary code execution</li>
+<li><strong>C.</strong> Hooks run inside a sandbox that isolates them from the whole file system</li>
+<li><strong>D.</strong> Hooks require explicit confirmation from the user on every trigger</li>
+<li><strong>E.</strong> Hooks can only execute commands that appear in the allow list</li>
+</ul>
+<h3 id="51-selecciona-2">51. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>Which TWO facts about permissions in settings.json are correct?</p>
+<ul>
+<li><strong>A.</strong> A deny rule beats an allow rule from any other configuration layer</li>
+<li><strong>B.</strong> Rules are written per tool and can use patterns to narrow scope</li>
+<li><strong>C.</strong> The model reads the permission list and explains its choices from it</li>
+<li><strong>D.</strong> Allow lists are advisory and the model may override them if needed</li>
+<li><strong>E.</strong> Permissions are inherited only when the project has no local file</li>
+</ul>
+<h3 id="52-clasifica-cada-fila">52. Clasifica cada fila</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>For each need, identify the Claude Code mechanism that fits.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The team's preferred naming conventions, which the model should follow.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A guarantee that no destructive migration command ever executes.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Declaring which Bash commands are allowed without a prompt.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>A specialised procedure the model should pull in when it applies.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Blocking a tool call and telling the model why it was refused.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>CLAUDE.md</code> · <code>hook</code> · <code>settings.json</code> · <code>skill or subagent</code></p>
+<h3 id="53-selecciona-2">53. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>A CLAUDE.md pulls in other files with the @path import syntax. Which TWO statements are correct?</p>
+<ul>
+<li><strong>A.</strong> Relative paths resolve against the file doing the importing</li>
+<li><strong>B.</strong> Imports can nest, but only up to a maximum depth of five</li>
+<li><strong>C.</strong> Imported files load only when the model explicitly asks for them</li>
+<li><strong>D.</strong> Imports accept a space between the @ and the path for readability</li>
+<li><strong>E.</strong> Only Markdown files can be imported, never configuration files</li>
+</ul>
+<h3 id="54-selecciona-2">54. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>A team moves its conventions from one long CLAUDE.md into .claude/rules/ files with paths frontmatter. Which TWO gains does that produce?</p>
+<ul>
+<li><strong>A.</strong> Each rule loads only when files matching its patterns are touched</li>
+<li><strong>B.</strong> Context and tokens are spent only on the conventions in play</li>
+<li><strong>C.</strong> Rules become enforceable, so the model can no longer ignore any of them</li>
+<li><strong>D.</strong> All conventions load at session start, which speeds up responses</li>
+<li><strong>E.</strong> The rules apply to every repository the developer works in</li>
+</ul>
+<h3 id="55-selecciona-2">55. Selecciona 2</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>Which TWO statements about the built-in /compact and /memory commands are correct?</p>
+<ul>
+<li><strong>A.</strong> Compacting can lose numeric values and dates in the summary</li>
+<li><strong>B.</strong> What /memory saves reloads automatically in later sessions</li>
+<li><strong>C.</strong> Compacting preserves the full transcript and only hides it</li>
+<li><strong>D.</strong> Memory entries apply only to the session where they were written</li>
+<li><strong>E.</strong> Compacting is required before any session can exceed its window</li>
+</ul>
+<h3 id="56-clasifica-cada-fila">56. Clasifica cada fila</h3>
+<p><code>D2 · Claude Code: configuración y workflows</code></p>
+<p>For each need, identify where the definition belongs.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A review checklist the whole team should share.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A personal shortcut one developer uses across every project.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>A guarantee that a destructive command never runs.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>A noisy investigation routine that should not fill the session.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>MCP servers every contributor to this repository needs.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>project-level, committed to the repository</code> · <code>user-level, in the home directory</code> · <code>a hook registered on a tool event</code> · <code>a skill with context: fork</code></p>
+<h3 id="57-selecciona-una">57. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>An extraction schema marks every field as required. Documents that lack a field come back with invented values. What is the fix?</p>
+<ul>
+<li><strong>A.</strong> Make fields that may be absent optional or explicitly nullable</li>
+<li><strong>B.</strong> Add an instruction telling the model never to invent values</li>
+<li><strong>C.</strong> Reject any extraction where a required field looks implausible</li>
+<li><strong>D.</strong> Split the schema so each field is extracted in its own call</li>
+</ul>
+<h3 id="58-selecciona-una">58. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>A classification enum keeps forcing borderline documents into the closest available category. What design change helps?</p>
+<ul>
+<li><strong>A.</strong> Add an unclear value, plus an other option with a detail field</li>
+<li><strong>B.</strong> Add more categories until every observed document fits one</li>
+<li><strong>C.</strong> Instruct the model to pick the category it considers most likely</li>
+<li><strong>D.</strong> Raise the temperature so the classification is less rigid</li>
+</ul>
+<h3 id="59-selecciona-una">59. Selecciona UNA</h3>
+<p><code>D3 · Prompt engineering y salida estructurada</code></p>
+<p>Invoice totals occasionally disagree with the sum of their line items, and nothing downstream notices. Which extraction design surfaces it?</p>
+<ul>
+<li><strong>A.</strong> Extract the stated total and the calculated total, and flag conflicts</li>
+<li><strong>B.</strong> Extract only the calculated total, since it is the trustworthy one</li>
+<li><strong>C.</strong> Extract only the stated total, since it is what the document says</li>
+<li><strong>D.</strong> Round both values so small differences stop being reported</li>
+</ul>
+<h3 id="60-clasifica-cada-fila">60. Clasifica cada fila</h3>
+<p><code>D4 · Diseño de herramientas e integración MCP</code></p>
+<p>For each need, identify the built-in tool that fits.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Escenario</th>
+<th>Tu respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Find every test file matching a naming pattern across the repository.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Locate which files mention a specific error message.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Load a file in full to trace how a function flows.</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Change one unique line inside an existing file.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>List all TypeScript files under a components directory.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Opciones: <code>Glob</code> · <code>Grep</code> · <code>Read</code> · <code>Edit</code></p></main><footer>
+<p><b>Material no oficial.</b> No afiliado a Anthropic PBC ni patrocinado ni avalado por Anthropic. <i>Claude</i> y <i>Claude Certified Architect</i> son marcas de Anthropic. Las preguntas son originales, escritas contra los objetivos publicados; no reproducen contenido del examen real. Ningún simulacro garantiza aprobar.</p>
+<p>Por <a href="https://www.linkedin.com/in/juanmartincordero/">Juan Martín Cordero</a> · <a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y contenido en GitHub</a> · Contenido CC BY 4.0</p>
+</footer></body></html>

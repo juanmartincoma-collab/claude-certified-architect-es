@@ -1,0 +1,286 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía de estudio CCAR-F · Claude Certified Architect Foundations en español</title>
+<meta name="description" content="Los cinco dominios del examen Foundations: arquitectura agéntica, diseño de tools y MCP, configuración de Claude Code, prompt engineering y manejo de contexto.">
+<meta name="keywords" content="ccar-f, claude certified architect foundations, guía de estudio, español">
+<meta name="author" content="Juan Martín Cordero">
+<link rel="canonical" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">
+<meta property="og:type" content="article"><meta property="og:title" content="Guía de estudio CCAR-F · Claude Certified Architect Foundations en español">
+<meta property="og:description" content="Los cinco dominios del examen Foundations: arquitectura agéntica, diseño de tools y MCP, configuración de Claude Code, prompt engineering y manejo de contexto."><meta property="og:url" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">
+<meta property="og:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png"><meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png">
+<style>
+:root{--bg:#FAFAFA;--surface:#fff;--ink:#252525;--ink-2:#484848;--muted:#656565;--line:#E5E5E5;--line-2:#D4D4D4;--accent:#E11D48;--soft:rgba(225,29,72,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0F0F0F;--surface:#1A1A1A;--ink:#FAFAFA;--ink-2:rgba(255,255,255,.86);--muted:#A1A1A1;--line:#2A2A2A;--line-2:#3D3D3D;--accent:#FF6B6B;--soft:rgba(255,107,107,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;text-align:justify;hyphens:auto;-webkit-font-smoothing:antialiased}
+.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:860px;margin:0 auto;padding:12px 22px;display:flex;gap:18px;align-items:center;font-size:14px;text-align:left}
+.top a{color:var(--ink-2);text-decoration:none}.top a:hover{color:var(--accent)}
+.top .home{font-weight:650;color:var(--ink)}
+.top .cta{margin-left:auto;background:var(--accent);color:#fff;padding:7px 14px;border-radius:8px;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:44px 22px 96px}
+h1,h2,h3,h4{text-align:left;hyphens:manual;letter-spacing:-.022em;line-height:1.2;font-weight:650;margin:2em 0 .6em}
+h1{font-size:clamp(30px,4.6vw,42px);margin-top:0;letter-spacing:-.035em}
+h2{font-size:25px;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:19px}
+p,li{color:var(--ink-2)}
+a{color:var(--accent)}
+code{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:.1em .35em;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;text-align:left}
+pre code{border:0;background:none;padding:0}
+blockquote{margin:1.4em 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0}
+blockquote p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:1.4em 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;hyphens:manual}
+th{background:var(--surface);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:650}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+.lede{font-size:18.5px;color:var(--ink-2);margin-bottom:2em}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 0;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head><body>
+<header class="top"><div class="in">
+<a class="home" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">Claude Certified Architect · ES</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">Professional</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">Foundations</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/glosario/">Glosario</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/faq/">FAQ</a>
+<a class="cta" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/">Simulador</a>
+</div></header><main><h1 id="guia-de-estudio-claude-certified-architect-foundations-ccar-f">Guía de Estudio — Claude Certified Architect · Foundations (CCAR-F)</h1>
+<blockquote>
+<p><strong>Qué mide este examen:</strong> la <strong>mecánica</strong> y los <strong>conceptos</strong>. Foundations pregunta <em>"¿qué es X y cómo funciona?"</em>. Domina cómo se comportan agentes, tools, prompts, Claude Code y el contexto. El criterio aplicado de arquitecto es del Professional; acá lo que cuenta es entender bien las piezas.</p>
+<p><strong>Formato:</strong> ~60 ítems · 120 min · corte 720/1000 · single y multi-response (cada ítem dice cuántas marcar).</p>
+<p><strong>Cómo usar esta guía:</strong> cada concepto trae <strong>Qué es → Cómo funciona → Cuándo aplica → Cuándo NO / diferencia → Trampa de examen</strong>. Lee la diferencia con el concepto vecino: ahí es donde te confunden.</p>
+</blockquote>
+<hr />
+<h2 id="dominio-1-agentic-architecture-orchestration">Dominio 1 — Agentic Architecture &amp; Orchestration</h2>
+<p>Este dominio es sobre <strong>cuándo usar un agente y cómo estructurarlo</strong>. La idea central: hay un abanico de patrones de menos a más autónomos, y elegir el correcto es la habilidad medida.</p>
+<h3 id="11-augmented-llm-llm-aumentado">1.1 Augmented LLM (LLM aumentado)</h3>
+<p><strong>Qué es:</strong> una sola llamada al modelo, potenciada con ayudas externas — retrieval (traer datos), tools (ejecutar acciones) o memoria. <strong>No hay loop de decisión.</strong></p>
+<p><strong>Cómo funciona:</strong> le das al modelo el contexto necesario (por ejemplo, el fragmento relevante de una base de conocimiento) y una tarea, y devuelve la salida en una pasada. Es la unidad básica; los demás patrones se construyen encima de esto.</p>
+<p><strong>Cuándo aplica:</strong>
+- Responder una pregunta usando un documento recuperado ("¿cuál es la política de devoluciones?").
+- Extraer campos de un texto a JSON (<code>{nombre, fecha, monto}</code>).
+- Traducir, resumir o reformular un texto.</p>
+<p><strong>Cuándo NO / diferencia:</strong> si la tarea necesita <strong>varios pasos con decisiones</strong>, ya no es Augmented LLM. Señal para reconocerlo: podés describir la tarea como "entra X → sale Y" <strong>sin ningún "y luego, dependiendo de…"</strong>.</p>
+<p><strong>Trampa:</strong> te describen algo con retrieval o una tool y te tientan con "es un agente". Si es una sola transformación con contexto al lado, es Augmented LLM, no agente.</p>
+<h3 id="12-workflow-flujo-orquestado">1.2 Workflow (flujo orquestado)</h3>
+<p><strong>Qué es:</strong> varios pasos de LLM encadenados donde <strong>el código decide el orden</strong>. El camino es fijo y conocido de antemano.</p>
+<p><strong>Cómo funciona:</strong> vos, el desarrollador, escribís la secuencia. Sub-patrones:
+- <strong>Prompt chaining:</strong> la salida de un paso alimenta al siguiente (clasificar → extraer → generar).
+- <strong>Routing:</strong> clasificás la entrada y la mandás a la rama correcta (¿spam/ofensivo/ok? → rama según resultado).
+- <strong>Parallelization:</strong> varias llamadas en paralelo y agregás (resumir ventas + soporte + web → fusionar).</p>
+<p><strong>Cuándo aplica:</strong>
+- Procesar facturas: clasificar tipo → extraer campos → validar → aprobar/rechazar.
+- Moderación de contenido con ramas fijas.
+- Cualquier proceso donde <strong>podés dibujar el diagrama de flujo antes de correr nada</strong>.</p>
+<p><strong>Cuándo NO / diferencia con Agentic:</strong> en workflow <strong>el código</strong> manda el orden; en agentic <strong>el modelo</strong> lo decide. Si podés enumerar los pasos de antemano, es workflow. Si el orden emerge en runtime, es agente.</p>
+<p><strong>Por qué preferirlo:</strong> predictibilidad, auditoría paso a paso, debug simple. Brilla cuando los pasos son idénticos en cada pedido y la reproducibilidad importa.</p>
+<p><strong>Trampa:</strong> una tarea que "suena inteligente" pero tiene flujo fijo → la respuesta correcta es <strong>workflow, no agente</strong>. Meter un agente donde alcanza un workflow agrega costo, latencia e imprevisibilidad sin beneficio.</p>
+<h3 id="13-agentic-agente-autonomo">1.3 Agentic (agente autónomo)</h3>
+<p><strong>Qué es:</strong> el <strong>modelo decide</strong> qué pasos dar, qué tools usar y cuándo parar, en un <strong>loop planificar → actuar → observar</strong>.</p>
+<p><strong>Cómo funciona:</strong> le das el objetivo y las tools; el agente ejecuta, observa el resultado, decide el siguiente paso, y repite hasta terminar. Puede tomar rutas distintas en cada ejecución.</p>
+<p><strong>Cuándo aplica:</strong>
+- "Investiga la competencia y dame un reporte" — no sabés cuántas búsquedas hará ni en qué orden.
+- Agente de debugging: lee error → hipótesis → cambio → corre test → repite hasta pasar.
+- "El servidor está lento, averigua por qué" — la ruta depende de lo que va encontrando.</p>
+<p><strong>Cuándo NO / diferencia:</strong> si podés escribir los pasos de antemano, NO uses agente (es workflow). El agente se justifica solo cuando <strong>la ruta a la respuesta recién aparece durante la ejecución</strong>.</p>
+<p><strong>Trampa:</strong> confundir "tarea compleja" con "necesita agente". Complejidad ≠ imprevisibilidad. Un cálculo complejo pero de pasos fijos sigue siendo workflow.</p>
+<h3 id="14-orquestador-multi-agente">1.4 Orquestador / Multi-agente</h3>
+<p><strong>Qué es:</strong> un agente <strong>coordinador</strong> que reparte trabajo a varios <strong>subagentes</strong> especializados y luego <strong>sintetiza</strong> los resultados.</p>
+<p><strong>Cómo funciona:</strong> el coordinador descompone el problema, lanza subagentes (a menudo en paralelo), cada uno trabaja su parte con su propio contexto, y el coordinador junta todo en una salida.</p>
+<p><strong>Cuándo aplica:</strong>
+- Investigación amplia: dividir "IA en industrias creativas" en música, escritura, cine, arte visual → un subagente por subtema en paralelo → sintetizar.
+- Revisión de PR grande: subagentes de seguridad, performance y estilo, cada uno con su lente.
+- Migración masiva: un subagente por archivo, en paralelo.</p>
+<p><strong>Condición para justificarlo:</strong> las subtareas piden <strong>especialización distinta</strong> + son <strong>independientes</strong> + pueden correr <strong>en paralelo</strong>. Si no cumplen esto, multi-agente es complejidad de más → usá workflow.</p>
+<p><strong>Concepto crítico — contexto de subagente:</strong> los subagentes <strong>NO heredan</strong> la conversación del coordinador, ni su memoria, ni sus variables. <strong>Todo lo que el subagente necesita debe ir explícito en su prompt.</strong> Empiezan con contexto limpio.</p>
+<p><strong>Trampa clásica:</strong> un reporte salió incompleto (cubrió solo "arte visual" cuando el tema era más amplio). La causa raíz está en la <strong>descomposición del coordinador</strong> (demasiado angosta, omitió dominios enteros), NO en la búsqueda ni en la síntesis. Aprendé a ubicar el fallo en la capa correcta.</p>
+<h3 id="15-terminacion-del-loop-agentico">1.5 Terminación del loop agéntico</h3>
+<p><strong>Qué es:</strong> cómo sabe un agente que terminó.</p>
+<p><strong>Cómo funciona:</strong> el criterio correcto es <strong><code>stop_reason: end_turn</code></strong> — el modelo dejó de pedir tools y dio su respuesta final. Un <strong>cap de iteraciones</strong> (ej. máximo 10) es una <strong>red de seguridad</strong>, no la condición de terminación.</p>
+<p><strong>Cuándo NO / diferencia:</strong> buscar una palabra como "done" en la respuesta es frágil. El cap de iteraciones existe para evitar loops infinitos, pero no es la señal de "terminé bien".</p>
+<p><strong>Trampa:</strong> confundir el cap de iteraciones con la condición de terminación. El cap es el freno de emergencia; <code>end_turn</code> es la meta.</p>
+<h3 id="16-ejecucion-paralela-de-subagentes">1.6 Ejecución paralela de subagentes</h3>
+<p><strong>Qué es:</strong> correr varios subagentes al mismo tiempo para bajar latencia.</p>
+<p><strong>Cómo funciona:</strong> emitís <strong>varias llamadas a la tool de subagente en UNA sola respuesta</strong> del coordinador. Eso las lanza en paralelo.</p>
+<p><strong>Cuándo NO / diferencia:</strong> una llamada por turno, en turnos separados, es <strong>secuencial</strong> (lento). Subir <code>max_tokens</code> o usar la batch API no las paraleliza.</p>
+<p><strong>Trampa:</strong> creer que llamar un subagente por turno es "paralelo". Paralelo = múltiples llamadas en la misma respuesta.</p>
+<hr />
+<h2 id="dominio-2-tool-design-mcp-integration">Dominio 2 — Tool Design &amp; MCP Integration</h2>
+<p>Sobre cómo diseñar herramientas que el modelo use bien, manejar errores, e integrar sistemas externos vía MCP.</p>
+<h3 id="21-descripciones-de-tools">2.1 Descripciones de tools</h3>
+<p><strong>Qué es:</strong> el texto que le dice al modelo qué hace cada tool y cuándo usarla.</p>
+<p><strong>Cómo funciona:</strong> una buena descripción incluye formato de input, ejemplos de queries, edge cases y <strong>cuándo usar esta tool vs otra parecida</strong>.</p>
+<p><strong>Cuándo aplica el fix:</strong> si el agente elige la tool equivocada (llama <code>get_customer</code> cuando el usuario pregunta por pedidos, y ambas aceptan IDs similares), el <strong>primer paso</strong> es <strong>expandir las descripciones</strong>, no meter capas nuevas ni fusionar tools.</p>
+<p><strong>Cuándo NO / diferencia:</strong> agregar few-shot examples, construir un router de keywords, o fusionar en una sola tool son soluciones posteriores o peores. Se ataca primero la causa raíz: descripciones pobres.</p>
+<p><strong>Trampa:</strong> saltar directo a "fusiona las dos tools" o "agrega ejemplos". La causa raíz suele ser la descripción.</p>
+<h3 id="22-numero-de-tools-por-agente-capability-bloat">2.2 Número de tools por agente (capability bloat)</h3>
+<p><strong>Qué es:</strong> cuántas herramientas darle a un agente.</p>
+<p><strong>Cómo funciona:</strong> demasiadas tools <strong>degradan la precisión de selección</strong>. Regla práctica: acotá cada agente a las ~4-5 tools que su rol necesita.</p>
+<p><strong>Cuándo aplica:</strong> un agente con 18 (o 45) tools que elige mal, con latencia alta y tools nunca usadas → es capability bloat. Fix: sacar tools muertas y solapadas, partir en agentes por dominio detrás de un router, y usar progressive disclosure.</p>
+<p><strong>Cuándo NO / diferencia:</strong> "más tools = más capacidad" es falso. Más allá de cierto punto, más tools = peor desempeño.</p>
+<p><strong>Trampa:</strong> creer que el problema es solo de descripciones cuando el catálogo ya es enorme. Con 45 tools el problema es de <strong>cantidad</strong>, no solo de texto.</p>
+<h3 id="23-manejo-de-errores-de-tools">2.3 Manejo de errores de tools</h3>
+<p><strong>Qué es:</strong> qué devuelve una tool cuando falla.</p>
+<p><strong>Cómo funciona:</strong> devolvé <strong>metadata estructurada</strong>: <code>errorCategory</code> (transient / validation / permission), <code>isRetryable</code> (boolean), y una descripción legible. Así el agente decide inteligentemente: reintentar (transient), corregir el input (validation), o escalar (permission).</p>
+<p><strong>Cuándo NO / diferencia:</strong>
+- "Operation failed" genérico → el agente no sabe qué hacer.
+- Devolver éxito silencioso con resultado vacío → el agente cree que funcionó.
+- Lanzar excepción que mata todo el workflow → pierde la chance de recuperarse.</p>
+<p><strong>Trampa:</strong> elegir el error genérico o el fallo silencioso. La respuesta correcta siempre da al agente información para <strong>recuperarse</strong>.</p>
+<h3 id="24-mcp-model-context-protocol">2.4 MCP (Model Context Protocol)</h3>
+<p><strong>Qué es:</strong> un estándar para conectar Claude a herramientas, datos y sistemas externos vía un servidor. El "USB-C" de las integraciones.</p>
+<p><strong>Cómo funciona:</strong> cada equipo mantiene su servidor MCP una vez, y cualquier app/agente lo consume de forma estandarizada y descubrible.</p>
+<p><strong>Cuándo aplica:</strong> muchos sistemas, muchas apps consumidoras, propiedad descentralizada, herramientas que rotan seguido. Ese es el caso canónico de MCP.</p>
+<p><strong>Cuándo NO / diferencia:</strong>
+- <strong>API/CLI directo:</strong> integración puntual, a medida, un solo consumidor.
+- <strong>Agent-to-agent:</strong> delegás a otro agente autónomo, no a una función.</p>
+<p><strong>Trampa:</strong> confundir MCP con "llamar una API". MCP es el protocolo estandarizado reutilizable; una API directa es plomería a medida.</p>
+<h3 id="25-secretos-en-configuracion-mcp">2.5 Secretos en configuración MCP</h3>
+<p><strong>Qué es:</strong> cómo manejar tokens/credenciales sin filtrarlos.</p>
+<p><strong>Cómo funciona:</strong> <code>.mcp.json</code> a nivel de proyecto, <strong>versionado</strong>, con <strong>expansión de variables de entorno</strong> (ej. <code>${GITHUB_TOKEN}</code>). El archivo referencia la variable; el secreto real vive en el entorno, nunca en git.</p>
+<p><strong>Cuándo NO / diferencia:</strong> hardcodear el token en <code>.mcp.json</code>, pegarlo en <code>CLAUDE.md</code>, o guardarlo en texto plano en el config personal = todos filtran el secreto.</p>
+<p><strong>Trampa:</strong> cualquier opción que ponga el valor del token dentro de un archivo versionado.</p>
+<hr />
+<h2 id="dominio-3-claude-code-configuration-workflows">Dominio 3 — Claude Code Configuration &amp; Workflows</h2>
+<p>Sobre configurar Claude Code para equipos y usar los modos correctamente.</p>
+<h3 id="31-comandos-compartidos-slash-commands">3.1 Comandos compartidos (slash commands)</h3>
+<p><strong>Qué es:</strong> comandos reutilizables como <code>/review</code>.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Para todo el equipo:</strong> <code>.claude/commands/</code> <strong>dentro del repo</strong>, versionado. Cada dev los recibe al clonar/pull.
+- <strong>Personales:</strong> <code>~/.claude/commands/</code> en el home. Solo ese dev los tiene.</p>
+<p><strong>Trampa:</strong> "quiero que TODOS lo tengan automáticamente al clonar" → repo <code>.claude/commands/</code>, NO el home.</p>
+<h3 id="32-instrucciones-compartidas-claudemd">3.2 Instrucciones compartidas (CLAUDE.md)</h3>
+<p><strong>Qué es:</strong> instrucciones persistentes para el proyecto.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Compartidas:</strong> <code>CLAUDE.md</code> en el repo (versionado).
+- <strong>Personales:</strong> <code>~/.claude/CLAUDE.md</code> (user-level, <strong>no se versiona</strong>, solo tuyo).</p>
+<p><strong>Diferencia clave:</strong> si "a un teammate nuevo no le llegan las instrucciones que todos los demás tienen", es porque están en el <code>~/.claude/</code> <strong>personal</strong> de cada uno, no en el repo. Fix: mover al <code>CLAUDE.md</code> del repo.</p>
+<p><strong>Trampa:</strong> confundir user-level con project-level. User-level no viaja con el clone.</p>
+<h3 id="33-reglas-por-patron-de-archivo-rules-glob">3.3 Reglas por patrón de archivo (rules + glob)</h3>
+<p><strong>Qué es:</strong> aplicar convenciones según el tipo de archivo, sin importar la carpeta.</p>
+<p><strong>Cómo funciona:</strong> un archivo de rule con frontmatter y un glob, ej. <code>**/*.test.tsx</code>. La convención se aplica a todos los tests estén donde estén (incluso al lado del componente, como <code>Button.test.tsx</code> junto a <code>Button.tsx</code>).</p>
+<p><strong>Cuándo NO / diferencia:</strong>
+- Poner todo en el <code>CLAUDE.md</code> raíz → no se aplica por patrón, se mezcla.
+- Un <code>CLAUDE.md</code> en cada subdirectorio → inmanejable.
+- Una skill por tipo de código → no es el mecanismo para convenciones automáticas por glob.</p>
+<p><strong>Trampa:</strong> la respuesta es la rule con glob cuando la convención depende del <strong>tipo de archivo disperso</strong>, no de la carpeta.</p>
+<h3 id="34-plan-mode-vs-ejecucion-directa">3.4 Plan mode vs ejecución directa</h3>
+<p><strong>Qué es:</strong> dos modos de trabajar una tarea.</p>
+<p><strong>Cómo funciona:</strong> <strong>Plan mode</strong> explora y diseña antes de tocar código. Úsalo para tareas grandes con decisiones caras de revertir (ej. reestructurar un monolito en microservicios — decenas de archivos, límites de servicio).</p>
+<p><strong>Cuándo NO / diferencia:</strong> ejecución directa para cambios triviales o cuando ya tenés instrucciones completas y el alcance es chico. "Ejecuta directo y cambia a plan si se complica" es peor que planear desde el inicio cuando ya sabés que es complejo.</p>
+<p><strong>Trampa:</strong> elegir ejecución directa para una reestructuración arquitectónica. Decisiones caras de revertir → plan primero.</p>
+<h3 id="35-context-fork-en-una-skill">3.5 context: fork en una skill</h3>
+<p><strong>Qué es:</strong> correr una skill en un contexto aislado.</p>
+<p><strong>Cómo funciona:</strong> la skill corre en un sub-agente separado; <strong>solo vuelve el resultado</strong>, sin ensuciar la conversación principal con el detalle intermedio.</p>
+<p><strong>Cuándo NO / diferencia:</strong> no crea una rama de git, no forkea el servidor MCP, no duplica el CLAUDE.md. Es aislamiento de <strong>contexto</strong>.</p>
+<p><strong>Trampa:</strong> interpretaciones literales de "fork" (git branch, fork de proceso). Es aislamiento de contexto conversacional.</p>
+<h3 id="36-claude-code-en-ci-modo-no-interactivo">3.6 Claude Code en CI (modo no interactivo)</h3>
+<p><strong>Qué es:</strong> correr Claude Code en un pipeline automatizado.</p>
+<p><strong>Cómo funciona:</strong> <code>claude -p "..."</code> (print / non-interactive). Corre y sale, sin esperar input humano.</p>
+<p><strong>Cuándo NO / diferencia:</strong> si el job "se cuelga esperando input", falta el <code>-p</code>. No existe un <code>--batch</code> para esto; no basta redirigir stdin.</p>
+<p><strong>Trampa:</strong> cualquier opción que no sea el modo print para CI que cuelga.</p>
+<hr />
+<h2 id="dominio-4-prompt-engineering-structured-output">Dominio 4 — Prompt Engineering &amp; Structured Output</h2>
+<p>Sobre guiar el comportamiento del modelo y garantizar salidas parseables.</p>
+<h3 id="41-precision-de-un-juicio-criterio-categorico">4.1 Precisión de un juicio (criterio categórico)</h3>
+<p><strong>Qué es:</strong> cómo bajar los falsos positivos de una tarea de evaluación (ej. code review que marca de más).</p>
+<p><strong>Cómo funciona:</strong> dale <strong>criterio categórico verificable</strong>: "marcá un comentario solo cuando el comportamiento que declara contradice el código". Un umbral objetivo que el modelo puede aplicar sin adivinar.</p>
+<p><strong>Cuándo NO / diferencia:</strong>
+- "Sé conservador" / "solo alta confianza" → subjetivo, el modelo no sabe dónde está el umbral.
+- Pedirle que autoevalúe su confianza → poco confiable.
+- Cambiar a un modelo más grande → no arregla un criterio mal definido.</p>
+<p><strong>Trampa:</strong> las opciones "vagas" (conservador, confianza) tientan. La correcta es la que da un criterio concreto y verificable.</p>
+<h3 id="42-tecnicas-de-prompting-zero-shot-few-shot-chain-of-thought">4.2 Técnicas de prompting: zero-shot, few-shot, chain-of-thought</h3>
+<p><strong>Qué es:</strong> las tres técnicas base.</p>
+<p><strong>Cómo funciona y cuándo cada una:</strong>
+- <strong>Zero-shot:</strong> tarea simple, sin ejemplos. Default cuando la instrucción basta.
+- <strong>Few-shot:</strong> das 2-5 ejemplos de entrada→salida. <strong>Para enseñar formato o patrón</strong> cuando describir en prosa no alcanza. "Mostrar supera a describir" en cumplimiento estricto de formato.
+- <strong>Chain-of-thought (razonamiento paso a paso):</strong> para tareas de <strong>varios pasos</strong> (matemática, lógica, análisis). Gana sus tokens ahí; en extracción simple solo agrega costo y latencia a cambio de nada.</p>
+<p><strong>Diferencia clave:</strong> few-shot enseña <strong>formato/patrón</strong>; chain-of-thought habilita <strong>razonamiento</strong>. No son intercambiables.</p>
+<p><strong>Trampa:</strong> aplicar chain-of-thought a una extracción trivial (desperdicio) o creer que few-shot resuelve costo (no; enseña patrón).</p>
+<h3 id="43-json-garantizado-tool_use-con-schema">4.3 JSON garantizado (tool_use con schema)</h3>
+<p><strong>Qué es:</strong> cómo obtener JSON válido siempre.</p>
+<p><strong>Cómo funciona:</strong> usá <code>tool_use</code> con un <strong>JSON schema</strong>. La validación pasa en la capa de la llamada a tool, y el modelo reintenta si no cumple. No hay errores de sintaxis.</p>
+<p><strong>Cuándo NO / diferencia:</strong> pedir JSON en el prompt y parsear el texto, bajar temperatura a 0, o post-procesar con regex → ninguno <strong>garantiza</strong> JSON válido.</p>
+<p><strong>Trampa:</strong> elegir "temp=0" o "pide JSON y parsea". La garantía viene del schema en tool_use.</p>
+<h3 id="44-evitar-valores-inventados-campos-opcionales">4.4 Evitar valores inventados (campos opcionales)</h3>
+<p><strong>Qué es:</strong> cómo impedir que el modelo invente cuando falta un dato.</p>
+<p><strong>Cómo funciona:</strong> hacé <strong>opcionales/nullable</strong> los campos que pueden faltar. Así el modelo devuelve <code>null</code> en vez de fabricar.</p>
+<p><strong>Cuándo NO / diferencia:</strong> hacer todo required fuerza al modelo a inventar; poner un valor default falso contamina; reintentar hasta que lo llene solo produce alucinación.</p>
+<p><strong>Trampa:</strong> "hazlo required" o "pon un default". La correcta permite <code>null</code> como respuesta legal.</p>
+<h3 id="45-que-garantiza-y-que-no-un-schema-estricto">4.5 Qué garantiza (y qué NO) un schema estricto</h3>
+<p><strong>Qué es:</strong> los límites de la validación por schema.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Garantiza:</strong> sintaxis JSON válida y estructura conforme (campos correctos, tipos correctos).
+- <strong>NO garantiza:</strong> corrección <strong>semántica</strong> — que los números sumen bien, que el campo tenga el valor correcto, que la info sea <strong>factualmente verdadera</strong>.</p>
+<p><strong>Diferencia clave:</strong> schema = <strong>forma</strong>, no <strong>verdad</strong>. Un JSON perfectamente válido puede tener datos falsos.</p>
+<p><strong>Trampa (multi-response típico):</strong> te piden qué garantiza y qué no. Garantiza sintaxis; NO garantiza que las cosas sumen ni que sea verdad.</p>
+<h3 id="46-retry-con-feedback-cuando-sirve">4.6 Retry con feedback: cuándo sirve</h3>
+<p><strong>Qué es:</strong> reintentar una extracción que falló validación, pasándole el error.</p>
+<p><strong>Cómo funciona:</strong> sirve cuando el fallo es de <strong>formato o estructura</strong> — el modelo puede corregir con el feedback.</p>
+<p><strong>Cuándo NO / diferencia:</strong> si el dato <strong>no existe en la fuente</strong>, el retry solo produce alucinación. Reintentar no crea información que no está.</p>
+<p><strong>Trampa:</strong> creer que el retry siempre ayuda. Solo ayuda con errores de forma, no con información ausente.</p>
+<hr />
+<h2 id="dominio-5-context-management-reliability">Dominio 5 — Context Management &amp; Reliability</h2>
+<p>Sobre manejar la ventana de contexto y hacer el sistema confiable en el tiempo.</p>
+<h3 id="51-proteger-datos-exactos-de-la-compresion">5.1 Proteger datos exactos de la compresión</h3>
+<p><strong>Qué es:</strong> evitar perder montos, fechas, IDs en conversaciones largas que se resumen.</p>
+<p><strong>Cómo funciona:</strong> <strong>extraé</strong> los hechos transaccionales a un bloque persistente ("case facts") que va en <strong>cada</strong> prompt, <strong>fuera</strong> del historial que se resume. La compresión no puede perder lo que nunca comprimió.</p>
+<p><strong>Cuándo NO / diferencia:</strong> confiar en que el resumen recuerde los detalles exactos → los pierde. Subir <code>max_tokens</code> no evita la pérdida. Reiniciar la sesión cada turno pierde todo.</p>
+<p><strong>Diferencia con truncar:</strong> truncar <strong>tira</strong> información; extraer <strong>protege</strong> la crítica sacándola del área que se comprime. Son opuestos.</p>
+<p><strong>Trampa:</strong> "confía en el resumen" o "sube max_tokens". La correcta saca los hechos duros aparte.</p>
+<h3 id="52-atencion-posicional-lost-in-the-middle">5.2 Atención posicional (lost in the middle)</h3>
+<p><strong>Qué es:</strong> el modelo presta menos atención a lo que está enterrado en el medio del contexto.</p>
+<p><strong>Cómo funciona:</strong> reglas críticas a mitad de un contexto largo se pierden. Moverlas <strong>al inicio o al final</strong>, separadas estructuralmente del material de referencia, es el fix de mayor palanca.</p>
+<p><strong>Cuándo NO / diferencia:</strong> enterrar la instrucción clave entre documentos largos = mal. Recuperar solo las secciones relevantes también ayuda (menos ruido en el medio).</p>
+<p><strong>Trampa:</strong> dejar la regla importante sepultada en el medio.</p>
+<h3 id="53-batch-api-vs-real-time">5.3 Batch API vs real-time</h3>
+<p><strong>Qué es:</strong> dos formas de llamar a la API.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Batch (Message Batches):</strong> ~50% más barato, pero <strong>latencia impredecible</strong> (hasta 24h). Para trabajo offline/nocturno.
+- <strong>Real-time:</strong> respuesta inmediata, más caro. Para lo interactivo o bloqueante.</p>
+<p><strong>Cuándo aplica cada uno:</strong> reporte de tech-debt nocturno → batch. Check bloqueante pre-merge que un dev espera → real-time.</p>
+<p><strong>Cuándo NO / diferencia:</strong> poner en batch algo que bloquea a una persona esperando = mal (la latencia lo mata). El ahorro no compensa bloquear un flujo interactivo.</p>
+<p><strong>Trampa:</strong> "batch todo para ahorrar 50%". Lo bloqueante/interactivo va real-time.</p>
+<h3 id="54-descomponer-una-revision-grande">5.4 Descomponer una revisión grande</h3>
+<p><strong>Qué es:</strong> cómo revisar algo grande (ej. un PR de 14 archivos) sin inconsistencias.</p>
+<p><strong>Cómo funciona:</strong> un solo pase diluye la atención y no tiene memoria transversal (marca un patrón en un archivo y aprueba el mismo en otro). Fix: <strong>pases por archivo</strong> para lo local + <strong>un pase de integración</strong> para lo cruzado.</p>
+<p><strong>Cuándo NO / diferencia:</strong> una ventana de contexto más grande sola no arregla la atención diluida. Correr 3 pases completos y quedarte con lo que aparece en ≥2 es más caro y no ataca la causa.</p>
+<p><strong>Trampa:</strong> "usa una ventana más grande". El problema es de estructura de revisión, no de tamaño de ventana.</p>
+<hr />
+<h2 id="reglas-de-decision-para-el-examen-foundations">Reglas de decisión para el examen (Foundations)</h2>
+<ol>
+<li><strong>Mínima complejidad que resuelve:</strong> Augmented LLM &lt; Workflow &lt; Agentic &lt; Orquestador. No subas de nivel sin necesidad.</li>
+<li><strong>Regla dura → código, no prompt:</strong> invariantes y precondiciones se implementan como gate/hook determinista.</li>
+<li><strong>Causa raíz primero:</strong> descripción de tool antes que capas; criterio categórico antes que "sé conservador".</li>
+<li><strong>Schema = forma, no verdad:</strong> garantiza sintaxis, no semántica.</li>
+<li><strong>Preservá contexto:</strong> extraer/recuperar, nunca truncar lo necesario.</li>
+<li><strong>Ubicá el fallo en su capa:</strong> descomposición vs búsqueda vs síntesis; datos vs prompt vs modelo.</li>
+</ol>
+<h3 id="distractores-que-casi-nunca-son-correctos">Distractores que casi nunca son correctos</h3>
+<ul>
+<li>"Usa un modelo más grande" (salvo model mismatch real).</li>
+<li>"Baja la temperatura" para garantizar JSON.</li>
+<li>"Ponlo en bold arriba" / "más few-shot" para un problema que no es de formato.</li>
+<li>"Batch todo para ahorrar".</li>
+<li>"Usa una ventana más grande" para arreglar consistencia de revisión.</li>
+</ul>
+<h3 id="tactica">Táctica</h3>
+<ul>
+<li>~2 min/ítem. Marcá dudosas y seguí.</li>
+<li>Multi-response: marcá <strong>exacto</strong> el número que pide el ítem.</li>
+<li>El % por dominio sale en el reporte pero <strong>no decide</strong> el pass; cuenta el score total escalado (720).</li>
+</ul>
+<hr />
+<h2 id="segui-practicando">Seguí practicando</h2>
+<ul>
+<li><a href="../foundations-examen/">Examen de práctica: 60 preguntas</a></li>
+<li><a href="../foundations-respuestas/">Clave con explicación</a></li>
+<li><a href="../simulador/">Simulador interactivo</a></li>
+<li><a href="../glosario/">Glosario EN→ES</a></li>
+</ul></main><footer>
+<p><b>Material no oficial.</b> No afiliado a Anthropic PBC ni patrocinado ni avalado por Anthropic. <i>Claude</i> y <i>Claude Certified Architect</i> son marcas de Anthropic. Las preguntas son originales, escritas contra los objetivos publicados; no reproducen contenido del examen real. Ningún simulacro garantiza aprobar.</p>
+<p>Por <a href="https://www.linkedin.com/in/juanmartincordero/">Juan Martín Cordero</a> · <a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y contenido en GitHub</a> · Contenido CC BY 4.0</p>
+</footer></body></html>

@@ -1,0 +1,553 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clave del examen CCAR-F con explicaciones</title>
+<meta name="description" content="Respuesta correcta, principio y por qué fallan las otras, para las 60 preguntas del simulacro Foundations.">
+<meta name="keywords" content="claude certified architect, examen de práctica, simulacro, español">
+<meta name="author" content="Juan Martín Cordero">
+<link rel="canonical" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations-respuestas/">
+<meta property="og:type" content="article"><meta property="og:title" content="Clave del examen CCAR-F con explicaciones">
+<meta property="og:description" content="Respuesta correcta, principio y por qué fallan las otras, para las 60 preguntas del simulacro Foundations."><meta property="og:url" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations-respuestas/">
+<meta property="og:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png"><meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png">
+<style>
+:root{--bg:#FAFAFA;--surface:#fff;--ink:#252525;--ink-2:#484848;--muted:#656565;--line:#E5E5E5;--line-2:#D4D4D4;--accent:#E11D48;--soft:rgba(225,29,72,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0F0F0F;--surface:#1A1A1A;--ink:#FAFAFA;--ink-2:rgba(255,255,255,.86);--muted:#A1A1A1;--line:#2A2A2A;--line-2:#3D3D3D;--accent:#FF6B6B;--soft:rgba(255,107,107,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;text-align:justify;hyphens:auto;-webkit-font-smoothing:antialiased}
+.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:860px;margin:0 auto;padding:12px 22px;display:flex;gap:18px;align-items:center;font-size:14px;text-align:left}
+.top a{color:var(--ink-2);text-decoration:none}.top a:hover{color:var(--accent)}
+.top .home{font-weight:650;color:var(--ink)}
+.top .cta{margin-left:auto;background:var(--accent);color:#fff;padding:7px 14px;border-radius:8px;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:44px 22px 96px}
+h1,h2,h3,h4{text-align:left;hyphens:manual;letter-spacing:-.022em;line-height:1.2;font-weight:650;margin:2em 0 .6em}
+h1{font-size:clamp(30px,4.6vw,42px);margin-top:0;letter-spacing:-.035em}
+h2{font-size:25px;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:19px}
+p,li{color:var(--ink-2)}
+a{color:var(--accent)}
+code{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:.1em .35em;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;text-align:left}
+pre code{border:0;background:none;padding:0}
+blockquote{margin:1.4em 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0}
+blockquote p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:1.4em 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;hyphens:manual}
+th{background:var(--surface);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:650}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+.lede{font-size:18.5px;color:var(--ink-2);margin-bottom:2em}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 0;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head><body>
+<header class="top"><div class="in">
+<a class="home" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">Claude Certified Architect · ES</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">Professional</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">Foundations</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/glosario/">Glosario</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/faq/">FAQ</a>
+<a class="cta" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/">Simulador</a>
+</div></header><main><!-- Generado desde el banco de preguntas. No editar a mano: abrí un issue. -->
+<h1 id="ccar-f-clave-de-respuestas">CCAR-F · Clave de respuestas</h1>
+<blockquote>
+<p>Cada respuesta trae el principio que la sostiene y por qué fallan las otras. El razonamiento importa más que la letra: en el examen real el escenario será distinto, el principio es el mismo.</p>
+</blockquote>
+<hr />
+<h3 id="1">1</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Acelerador y freno a la vez: prácticas probadas que se heredan por control de versiones, y límites explícitos sobre lo que la automatización puede ejecutar.</p>
+<p><em>Por qué no las otras:</em> C maximiza el radio de daño; D reproduce la fragmentación; E agrega rotación sin evaluación.</p>
+<hr />
+<h3 id="2">2</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Un revisor anclado al razonamiento que generó el código hereda sus puntos ciegos. Por eso la revisión se hace desde contexto fresco, separado de la sesión que escribió.</p>
+<p><em>Por qué no las otras:</em> B y C son ajustes de configuración que no tocan el anclaje; D sería un problema de proceso visible en los tiempos.</p>
+<hr />
+<h3 id="3">3</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Diagnosticar antes de intervenir. Las trazas muestran si el desvío nace en la entrada, en lo recuperado, en la descripción de la herramienta o en el prompt.</p>
+<p><em>Por qué no las otras:</em> B adivina la causa; C y D son intervenciones grandes sin evidencia de que apunten al problema.</p>
+<hr />
+<h3 id="4">4</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>shared configuration in version control</td>
+</tr>
+<tr>
+<td>2</td>
+<td>review from an independent context</td>
+</tr>
+<tr>
+<td>3</td>
+<td>inspect the traces first</td>
+</tr>
+<tr>
+<td>4</td>
+<td>restrict what automation may execute</td>
+</tr>
+<tr>
+<td>5</td>
+<td>shared configuration in version control</td>
+</tr>
+</tbody>
+</table>
+<p>Inconsistencia entre equipos y onboarding se resuelven con configuración compartida y versionada. Revisión que no encuentra nada pide contexto fresco. Conducta inesperada pide diagnóstico antes que cambio. Automatización sin supervisión pide límites de ejecución.</p>
+<hr />
+<h3 id="5">5</h3>
+<p><strong>Correcta: B y C</strong></p>
+<p>La autonomía se justifica cuando el camino no se puede enumerar de antemano. Que las intervenciones no sigan un patrón listable y que los pasos aparezcan a mitad del proceso son exactamente esa condición.</p>
+<p><em>Por qué no las otras:</em> A y E son escala y costo: se resuelven dentro de cualquier patrón; D es prestigio, no un driver arquitectónico.</p>
+<hr />
+<h3 id="6">6</h3>
+<p><strong>Correcta: A y C</strong></p>
+<p>El supervisor aporta secuenciación y un punto único donde queda registrado el orden de las decisiones. Eso es justamente lo que un esquema peer-to-peer no puede garantizar.</p>
+<p><em>Por qué no las otras:</em> B es trabajo del especialista; D es interno de cada agente; E es una decisión de configuración fijada de antemano, no de orquestación en ejecución.</p>
+<hr />
+<h3 id="7">7</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Descomponer sirve por dos motivos: cada paso recibe atención enfocada y cada salida intermedia se puede verificar. Sin salida estructurada entre pasos, la cadena vuelve a ser una caja negra.</p>
+<p><em>Por qué no las otras:</em> C confunde capacidad con estructura; D deja el prompt gigante intacto; E deshace la descomposición.</p>
+<hr />
+<h3 id="8">8</h3>
+<p><strong>Correcta: A y C</strong></p>
+<p>Una sola llamada aumentada alcanza cuando hay una transformación y el contexto necesario cabe al lado del pedido. Es el escalón más bajo de la escalera y se elige siempre que cumpla.</p>
+<p><em>Por qué no las otras:</em> B pide multi-agente; D pide un agente; E pide un workflow con pasos discretos.</p>
+<hr />
+<h3 id="9">9</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the architect, at design time</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the model, at run time</td>
+</tr>
+<tr>
+<td>3</td>
+<td>a human reviewer, per case</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the architect, at design time</td>
+</tr>
+<tr>
+<td>5</td>
+<td>the model, at run time</td>
+</tr>
+</tbody>
+</table>
+<p>Lo predecible lo fija una persona en diseño; lo que depende de lo que va apareciendo lo decide el modelo en ejecución; lo irreversible o de alto impacto lo decide un humano caso por caso.</p>
+<hr />
+<h3 id="10">10</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Cuando hay categorías de entrada claramente distintas, clasificar primero y derivar permite atender lo simple barato y rápido, y reservar el análisis profundo para lo que lo necesita.</p>
+<p><em>Por qué no las otras:</em> B paga el costo del caso complejo en cada consulta trivial; C mezcla dos tareas en un prompt; D parte la experiencia del usuario sin necesidad.</p>
+<hr />
+<h3 id="11">11</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Validar entre pasos es lo que convierte una cadena en algo depurable: el error se detecta donde nace y no contamina lo que sigue. Es la razón principal para descomponer.</p>
+<p><em>Por qué no las otras:</em> B detecta cuando ya se arrastró; C no cubre lo que el proceso genera; D confía la garantía a una instrucción.</p>
+<hr />
+<h3 id="12">12</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Una cadena en producción necesita conducta definida ante falla, no solo camino feliz. Reintento, degradación o corte explícito son decisiones de diseño que se toman antes, no en el incidente.</p>
+<p><em>Por qué no las otras:</em> B parchea aguas abajo sin saber qué falló; C baja la frecuencia pero no define qué pasa cuando ocurre; D salta un paso necesario en silencio.</p>
+<hr />
+<h3 id="13">13</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Con calidad equivalente medida, se elige el modelo más chico que alcanza el umbral y se sostiene la evaluación para confirmar que lo sigue alcanzando.</p>
+<p><em>Por qué no las otras:</em> B ignora la medición que ya existe; C hace el comportamiento impredecible sin evaluar; D baja de escalón sin evidencia de que ese modelo cumpla.</p>
+<hr />
+<h3 id="14">14</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>few-shot examples</td>
+</tr>
+<tr>
+<td>2</td>
+<td>move the rule to an edge</td>
+</tr>
+<tr>
+<td>3</td>
+<td>prompt caching</td>
+</tr>
+<tr>
+<td>4</td>
+<td>retrieve only what is relevant</td>
+</tr>
+<tr>
+<td>5</td>
+<td>few-shot examples</td>
+</tr>
+</tbody>
+</table>
+<p>Formato inconsistente se arregla mostrando, no describiendo. Una regla que se pierde es un problema de posición. Contenido idéntico repetido es caché. Un documento grande con respuestas flojas en el medio y caras es recuperación selectiva.</p>
+<hr />
+<h3 id="15">15</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Los ejemplos cuestan tokens en cada pedido. Si las definiciones ya alcanzan y la precisión es alta, agregarlos paga costo sin comprar nada. Cada técnica se aplica según beneficio medido.</p>
+<p><em>Por qué no las otras:</em> B es una regla absoluta que no se sostiene; C infla el prompt sin evidencia; D gasta capacidad donde no hay problema.</p>
+<hr />
+<h3 id="16">16</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Resumir lo viejo y conservar textual lo que decide —identificadores, importes, compromisos— combina las dos cosas: cabe en la ventana y no se pierde el dato que rompe la respuesta si falta.</p>
+<p><em>Por qué no las otras:</em> B descarta información sin criterio; C corre el problema unos turnos; D tira el hilo de la conversación.</p>
+<hr />
+<h3 id="17">17</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Las herramientas se diseñan orientadas a la tarea, no como espejo de la API interna, y solo se presentan las relevantes a cada pedido. La complejidad queda del lado del sistema, donde es determinística.</p>
+<p><em>Por qué no las otras:</em> B compra capacidad sin reducir la confusión; C agrega latencia a cada llamada; D descarta las interfaces tipadas y hace los errores más difíciles de detectar.</p>
+<hr />
+<h3 id="18">18</h3>
+<p><strong>Correcta: A</strong></p>
+<p>El aislamiento entre inquilinos se resuelve en la consulta, no en el prompt: si el filtro por metadato no devuelve el documento, el modelo no puede citarlo aunque quiera.</p>
+<p><em>Por qué no las otras:</em> B y D dejan la separación en manos de una instrucción; C confía en que la relevancia haga de control de acceso.</p>
+<hr />
+<h3 id="19">19</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Frescura en minutos pide indexado incremental disparado por el cambio, y una reconstrucción completa periódica que corrige la deriva acumulada. Las dos piezas juntas.</p>
+<p><em>Por qué no las otras:</em> B llega con horas de retraso; C empeora deliberadamente la frescura; D pierde la búsqueda semántica.</p>
+<hr />
+<h3 id="20">20</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Las herramientas se diseñan por tarea. Espejar la API interna traslada su complejidad al modelo, que es donde peor se maneja; agrupada por tarea, la complejidad queda del lado determinístico.</p>
+<p><em>Por qué no las otras:</em> B produce exceso de capacidades; C descarta la interfaz tipada; D usa un criterio del backend para una decisión del agente.</p>
+<hr />
+<h3 id="21">21</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Se despierta a alguien por una condición sostenida que indica que el sistema está roto. Una tasa de error de herramientas por encima del umbral y mantenida es eso.</p>
+<p><em>Por qué no las otras:</em> B es ruido estadístico; C se revisa, no se despierta a nadie; D es una señal individual sin significado operativo.</p>
+<hr />
+<h3 id="22">22</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Se paraleliza el trabajo de campo, no la pluma. La voz, el hilo y el no repetirse son propiedades del documento entero, y ningún subagente las ve.</p>
+<p><em>Por qué no las otras:</em> B y D producen cuatro voces y solapes; C desperdicia el paralelismo disponible.</p>
+<hr />
+<h3 id="23">23</h3>
+<p><strong>Correcta: A</strong></p>
+<p>En routing se descarta entre opciones que ya existían; en orchestrator se suman piezas que nacen al leer el problema, y la síntesis final es su trabajo principal.</p>
+<p><em>Por qué no las otras:</em> B elige uno de un menú fijo; C reparte secciones definidas de antemano; D es una cadena secuencial.</p>
+<hr />
+<h3 id="24">24</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>La persona fija el contrato, el modelo llena el contenido. Sin formato común los resultados no se pueden juntar, y los límites y herramientas son decisiones de seguridad, no de contenido.</p>
+<p><em>Por qué no las otras:</em> C, D y E dependen del problema concreto y solo se pueden decidir en ejecución.</p>
+<hr />
+<h3 id="25">25</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Multi-agente consume del orden de quince veces más tokens que una conversación normal. Se justifica con independencia real y con subtareas que generan volumen que conviene resumir aparte.</p>
+<p><em>Por qué no las otras:</em> C y D son justamente donde fracasa: dependencia secuencial y estado compartido; E no es un criterio arquitectónico.</p>
+<hr />
+<h3 id="26">26</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Formatos dispares significan que falta el contrato de salida escrito por una persona. Se define una vez y se valida al recibir, antes de intentar juntar nada.</p>
+<p><em>Por qué no las otras:</em> C parchea aguas abajo; D rompe el aislamiento que justifica los subagentes; E sacrifica el paralelismo.</p>
+<hr />
+<h3 id="27">27</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>El bloqueo no es un candado mudo: impide la ejecución y devuelve la explicación al modelo, que puede corregir el rumbo en el mismo turno.</p>
+<p><em>Por qué no las otras:</em> C es demasiado drástico; D no corre porque no hubo herramienta; E no es automático, el modelo decide con la explicación recibida.</p>
+<hr />
+<h3 id="28">28</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Los CLAUDE.md de subcarpeta se cargan bajo demanda, solo al tocar archivos de esa carpeta. Eso evita arrastrar las convenciones de doce aplicaciones en cada sesión.</p>
+<p><em>Por qué no las otras:</em> C es exactamente el desperdicio que se quiere evitar; D confunde configuración con instrucciones; E depende de la memoria de la persona.</p>
+<hr />
+<h3 id="29">29</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Si la salida la consume un programa, la estructura se fuerza por schema, no se pide en el prompt. Pedirla funciona casi siempre, y casi siempre no alcanza cuando hay un parser del otro lado.</p>
+<p><em>Por qué no las otras:</em> B sigue siendo una petición; C convierte el error en fallo silencioso; D parchea síntomas y acumula deuda.</p>
+<hr />
+<h3 id="30">30</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Cuando el modelo mezcla partes, el problema es que no hay frontera explícita. Delimitar con etiquetas separa instrucción, dato y pregunta sin tocar el contenido.</p>
+<p><em>Por qué no las otras:</em> B infla el prompt; C descarta material necesario; D empeora la variabilidad.</p>
+<hr />
+<h3 id="31">31</h3>
+<p><strong>Correcta: A</strong></p>
+<p>La pregunta que ordena el dominio es quién consume la salida. Para una persona, un error de formato no rompe nada; poner un mecanismo duro donde alcanza uno blando cuesta mantenerlo y no compra nada.</p>
+<p><em>Por qué no las otras:</em> B y C sobre-corrigen; D vuelve el comportamiento impredecible.</p>
+<hr />
+<h3 id="32">32</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Los ejemplos son la especificación implícita de la tarea. Si la distribución de ejemplos no refleja las categorías reales, el modelo aprende ese desbalance.</p>
+<p><em>Por qué no las otras:</em> B y D atribuyen la falla a parámetros; C es falso.</p>
+<hr />
+<h3 id="33">33</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Entre dos y cuatro ejemplos de entrada y salida superan a cualquier descripción textual para consistencia de formato, y el modelo generaliza el patrón a casos nuevos en vez de repetir los ejemplos.</p>
+<p><em>Por qué no las otras:</em> B y C insisten en describir; D reduce variación pero no enseña la forma esperada.</p>
+<hr />
+<h3 id="34">34</h3>
+<p><strong>Correcta: A</strong></p>
+<p>«Conservador» y «alta confianza» no son criterios. Se define exactamente qué marcar, qué no marcar y qué significa cada nivel de severidad, con un ejemplo por nivel.</p>
+<p><em>Por qué no las otras:</em> B y C atribuyen a tamaño lo que es ambigüedad; D es falso: se expresa con criterios explícitos.</p>
+<hr />
+<h3 id="35">35</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Las herramientas se diseñan orientadas a la tarea, no como espejo de la API interna. La complejidad se queda del lado del sistema, donde es determinística y testeable.</p>
+<p><em>Por qué no las otras:</em> B traslada carga al contexto; C atrapa el síntoma; D descarta la interfaz tipada.</p>
+<hr />
+<h3 id="36">36</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Es el antipatrón capital: devolver vacío ante un error es un fallo silencioso. El modelo concluye que no hay resultados y construye una respuesta segura sobre una premisa falsa.</p>
+<p><em>Por qué no las otras:</em> B es irrelevante; C esconde el problema una capa más abajo; D no describe el defecto.</p>
+<hr />
+<h3 id="37">37</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Cruzar la frontera de otra organización sin exponer lo interno es el caso que define la comunicación agente a agente: cada agente es la frontera de su propia empresa.</p>
+<p><em>Por qué no las otras:</em> B, C y D exponen justamente lo que ninguna de las dos partes está dispuesta a exponer.</p>
+<hr />
+<h3 id="38">38</h3>
+<p><strong>Correcta: A</strong></p>
+<p>La descripción es el mecanismo de selección. Un nombre específico más el tipo concreto de dato que devuelve cada herramienta elimina la ambigüedad de raíz.</p>
+<p><em>Por qué no las otras:</em> B agrega latencia sin quitar la ambigüedad; C esconde la decisión en un parámetro; D sacrifica una capacidad que se usa.</p>
+<hr />
+<h3 id="39">39</h3>
+<p><strong>Correcta: A</strong></p>
+<p>La configuración de proyecto se versiona con sustitución de variables de entorno: el archivo viaja al repositorio, el token no.</p>
+<p><em>Por qué no las otras:</em> B publica el secreto; C pierde el beneficio de compartir la configuración; D lo mete además en la ventana de contexto.</p>
+<hr />
+<h3 id="40">40</h3>
+<p><strong>Correcta: A</strong></p>
+<p>El nivel de usuario vive en el directorio personal, no se comparte por control de versiones y sirve para experimentar sin tocar al equipo.</p>
+<p><em>Por qué no las otras:</em> B y D contaminan la configuración compartida; C es una rama que hay que mantener viva sin motivo.</p>
+<hr />
+<h3 id="41">41</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Un recurso que entrega el catálogo o el esquema le da al agente el mapa de entrada, y le evita gastar llamadas exploratorias para descubrir lo que ya se podía declarar.</p>
+<p><em>Por qué no las otras:</em> B no persiste entre sesiones; C describe herramientas, no datos; D invita a inventar.</p>
+<hr />
+<h3 id="42">42</h3>
+<p><strong>Correcta: A</strong></p>
+<p>La pregunta que ordena el dominio es si la información tiene que sobrevivir sí o sí. Si la respuesta es sí, no puede vivir solamente en la conversación: se reinyecta.</p>
+<p><em>Por qué no las otras:</em> B no tiene relación; C pierde detalle y sigue dependiendo del historial; D descarta trabajo útil.</p>
+<hr />
+<h3 id="43">43</h3>
+<p><strong>Correcta: A</strong></p>
+<p>La fiabilidad se construye con mecanismos determinísticos alrededor de un modelo que falla de forma no determinística. Sin fundamento recuperado, lo correcto es declararlo.</p>
+<p><em>Por qué no las otras:</em> B es la puerta directa a la alucinación; C traslada el problema al usuario; D repite una consulta que ya falló.</p>
+<hr />
+<h3 id="44">44</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Si un dato tiene que sobrevivir sí o sí, no puede vivir solamente en la conversación. Un bloque de hechos del caso se mantiene aparte, se actualiza y se reinyecta en cada pedido.</p>
+<p><em>Por qué no las otras:</em> B y D posponen el problema; C deja la persistencia en manos del propio modelo.</p>
+<hr />
+<h3 id="45">45</h3>
+<p><strong>Correcta: A</strong></p>
+<p>El efecto de perderse en el medio es conocido y se mitiga por posición: lo que decide la respuesta va cerca del principio o del final.</p>
+<p><em>Por qué no las otras:</em> B duplica el costo; C no tiene relación; D destruye el orden del documento.</p>
+<hr />
+<h3 id="46">46</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Un archivo de notas sobrevive a la degradación del contexto y al cierre de sesión, y evita repetir el descubrimiento desde cero.</p>
+<p><em>Por qué no las otras:</em> B no es sostenible; C pierde justamente los detalles concretos; D desperdicia tiempo y tokens.</p>
+<hr />
+<h3 id="47">47</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>El subagente arranca en blanco y en contexto aislado. Por eso su encargo tiene que ser autosuficiente: objetivo, datos y formato de salida explícitos.</p>
+<p><em>Por qué no las otras:</em> C, D y E suponen una memoria o herencia compartida que no existe; ese aislamiento es justamente lo que protege el contexto del coordinador.</p>
+<hr />
+<h3 id="48">48</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Se abre sesión nueva cuando el contexto dejó de ser confiable: resultados viejos o deterioro tras trabajo no relacionado. Para explorar una variante desde el mismo punto de partida existe la bifurcación de sesión.</p>
+<p><em>Por qué no las otras:</em> C no justifica cortar; D pide bifurcar, no empezar de cero; E describe un contexto sano.</p>
+<hr />
+<h3 id="49">49</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>execute the requested tools and continue</td>
+</tr>
+<tr>
+<td>2</td>
+<td>show the result to the user</td>
+</tr>
+<tr>
+<td>3</td>
+<td>raise the output budget and retry</td>
+</tr>
+<tr>
+<td>4</td>
+<td>treat the custom stop sequence as the boundary</td>
+</tr>
+<tr>
+<td>5</td>
+<td>execute the requested tools and continue</td>
+</tr>
+</tbody>
+</table>
+<p>El bucle se gobierna por stop_reason: tool_use pide ejecutar y seguir, end_turn cierra, max_tokens indica truncamiento y stop_sequence marca un corte definido por vos.</p>
+<hr />
+<h3 id="50">50</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>El hook se ejecuta en la máquina local, con los permisos del usuario y de forma automática. Por eso aceptar la configuración de un repositorio ajeno equivale a ejecutar código ajeno.</p>
+<p><em>Por qué no las otras:</em> C, D y E describen protecciones que no existen: por eso hay que revisar el contenido antes de aceptarlo.</p>
+<hr />
+<h3 id="51">51</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Los permisos son mecanismo duro: se declaran por herramienta con patrones y lo denegado gana siempre. El modelo no ve el archivo; se entera de que algo estaba prohibido cuando lo intenta y le rebota.</p>
+<p><em>Por qué no las otras:</em> C es falso, settings.json no entra al contexto; D contradice la naturaleza del mecanismo; E describe mal la precedencia.</p>
+<hr />
+<h3 id="52">52</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CLAUDE.md</td>
+</tr>
+<tr>
+<td>2</td>
+<td>hook</td>
+</tr>
+<tr>
+<td>3</td>
+<td>settings.json</td>
+</tr>
+<tr>
+<td>4</td>
+<td>skill or subagent</td>
+</tr>
+<tr>
+<td>5</td>
+<td>hook</td>
+</tr>
+</tbody>
+</table>
+<p>El modelo lee CLAUDE.md; el sistema ejecuta hooks; settings.json declara el terreno sin que el modelo lo vea; skills y subagentes son procedimientos que se invocan. Pedir y garantizar son capas distintas.</p>
+<hr />
+<h3 id="53">53</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Las rutas relativas se resuelven respecto del archivo que importa y el anidamiento tiene un tope de cinco niveles. Sirve para partir convenciones largas en piezas mantenibles.</p>
+<p><em>Por qué no las otras:</em> C describe otra cosa; D es incorrecto, no va espacio; E es falso, se pueden importar README o package.json.</p>
+<hr />
+<h3 id="54">54</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>El frontmatter con patrones de ruta activa cada regla solo al tocar los archivos que le corresponden. Es divulgación progresiva aplicada a las convenciones.</p>
+<p><em>Por qué no las otras:</em> C confunde petición con garantía: siguen siendo texto; D es lo contrario de lo que ocurre; E describe alcance de usuario.</p>
+<hr />
+<h3 id="55">55</h3>
+<p><strong>Correcta: A y B</strong></p>
+<p>Compactar libera ventana comprimiendo el historial, y en esa compresión se pierden detalles concretos: cifras, fechas, nombres. Lo que se guarda como memoria vive en CLAUDE.md y se carga sola al arrancar.</p>
+<p><em>Por qué no las otras:</em> C describe algo que no ocurre; D contradice el propósito de la memoria; E no es un requisito.</p>
+<hr />
+<h3 id="56">56</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>project-level, committed to the repository</td>
+</tr>
+<tr>
+<td>2</td>
+<td>user-level, in the home directory</td>
+</tr>
+<tr>
+<td>3</td>
+<td>a hook registered on a tool event</td>
+</tr>
+<tr>
+<td>4</td>
+<td>a skill with context: fork</td>
+</tr>
+<tr>
+<td>5</td>
+<td>project-level, committed to the repository</td>
+</tr>
+</tbody>
+</table>
+<p>Lo compartido se versiona en el proyecto; lo personal vive en el directorio del usuario; lo que debe garantizarse va en un hook; lo que genera ruido se aísla en un subagente.</p>
+<hr />
+<h3 id="57">57</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Un campo obligatorio fuerza al modelo a poner algo. Solo se marca como requerido lo que siempre está disponible; el resto va opcional o nullable.</p>
+<p><em>Por qué no las otras:</em> B pide en texto lo que el esquema está exigiendo al revés; C detecta tarde y a mano; D multiplica llamadas sin resolver la causa.</p>
+<hr />
+<h3 id="58">58</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Un valor «unclear» es preferible a una categorización incorrecta, y un «other» con campo de detalle mantiene el esquema extensible sin inventar categorías.</p>
+<p><em>Por qué no las otras:</em> B persigue una cola infinita; C es lo que ya está haciendo mal; D no tiene relación con el diseño del enum.</p>
+<hr />
+<h3 id="59">59</h3>
+<p><strong>Correcta: A</strong></p>
+<p>Extraer el valor declarado y el calculado, y marcar el conflicto, convierte una discrepancia silenciosa en un dato que alguien puede resolver.</p>
+<p><em>Por qué no las otras:</em> B y C eligen un lado y pierden la señal; D esconde el problema.</p>
+<hr />
+<h3 id="60">60</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Glob</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Grep</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Read</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Edit</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Glob</td>
+</tr>
+</tbody>
+</table>
+<p>Glob busca por nombre y patrón de ruta, Grep busca dentro del contenido, Read carga el archivo completo y Edit modifica por coincidencia única de texto.</p>
+<hr /></main><footer>
+<p><b>Material no oficial.</b> No afiliado a Anthropic PBC ni patrocinado ni avalado por Anthropic. <i>Claude</i> y <i>Claude Certified Architect</i> son marcas de Anthropic. Las preguntas son originales, escritas contra los objetivos publicados; no reproducen contenido del examen real. Ningún simulacro garantiza aprobar.</p>
+<p>Por <a href="https://www.linkedin.com/in/juanmartincordero/">Juan Martín Cordero</a> · <a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y contenido en GitHub</a> · Contenido CC BY 4.0</p>
+</footer></body></html>

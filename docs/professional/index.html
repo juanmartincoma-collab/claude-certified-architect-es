@@ -1,0 +1,425 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía de estudio CCAR-P · Claude Certified Architect Professional en español</title>
+<meta name="description" content="Los siete dominios del examen Professional explicados por la diferencia entre opciones parecidas: patrones de arquitectura, integración, evaluación, gobernanza y comunicación con stakeholders.">
+<meta name="keywords" content="ccar-p, claude certified architect professional, guía de estudio, español">
+<meta name="author" content="Juan Martín Cordero">
+<link rel="canonical" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">
+<meta property="og:type" content="article"><meta property="og:title" content="Guía de estudio CCAR-P · Claude Certified Architect Professional en español">
+<meta property="og:description" content="Los siete dominios del examen Professional explicados por la diferencia entre opciones parecidas: patrones de arquitectura, integración, evaluación, gobernanza y comunicación con stakeholders."><meta property="og:url" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">
+<meta property="og:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png"><meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://juanmartincoma-collab.github.io/claude-certified-architect-es/og.png">
+<style>
+:root{--bg:#FAFAFA;--surface:#fff;--ink:#252525;--ink-2:#484848;--muted:#656565;--line:#E5E5E5;--line-2:#D4D4D4;--accent:#E11D48;--soft:rgba(225,29,72,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0F0F0F;--surface:#1A1A1A;--ink:#FAFAFA;--ink-2:rgba(255,255,255,.86);--muted:#A1A1A1;--line:#2A2A2A;--line-2:#3D3D3D;--accent:#FF6B6B;--soft:rgba(255,107,107,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;text-align:justify;hyphens:auto;-webkit-font-smoothing:antialiased}
+.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:860px;margin:0 auto;padding:12px 22px;display:flex;gap:18px;align-items:center;font-size:14px;text-align:left}
+.top a{color:var(--ink-2);text-decoration:none}.top a:hover{color:var(--accent)}
+.top .home{font-weight:650;color:var(--ink)}
+.top .cta{margin-left:auto;background:var(--accent);color:#fff;padding:7px 14px;border-radius:8px;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:44px 22px 96px}
+h1,h2,h3,h4{text-align:left;hyphens:manual;letter-spacing:-.022em;line-height:1.2;font-weight:650;margin:2em 0 .6em}
+h1{font-size:clamp(30px,4.6vw,42px);margin-top:0;letter-spacing:-.035em}
+h2{font-size:25px;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:19px}
+p,li{color:var(--ink-2)}
+a{color:var(--accent)}
+code{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:.1em .35em;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;text-align:left}
+pre code{border:0;background:none;padding:0}
+blockquote{margin:1.4em 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 10px 10px 0}
+blockquote p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:1.4em 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;hyphens:manual}
+th{background:var(--surface);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:650}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+.lede{font-size:18.5px;color:var(--ink-2);margin-bottom:2em}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 0;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head><body>
+<header class="top"><div class="in">
+<a class="home" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/">Claude Certified Architect · ES</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/professional/">Professional</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/foundations/">Foundations</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/glosario/">Glosario</a>
+<a href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/faq/">FAQ</a>
+<a class="cta" href="https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/">Simulador</a>
+</div></header><main><h1 id="guia-de-estudio-claude-certified-architect-professional-ccar-p">Guía de Estudio — Claude Certified Architect · Professional (CCAR-P)</h1>
+<blockquote>
+<p><strong>Qué mide este examen:</strong> <strong>criterio de arquitecto aplicado</strong>. No pregunta "¿qué es X?" sino "dado este caso con estas restricciones, ¿qué decisión?". Casi siempre dos opciones "funcionan", pero una es correcta <strong>por principio</strong>. La habilidad medida es elegir bien bajo trade-offs de costo, latencia, seguridad y mantenibilidad.</p>
+<p><strong>Formato:</strong> 63 ítems · 120 min · corte 720/1000 · single y multi-response (cada ítem dice cuántas marcar). Proctored (Pearson VUE). El reporte da % por dominio, pero el pass lo decide el <strong>score total escalado</strong>.</p>
+<p><strong>Cómo usar esta guía:</strong> cada concepto trae <strong>Qué es → Cómo funciona → Cuándo aplica → Cuándo NO / diferencia → Trampa de examen</strong>. La zona de examen es siempre la <strong>diferencia entre dos opciones parecidas</strong>.</p>
+</blockquote>
+<p><strong>Pesos del blueprint (memorízalos, orientan dónde caen más ítems):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Dominio</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Solution Design &amp; Architecture</td>
+<td>17%</td>
+</tr>
+<tr>
+<td>2. Claude Models, Prompting &amp; Context Engineering</td>
+<td>13%</td>
+</tr>
+<tr>
+<td>3. Integration</td>
+<td><strong>19%</strong></td>
+</tr>
+<tr>
+<td>4. Evaluation, Testing &amp; Optimization</td>
+<td>16%</td>
+</tr>
+<tr>
+<td>5. Governance, Safety &amp; Risk Management</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>6. Stakeholder Communication &amp; Lifecycle Management</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>7. Developer Productivity &amp; Operational Enablement</td>
+<td>7%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dominio-1-solution-design-architecture-17">Dominio 1 — Solution Design &amp; Architecture (17%)</h2>
+<p>Traducir problemas de negocio en arquitecturas y elegir el patrón correcto.</p>
+<h3 id="11-los-cuatro-patrones-y-cuando-cada-uno">1.1 Los cuatro patrones y cuándo cada uno</h3>
+<p><strong>Qué es:</strong> el abanico de arquitecturas, de menos a más autónomas.</p>
+<ul>
+<li><strong>Augmented LLM:</strong> una llamada + retrieval/tool/memoria. Sin loop. Caso: transformación única con contexto al lado ("resume este ticket usando la KB").</li>
+<li><strong>Workflow:</strong> varios pasos, <strong>el código decide el orden</strong>. Predecible, auditable. Caso: pasos conocidos e idénticos en cada pedido (clasificar → extraer → validar → aprobar).</li>
+<li><strong>Agentic:</strong> varios pasos, <strong>el modelo decide el orden y cuándo parar</strong>, en loop planificar-actuar-observar. Caso: la ruta recién aparece durante la ejecución (investigar, debuggear).</li>
+<li><strong>Multi-agente (orquestador):</strong> coordinador reparte a subagentes especializados y sintetiza. Caso: subtareas con especialización distinta, independientes, paralelizables.</li>
+</ul>
+<p><strong>Regla maestra:</strong> elegí el patrón <strong>menos complejo</strong> que resuelve. Cada nivel arriba agrega costo, latencia, imprevisibilidad y dificultad de debug/eval. El multi-agente "gana su complejidad" solo cuando las subtareas piden herramientas y contexto <strong>genuinamente distintos</strong> y pueden correr en paralelo.</p>
+<p><strong>Trampa:</strong> una tarea que suena sofisticada pero tiene flujo fijo → <strong>workflow</strong>, no agente. La sofisticación no justifica autonomía; la imprevisibilidad del camino sí.</p>
+<h3 id="12-arquitectura-end-to-end-y-feedback-loop">1.2 Arquitectura end-to-end y feedback loop</h3>
+<p><strong>Qué es:</strong> el flujo completo entrada → procesamiento → salida → <strong>feedback</strong>.</p>
+<p><strong>Cómo funciona:</strong> el tramo de feedback devuelve las señales de corrección de producción convertidas en un <strong>conjunto evaluable</strong> que mejora el sistema. Sin ese tramo, la arquitectura está incompleta.</p>
+<p><strong>Trampa:</strong> un diseño que cubre entrada/proceso/salida pero <strong>omite el feedback</strong>. La opción correcta suele ser la que cierra ese lazo (capturar señales de producción como dataset de evaluación).</p>
+<h3 id="13-descomposicion-de-problemas-complejos">1.3 Descomposición de problemas complejos</h3>
+<p><strong>Qué es:</strong> partir un problema grande en piezas manejables.</p>
+<p><strong>Cómo funciona:</strong> una tarea larga que sale con <strong>ítems salteados y razonamiento superficial</strong> es una falla de descomposición. Secuenciar en pasos da <strong>contexto enfocado</strong> en cada uno y <strong>salidas intermedias verificables</strong>.</p>
+<p><strong>Trampa:</strong> atribuir a "el modelo es malo" lo que es una descomposición pobre. La firma (cobertura incompleta, superficialidad) apunta a cómo se partió el problema.</p>
+<h3 id="14-multi-agente-contexto-de-subagente">1.4 Multi-agente: contexto de subagente</h3>
+<p><strong>Qué es:</strong> qué sabe un subagente.</p>
+<p><strong>Cómo funciona:</strong> <strong>nada se hereda.</strong> El subagente arranca con contexto limpio; todo lo que necesita va <strong>explícito en su prompt</strong>.</p>
+<p><strong>Trampa:</strong> asumir que el subagente ve la conversación del coordinador o sus variables. No las ve.</p>
+<h3 id="15-alinear-a-valor-de-negocio">1.5 Alinear a valor de negocio</h3>
+<p><strong>Qué es:</strong> justificar el diseño en pilares de valor (eficiencia, transformación, productividad, costo, SLA de performance).</p>
+<p><strong>Cómo funciona:</strong> el <strong>primer proyecto</strong> se elige por <strong>valor medible balanceado con factibilidad y riesgo</strong> → construye respaldo organizacional duradero.</p>
+<p><strong>Trampa:</strong> elegir el proyecto más vistoso, el más difícil, o el favorito técnico. La correcta balancea valor + factibilidad + riesgo.</p>
+<hr />
+<h2 id="dominio-2-claude-models-prompting-context-engineering-13">Dominio 2 — Claude Models, Prompting &amp; Context Engineering (13%)</h2>
+<h3 id="21-seleccion-de-modelo-por-trade-offs">2.1 Selección de modelo por trade-offs</h3>
+<p><strong>Qué es:</strong> elegir familia/tamaño según la tarea.</p>
+<p><strong>Cómo funciona:</strong>
+- Mecánica / alto volumen / latencia crítica / formato simple → modelo <strong>chico</strong> (rápido, barato).
+- Juicio complejo / razonamiento multi-paso / síntesis → modelo <strong>grande</strong>.
+- A gran escala con <strong>precisión comparable</strong> entre modelos, la elección disciplinada es <strong>el más chico que alcanza el umbral</strong> — y la eval confirma que lo sigue alcanzando.</p>
+<p><strong>Cuándo NO / diferencia:</strong> subir de modelo <strong>no</strong> arregla problemas de auth, scope, retrieval o prompt mal escrito. Solo ayuda cuando el cuello de botella es genuinamente <strong>capacidad de razonamiento</strong> (model mismatch).</p>
+<p><strong>Trampa:</strong> "usa el modelo más grande" como respuesta universal. Casi nunca lo es fuera de model mismatch.</p>
+<h3 id="22-routing-por-complejidad">2.2 Routing por complejidad</h3>
+<p><strong>Qué es:</strong> un triaje que manda cada pedido al modelo adecuado.</p>
+<p><strong>Cómo funciona:</strong> un modelo chico y barato clasifica la dificultad; lo fácil lo responde él, lo difícil escala al modelo grande. El ~80% fácil se resuelve barato; pagás grande solo por el ~20% difícil.</p>
+<p><strong>Ejemplo:</strong> chatbot de banco — "¿mi saldo?" → modelo chico; "¿es justo este cobro según mi contrato?" → modelo grande.</p>
+<p><strong>Trampa:</strong> mandar todo al modelo grande "por las dudas". El routing ahorra sin perder calidad en lo difícil.</p>
+<h3 id="23-prompt-caching">2.3 Prompt caching</h3>
+<p><strong>Qué es:</strong> reutilizar un prefijo de tokens idéntico entre requests.</p>
+<p><strong>Cómo funciona:</strong> el caché coincide <strong>por prefijo</strong>. Poné lo <strong>estable primero</strong> (system + política + few-shot) y lo <strong>variable al final</strong> (mensaje del usuario). Baja time-to-first-token (latencia) y costo por request.</p>
+<p><strong>Cuándo NO / diferencia:</strong> un <strong>timestamp o ID en la posición 0</strong> hace único cada prefijo → nunca hay acierto de caché. Truncar el documento pierde contexto; bajar de modelo a ciegas arriesga calidad; mover la política a few-shot no crea un prefijo cacheable.</p>
+<p><strong>Trampa (caso clásico):</strong> "mismo prompt de 8.000 tokens en cada request, importa costo y latencia" → la correcta es <strong>ordenar estático primero + activar caching</strong>. Las otras destruyen contexto o no cachean.</p>
+<h3 id="24-tecnicas-de-prompting">2.4 Técnicas de prompting</h3>
+<p><strong>Qué es:</strong> zero-shot, few-shot, chain-of-thought.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Zero-shot:</strong> tarea simple.
+- <strong>Few-shot:</strong> enseñar <strong>formato/patrón</strong>; "mostrar supera a describir" para formato estricto.
+- <strong>Chain-of-thought:</strong> razonamiento <strong>multi-paso</strong>; en extracción simple solo agrega costo.</p>
+<p><strong>Diferencia:</strong> few-shot = formato; CoT = razonamiento. Se aplican <strong>por tarea y según beneficio medido</strong>.</p>
+<h3 id="25-guardrails-en-el-prompt-vs-atencion-posicional">2.5 Guardrails en el prompt vs atención posicional</h3>
+<p><strong>Qué es:</strong> dónde poner las reglas críticas.</p>
+<p><strong>Cómo funciona:</strong> reglas enterradas a mitad de contexto sufren caída de atención posicional. Moverlas al <strong>inicio o final</strong>, separadas del material de referencia, es el fix de mayor palanca. Estructura clara + prioridad explícita ante conflicto + ejemplos concretos de los casos que fallan = elimina ambigüedad.</p>
+<p><strong>Ojo — límite:</strong> para reglas de <strong>seguridad</strong>, el prompt no basta (ver Dominio 5.1 y 3.4). El prompt guía comportamiento; no es frontera de seguridad.</p>
+<h3 id="26-optimizar-ventana-y-tokens">2.6 Optimizar ventana y tokens</h3>
+<p><strong>Qué es:</strong> manejar contexto grande.</p>
+<p><strong>Cómo funciona:</strong> recuperar solo las secciones relevantes arregla dos cosas a la vez — esquiva la caída de atención en el medio y recorta tokens por pedido. Extraer hechos duros a un bloque persistente los protege de la compresión.</p>
+<h3 id="27-reuse-de-prompts">2.7 Reuse de prompts</h3>
+<p><strong>Qué es:</strong> no repetir trabajo de prompt.</p>
+<p><strong>Cómo funciona:</strong> caching (prefijos), prompts modulares (componer bloques), y <strong>Skills</strong> (empaquetar instrucciones/workflows reutilizables).</p>
+<hr />
+<h2 id="dominio-3-integration-19-el-de-mas-peso">Dominio 3 — Integration (19% · el de más peso)</h2>
+<h3 id="31-capability-bloat-en-toolsagentes">3.1 Capability bloat en tools/agentes</h3>
+<p><strong>Qué es:</strong> demasiadas herramientas degradan al agente.</p>
+<p><strong>Cómo funciona:</strong> un agente que creció a 45 tools en 6 dominios con precisión de selección cayendo, latencia subiendo y un tercio de tools nunca invocadas = capability bloat. Fix ordenado: <strong>agentes por dominio detrás de un router</strong>, cada uno con toolset enfocado; sacar tools muertas y solapadas; <strong>progressive disclosure</strong> para mantener chica la superficie por request a medida que el catálogo crece.</p>
+<p><strong>Cuándo NO / diferencia:</strong> "describí cada tool con más detalle" no arregla un problema de <strong>cantidad</strong>. "Agregá las tools nuevas ahora y reescribí el prompt el próximo trimestre" pospone el problema real.</p>
+<p><strong>Trampa:</strong> elegir el fix cosmético (más descripción) cuando la causa es volumen. La correcta reduce y segmenta.</p>
+<h3 id="32-auth-y-authz-gaps-de-seguridad">3.2 Auth y authz: gaps de seguridad</h3>
+<p><strong>Qué es:</strong> quién puede hacer qué.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Autenticación (authn):</strong> probar <strong>quién sos</strong> (token, credencial).
+- <strong>Autorización (authz):</strong> <strong>qué te dejan hacer</strong> (scope, permisos).
+- El control de acceso vive en la <strong>capa del sistema</strong> — credencial <strong>por usuario</strong> o autenticación traspasada — para que el modelo <strong>no pueda</strong> recuperar/ejecutar lo que no debe.</p>
+<p><strong>El principio central — el prompt no es frontera de seguridad:</strong> si "instruimos al modelo a no devolver datos de otro usuario pero a veces lo hace", la instrucción está haciendo el trabajo de la autorización, y eso está mal. La autorización tiene que ser estructural (el modelo no recibe acceso), no una petición en texto.</p>
+<p><strong>Escalada de privilegios:</strong> un agente que corre con permisos del <strong>sistema</strong> actuando para un usuario común → puede hacer cosas que el usuario nunca podría. Los tokens deben tener <strong>scope mínimo</strong>.</p>
+<p><strong>Trampa:</strong> "mejorá el prompt para que no filtre". La correcta mueve el control a la capa del sistema.</p>
+<h3 id="33-least-privilege-minimo-privilegio">3.3 Least privilege (mínimo privilegio)</h3>
+<p><strong>Qué es:</strong> dar solo los permisos que el rol necesita.</p>
+<p><strong>Cómo funciona:</strong> si un rol no necesita una capability, <strong>removela</strong>. Jerarquía de controles, de más débil a más fuerte:
+1. Loggear (detectivo — te enterás después, el daño ya pasó).
+2. Confirmar antes (compensatorio — reduce, no elimina; un injection puede pasar por encima).
+3. <strong>Remover la tool (eliminativo — el daño se vuelve imposible). ← siempre gana cuando no se necesita.</strong></p>
+<p><strong>Caso canónico:</strong> agente de soporte que puede leer, redactar, <strong>reembolsar y borrar cuentas</strong>, pero soporte solo necesita leer y redactar → <strong>remové reembolso y borrado</strong>. No basta loggear ni confirmar; y un modelo más grande no tiene nada que ver con el scope de autorización.</p>
+<p><strong>Frase:</strong> no pongas guardias alrededor de una puerta que no debería existir — tapiala.</p>
+<p><strong>Trampa:</strong> elegir "loggear" o "confirmar" cuando la opción "remover" está disponible y la capability no se necesita.</p>
+<h3 id="34-guardrails-deterministas-gate-en-codigo">3.4 Guardrails deterministas (gate en código)</h3>
+<p><strong>Qué es:</strong> hacer cumplir invariantes de seguridad de forma confiable.</p>
+<p><strong>Cómo funciona:</strong> para una regla dura ("verificá identidad con <code>get_customer</code> antes de <code>process_refund</code>"), usá un <strong>gate/hook programático</strong> que bloquee la acción hasta que la precondición se cumpla. Determinista: falla 0%.</p>
+<p><strong>Cuándo NO / diferencia:</strong> una instrucción en el prompt ("siempre verificá primero") falla ~10% — es probabilística. Más ejemplos, ponerlo en bold, o bajar temperatura no lo vuelven confiable.</p>
+<p><strong>Trampa:</strong> el enunciado dice "instruimos al modelo pero a veces falla" → la correcta es el gate en código, no tocar el prompt.</p>
+<h3 id="35-accuracy-latency-trade-off">3.5 Accuracy-latency trade-off</h3>
+<p><strong>Qué es:</strong> balancear precisión contra velocidad/costo.</p>
+<p><strong>Cómo funciona:</strong> justificás la config según el caso — más pasos/modelo mayor/reranking suben accuracy pero cuestan latencia; menos suben velocidad pero arriesgan calidad. La respuesta correcta ata la decisión al requisito del caso (SLA, criticidad), no a una preferencia genérica.</p>
+<h3 id="36-rag-cuando-y-alternativas">3.6 RAG: cuándo, y alternativas</h3>
+<p><strong>Qué es:</strong> recuperar contexto relevante de una base grande para el modelo.</p>
+<p><strong>Cuándo RAG vs alternativa:</strong>
+- <strong>RAG:</strong> base grande y <strong>cambiante</strong>, necesitás citar fuentes, solo una fracción es relevante por query. Datos que cambian a diario = caso canónico (responde vigente sin reentrenar).
+- <strong>Long-context (todo en el prompt):</strong> corpus <strong>chico y estable</strong> que cabe holgado.
+- <strong>Tool/API:</strong> dato <strong>estructurado o en tiempo real</strong> (saldo, stock).
+- <strong>Fine-tuning:</strong> cambiar <strong>comportamiento/estilo/formato</strong>, no inyectar conocimiento factual.</p>
+<p><strong>Diferencia clave:</strong> RAG da <strong>conocimiento</strong>; fine-tuning da <strong>comportamiento</strong>. No confundir.</p>
+<h3 id="37-rag-chunking">3.7 RAG: chunking</h3>
+<p><strong>Qué es:</strong> cómo cortás los documentos antes de indexarlos.</p>
+<p><strong>Cómo funciona:</strong> cortá <strong>según la estructura</strong> del documento (cláusulas, secciones) con <strong>metadata de enlace</strong> que preserve el contexto interpretativo. Chunk grande = trae ruido y diluye; chunk chico = pierde contexto.</p>
+<p><strong>Cuándo NO / diferencia:</strong> pedazos de <strong>tamaño fijo</strong> cortan cláusulas a la mitad y rompen el sentido. Reducir a 100 tokens no "mejora la precisión", empeora el contexto. Traer 50 chunks "por si acaso" mete ruido.</p>
+<p><strong>Trampa:</strong> la opción de tamaño fijo o de subir k a lo bruto. La correcta corta por estructura con metadata.</p>
+<h3 id="38-rag-indexing">3.8 RAG: indexing</h3>
+<p><strong>Qué es:</strong> convertir chunks en embeddings y guardarlos para búsqueda.</p>
+<p><strong>Cómo funciona:</strong> el modelo de embedding del índice y el de la query <strong>deben coincidir</strong>. Para una KB que se <strong>edita todo el día</strong> y debe reflejarse en minutos → un enfoque de indexación que soporte <strong>updates incrementales</strong> frecuentes.</p>
+<p><strong>Diagnóstico:</strong> si todo empeora <strong>tras un refresh de documentos</strong> (modelo y latencia iguales) → el problema es el <strong>index/retrieval</strong> (re-index roto, embeddings desalineados, chunks stale), no el modelo.</p>
+<p><strong>Trampa:</strong> atribuir al modelo un fallo que apareció al tocar los datos.</p>
+<h3 id="39-rag-retrieval">3.9 RAG: retrieval</h3>
+<p><strong>Qué es:</strong> buscar y traer los chunks relevantes en runtime.</p>
+<p><strong>Cómo funciona:</strong> semántico (intención, parafraseo), keyword/BM25 (términos exactos, códigos, nombres), <strong>híbrido</strong> (ambos), reranking (precisión en top-k). Matcheá la estrategia al <strong>patrón de query</strong>.</p>
+<p><strong>Diferencia entre los tres pasos:</strong>
+- <strong>Chunking</strong> = cómo <strong>cortás</strong> (antes, una vez).
+- <strong>Indexing</strong> = cómo <strong>guardás/organizás</strong> (antes, una vez).
+- <strong>Retrieval</strong> = cómo <strong>buscás y traés</strong> (en runtime, cada query).</p>
+<h3 id="310-protocolo-de-conexion-mcp-vs-apicli-vs-agent-to-agent">3.10 Protocolo de conexión: MCP vs API/CLI vs agent-to-agent</h3>
+<p><strong>Qué es:</strong> el mecanismo de integración.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>MCP:</strong> muchos sistemas, muchas apps consumidoras, propiedad <strong>descentralizada</strong>, tools que rotan seguido. Cada equipo mantiene su server una vez, todos reusan. Caso canónico.
+- <strong>API/CLI:</strong> integración puntual, a medida, un consumidor.
+- <strong>Agent-to-agent:</strong> delegar a otro agente autónomo con su razonamiento y tools.</p>
+<p><strong>Trampa:</strong> confundir MCP (protocolo estandarizado reutilizable) con una API directa (plomería a medida).</p>
+<h3 id="311-progressive-discovery-vs-monolithic">3.11 Progressive discovery vs monolithic</h3>
+<p><strong>Qué es:</strong> cuánto contexto/tools cargás y cuándo.</p>
+<p><strong>Cómo funciona:</strong>
+- <strong>Monolítico:</strong> todo al inicio. Bueno solo con pocas tools y poco contexto.
+- <strong>Progressive discovery:</strong> cargás solo lo relevante para el paso actual; el resto se revela on-demand. Menos tokens, mejor selección de tool, escala. Es la contraparte del capability bloat.</p>
+<p><strong>Trampa:</strong> cargar 50 definiciones de tools de golpe. Con catálogo grande → progressive.</p>
+<h3 id="312-observabilidad-a-escala">3.12 Observabilidad a escala</h3>
+<p><strong>Qué es:</strong> monitorear un sistema agéntico en producción.</p>
+<p><strong>Cómo funciona:</strong> tracing por request, logs estructurados, métricas por tool/agente. <strong>Qué debe disparar una alerta:</strong> tasa de error de tools sobre umbral <strong>sostenida varios minutos</strong>.</p>
+<p><strong>Cuándo NO / diferencia:</strong> NO alertar por un solo request más lento que la mediana, ni por el gasto diario subiendo, ni por un rating individual "poco útil". Esas son señales ruidosas, no incidentes.</p>
+<p><strong>Trampa:</strong> elegir la métrica ruidosa. La correcta es el patrón sostenido y significativo.</p>
+<hr />
+<h2 id="dominio-4-evaluation-testing-optimization-16">Dominio 4 — Evaluation, Testing &amp; Optimization (16%)</h2>
+<h3 id="41-definir-metricas">4.1 Definir métricas</h3>
+<p><strong>Qué es:</strong> qué medís.</p>
+<p><strong>Cómo funciona:</strong> accuracy, latency, cost, safety, security. Elegí las relevantes al caso; no todas importan igual siempre.</p>
+<h3 id="42-disenar-datasets-y-frameworks-metodologias-mixtas">4.2 Diseñar datasets y frameworks (metodologías mixtas)</h3>
+<p><strong>Qué es:</strong> cómo armás la evaluación pre-producción.</p>
+<p><strong>Cómo funciona (caso dominio regulado — los 2 que más importan):</strong>
+- <strong>Golden dataset</strong> etiquetado por <strong>expertos de dominio</strong>, cubriendo casos de <strong>alto riesgo</strong>.
+- <strong>Casos adversariales</strong> que prueban límites de safety y prompt injection.</p>
+<p><strong>Cuándo NO / diferencia (distractores):</strong> demo con ejemplos cherry-picked al ejecutivo, benchmark contra competidores, encuesta de satisfacción post-launch. Ninguno es una evaluación rigurosa pre-producción.</p>
+<p><strong>Trampa:</strong> elegir la demo o la encuesta. La correcta es dataset experto + adversarial.</p>
+<h3 id="43-metodos-de-evaluacion">4.3 Métodos de evaluación</h3>
+<p><strong>Qué es:</strong> cómo puntuás las salidas.</p>
+<p><strong>Cómo funciona y cuándo:</strong>
+- <strong>Exact match / assertions programáticas:</strong> salida objetiva verificable (clasificación, extracción, schema). Barato, determinista, escala.
+- <strong>LLM-as-judge:</strong> calidad subjetiva (resumen, tono, relevancia). Escala, pero <strong>tiene sesgos</strong> (favorece respuestas largas, se puede engañar) → calibralo contra humano.
+- <strong>Human eval:</strong> casos críticos o para calibrar al juez. Alta calidad, caro, no escala.
+- <strong>Mixto:</strong> cuando hay componentes objetivos <strong>y</strong> subjetivos → combiná.</p>
+<p><strong>Trampa:</strong> tratar al LLM-judge como verdad absoluta. Necesita calibración humana.</p>
+<h3 id="44-ab-testing-e-iteracion">4.4 A/B testing e iteración</h3>
+<p><strong>Qué es:</strong> comparar cambios con evidencia.</p>
+<p><strong>Cómo funciona:</strong> cambiá <strong>una variable a la vez</strong> contra un <strong>baseline</strong>, medí, decidí. Iterá.</p>
+<p><strong>Trampa:</strong> cambiar varias cosas a la vez → no sabés qué causó la diferencia.</p>
+<h3 id="45-diagnostico-de-fallos-causa-sintoma">4.5 Diagnóstico de fallos (causa → síntoma)</h3>
+<p><strong>Qué es:</strong> ubicar la causa raíz de un problema.</p>
+<p><strong>Cómo funciona (tabla mental):</strong>
+- Falló tras <strong>refresh de datos</strong> → retrieval/index.
+- Falló tras cambiar <strong>el prompt</strong> → prompt failure.
+- Falla en tarea que un <strong>modelo mayor</strong> sí resuelve → model mismatch.
+- Inventa datos que no están en la fuente → alucinación (grounding + citas + campos nullable).
+- Inconsistente entre corridas idénticas → temperatura alta.</p>
+<p><strong>Regla:</strong> el síntoma aparece justo tras tocar una capa → el problema está en esa capa.</p>
+<h3 id="46-optimizacion-costo-latencia-performance">4.6 Optimización costo-latencia-performance</h3>
+<p><strong>Qué es:</strong> hacer el sistema más eficiente sin romper calidad.</p>
+<p><strong>Cómo funciona:</strong> caching, modelo más chico donde la tarea lo tolera, recorte de tokens, paralelización, streaming (percepción de latencia). Siempre medido contra baseline y confirmado por eval.</p>
+<h3 id="47-monitoreo-con-logging-y-observabilidad">4.7 Monitoreo con logging y observabilidad</h3>
+<p>Ver 3.12. La eval no termina en pre-producción: en producción, alertá por patrones sostenidos y significativos, no por ruido puntual.</p>
+<hr />
+<h2 id="dominio-5-governance-safety-risk-management-14">Dominio 5 — Governance, Safety &amp; Risk Management (14%)</h2>
+<h3 id="51-guardrails-y-controles-de-seguridad">5.1 Guardrails y controles de seguridad</h3>
+<p><strong>Qué es:</strong> hacer cumplir reglas de seguridad.</p>
+<p><strong>Cómo funciona:</strong> invariantes duros → <strong>gate en código</strong> (determinista). El prompt guía comportamiento pero <strong>no es frontera de seguridad</strong> (fuga ~10%). Combiná: control de acceso en la capa del sistema + validación de input/output + gates programáticos.</p>
+<p><strong>Trampa:</strong> confiar la seguridad al prompt. Va en código/sistema.</p>
+<h3 id="52-riesgos-y-failure-modes-de-llm-diferencias">5.2 Riesgos y failure modes de LLM (diferencias)</h3>
+<p><strong>Qué es:</strong> las maneras en que un LLM falla. Distinguilas por síntoma; cada una tiene mitigación distinta.</p>
+<ul>
+<li><strong>Alucinación:</strong> inventa info con seguridad por <strong>falta de conocimiento</strong> (rellena). Mitigá: grounding, citas, campos nullable ("no sé" legal).</li>
+<li><strong>Sicofancia:</strong> <strong>te da la razón</strong> para complacerte, aunque estés mal (sabe pero te sigue). Mitigá: prompts neutrales que no filtren la respuesta esperada.</li>
+<li><strong>Prompt injection:</strong> ataque <strong>externo</strong> — datos que el agente procesa contienen instrucciones ocultas que lo secuestran. Mitigá: separar instrucciones de datos, sanitizar input, no dar poder de acción a tools que leen data no confiable.</li>
+<li><strong>Jailbreak:</strong> ataque del <strong>usuario</strong> para saltar las reglas de seguridad del modelo. Mitigá: guardrails robustos, clasificadores/moderación.</li>
+<li><strong>Model mismatch:</strong> el modelo <strong>no da la talla</strong> (muy chico para la tarea). Mitigá: subir modelo (acá sí) o routing.</li>
+<li><strong>Drift:</strong> el desempeño <strong>se degrada con el tiempo</strong> sin cambios (el mundo cambió). Mitigá: monitoreo continuo, re-eval, actualizar datos/prompts.</li>
+</ul>
+<p><strong>Diferencias que confunden:</strong>
+- Alucinación (no sabe y rellena) vs sicofancia (sabe pero te complace).
+- Prompt injection (ataque vía <strong>datos de terceros</strong>) vs jailbreak (ataque del <strong>usuario</strong>).
+- Model mismatch (falta capacidad) vs los demás (no es cuestión de tamaño).</p>
+<h3 id="53-human-in-the-loop">5.3 Human-in-the-loop</h3>
+<p><strong>Qué es:</strong> meter aprobación humana en el flujo.</p>
+<p><strong>Cómo funciona:</strong> para acciones <strong>irreversibles o de alto impacto</strong> (transferencias grandes, borrado de datos, decisiones legales/médicas), el humano aprueba <strong>antes</strong> de ejecutar.</p>
+<p><strong>Cuándo NO / diferencia:</strong> no en cada paso — mata el throughput y anula el valor de automatizar. Es un control <strong>calibrado al riesgo</strong>.</p>
+<p><strong>Trampa:</strong> "humano en todos los pasos" (mata el sistema) o "sin humano en una acción irreversible crítica" (riesgo inaceptable). La correcta calibra.</p>
+<h3 id="54-compliance-regulacion-dominio">5.4 Compliance (regulación ↔ dominio)</h3>
+<p><strong>Qué es:</strong> cumplir marcos regulatorios.</p>
+<p><strong>Cómo funciona (asociá):</strong>
+- <strong>GDPR:</strong> datos personales UE — derecho al olvido, minimización, consentimiento, portabilidad.
+- <strong>HIPAA:</strong> salud protegida (PHI) EE.UU.
+- <strong>FedRAMP:</strong> cargas de trabajo gov cloud EE.UU.
+- <strong>SOC 2:</strong> controles de seguridad organizacional.</p>
+<p><strong>Trampa:</strong> el caso menciona el dominio (hospital → HIPAA, usuarios europeos → GDPR, agencia federal US → FedRAMP). Asociá bien.</p>
+<h3 id="55-etica-de-ia">5.5 Ética de IA</h3>
+<p><strong>Qué es:</strong> consideraciones de bias, fairness, transparencia.</p>
+<p><strong>Cómo funciona:</strong> bias (sesgo en datos/salidas), fairness (trato equitativo entre grupos), transparencia (explicabilidad + disclosure de que es IA). Se abordan con datos representativos, auditoría de sesgo, y comunicación clara al usuario.</p>
+<hr />
+<h2 id="dominio-6-stakeholder-communication-lifecycle-management-14">Dominio 6 — Stakeholder Communication &amp; Lifecycle Management (14%)</h2>
+<h3 id="61-discovery-estructurado">6.1 Discovery estructurado</h3>
+<p><strong>Qué es:</strong> levantar requisitos antes de diseñar.</p>
+<p><strong>Cómo funciona:</strong> entendé el problema de negocio y las restricciones <strong>antes</strong> de proponer arquitectura. Preguntas estructuradas, no asumir.</p>
+<p><strong>Trampa:</strong> saltar directo a la solución técnica sin discovery. Casi siempre incorrecta.</p>
+<h3 id="62-comunicar-decisiones-y-trade-offs">6.2 Comunicar decisiones y trade-offs</h3>
+<p><strong>Qué es:</strong> explicar la arquitectura al stakeholder.</p>
+<p><strong>Cómo funciona:</strong> comunicá <strong>trade-offs</strong> (costo vs latencia vs riesgo vs valor), no features técnicos. "Opción A es más barata pero 200ms más lenta" &gt; "usé tal modelo".</p>
+<p><strong>Trampa:</strong> listar features o jerga técnica. El stakeholder decide por trade-offs de negocio.</p>
+<h3 id="63-gestion-de-expectativas-y-slas">6.3 Gestión de expectativas y SLAs</h3>
+<p><strong>Qué es:</strong> alinear lo que el sistema promete.</p>
+<p><strong>Cómo funciona:</strong> convertí expectativas vagas en <strong>métricas medibles</strong> — p95 de latencia, uptime, accuracy mínima. El SLA es un compromiso cuantificado.</p>
+<p><strong>Trampa:</strong> aceptar expectativas cualitativas ("que sea rápido"). Cuantificá.</p>
+<h3 id="64-documentar-y-guiar-implementacion">6.4 Documentar y guiar implementación</h3>
+<p><strong>Qué es:</strong> el handoff.</p>
+<p><strong>Cómo funciona:</strong> documentá decisiones arquitectónicas (el porqué, no solo el qué) y provee guía de implementación para el equipo que construye/mantiene.</p>
+<h3 id="65-fases-del-ciclo-de-vida">6.5 Fases del ciclo de vida</h3>
+<p><strong>Qué es:</strong> el recorrido completo.</p>
+<p><strong>Cómo funciona:</strong> discovery → design → build → <strong>handoff</strong> → monitoring → iteration. El monitoreo y la iteración no son opcionales en producción; el sistema vive y evoluciona.</p>
+<p><strong>Trampa:</strong> tratar el proyecto como "termina en el deploy". El ciclo incluye monitoreo e iteración.</p>
+<hr />
+<h2 id="dominio-7-developer-productivity-operational-enablement-7">Dominio 7 — Developer Productivity &amp; Operational Enablement (7%)</h2>
+<h3 id="71-configurar-claude-code-para-equipos">7.1 Configurar Claude Code para equipos</h3>
+<table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>Correcto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comando para todo el equipo</td>
+<td><code>.claude/commands/</code> en el repo (versionado)</td>
+</tr>
+<tr>
+<td>Comando solo mío</td>
+<td><code>~/.claude/commands/</code> (home)</td>
+</tr>
+<tr>
+<td>Instrucción compartida</td>
+<td><code>CLAUDE.md</code> del repo</td>
+</tr>
+<tr>
+<td>A un dev no le llegan las instrucciones comunes</td>
+<td>Están en su <code>~/.claude/</code> personal → mover al repo</td>
+</tr>
+<tr>
+<td>Secreto de MCP sin filtrarlo a git</td>
+<td><code>.mcp.json</code> versionado + <code>${ENV_VAR}</code></td>
+</tr>
+<tr>
+<td>Convención por tipo de archivo disperso</td>
+<td>Rule con glob <code>**/*.ext</code></td>
+</tr>
+<tr>
+<td>CI se cuelga esperando input</td>
+<td><code>claude -p "..."</code> (non-interactive)</td>
+</tr>
+<tr>
+<td>Aislar output ruidoso de una tarea</td>
+<td>Skill con <code>context: fork</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-mejorar-workflows-con-tooling-asistido">7.2 Mejorar workflows con tooling asistido</h3>
+<p><strong>Qué es:</strong> habilitar al equipo con IA.</p>
+<p><strong>Cómo funciona:</strong> el arquitecto configura y habilita (comandos, skills, MCP compartidos) para que el equipo sea más productivo, no solo lo usa él.</p>
+<h3 id="73-debugging-y-resolucion-operativa">7.3 Debugging y resolución operativa</h3>
+<p><strong>Qué es:</strong> apoyar incidentes con IA.</p>
+<p><strong>Cómo funciona:</strong> usar Claude Code para investigar logs, reproducir bugs, proponer fixes, acelerar la resolución de incidentes.</p>
+<hr />
+<h2 id="reglas-de-decision-maestras-el-corazon-del-professional">Reglas de decisión maestras (el corazón del Professional)</h2>
+<p>Cuando dos opciones "funcionan", aplicá el principio:</p>
+<ol>
+<li><strong>Mínima complejidad que resuelve:</strong> workflow antes que agente si el camino es fijo.</li>
+<li><strong>Elimina el riesgo, no lo vigiles:</strong> remover tool &gt; confirmar &gt; loggear.</li>
+<li><strong>Seguridad en la capa del sistema, no en el prompt:</strong> gate/auth en código; el prompt no es frontera de seguridad.</li>
+<li><strong>Preservá el contexto necesario:</strong> recuperar/extraer, nunca truncar lo que hace falta.</li>
+<li><strong>Atacá la causa raíz, no el síntoma.</strong></li>
+<li><strong>Localizá el fallo por la capa que cambió:</strong> datos→retrieval, prompt→prompt, tarea→modelo.</li>
+<li><strong>Valor de negocio medible</strong> manda en priorización.</li>
+<li><strong>Trade-offs, no features</strong>, al comunicar con stakeholders.</li>
+<li><strong>Calibrá al riesgo:</strong> human-in-the-loop donde importa, no en todo.</li>
+<li><strong>Chunk por estructura, no por tamaño fijo.</strong></li>
+</ol>
+<h3 id="distractores-que-casi-nunca-son-correctos">Distractores que casi nunca son correctos</h3>
+<ul>
+<li>"Usa un modelo más grande" (salvo model mismatch real).</li>
+<li>"Sube temperatura" / "ponlo en bold" / "más few-shot" para problemas que no son de formato.</li>
+<li>"Truncá el documento" (pierde contexto).</li>
+<li>"Loggear/confirmar" cuando "remover" está disponible y la capability no se necesita.</li>
+<li>"Mejorá el prompt" para hacer cumplir una regla de seguridad dura.</li>
+<li>"Batch todo para ahorrar" cuando algo es bloqueante/interactivo.</li>
+<li>Alertar por un request lento aislado o un rating individual.</li>
+<li>Demo cherry-picked o encuesta post-launch como "evaluación".</li>
+</ul>
+<h3 id="tactica-de-examen">Táctica de examen</h3>
+<ul>
+<li>63 ítems / 120 min ≈ <strong>1.9 min/ítem</strong>. Marcá dudosas y seguí; no te trabes.</li>
+<li><strong>Multi-response:</strong> marcá <strong>exacto</strong> el número que pide el ítem.</li>
+<li>El % por dominio sale en el reporte pero <strong>no decide</strong> el pass; cuenta el <strong>score total escalado (720)</strong>. Cubrí parejo.</li>
+<li>Ante dos opciones válidas, ganá con el <strong>principio</strong>, no con la intuición.</li>
+</ul>
+<hr />
+<h2 id="segui-practicando">Seguí practicando</h2>
+<ul>
+<li><a href="../professional-examen/">Examen de práctica: 63 preguntas</a></li>
+<li><a href="../professional-respuestas/">Clave con explicación</a></li>
+<li><a href="../simulador/">Simulador interactivo</a></li>
+<li><a href="../glosario/">Glosario EN→ES</a></li>
+</ul></main><footer>
+<p><b>Material no oficial.</b> No afiliado a Anthropic PBC ni patrocinado ni avalado por Anthropic. <i>Claude</i> y <i>Claude Certified Architect</i> son marcas de Anthropic. Las preguntas son originales, escritas contra los objetivos publicados; no reproducen contenido del examen real. Ningún simulacro garantiza aprobar.</p>
+<p>Por <a href="https://www.linkedin.com/in/juanmartincordero/">Juan Martín Cordero</a> · <a href="https://github.com/juanmartincoma-collab/claude-certified-architect-es">Código y contenido en GitHub</a> · Contenido CC BY 4.0</p>
+</footer></body></html>
