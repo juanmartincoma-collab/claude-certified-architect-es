@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guía oficial del examen
+    url: https://www.anthropic.com/
+    about: Para dudas sobre inscripción, políticas o precios, la fuente es Anthropic. Este repositorio es material comunitario no oficial.

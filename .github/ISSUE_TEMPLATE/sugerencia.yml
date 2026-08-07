@@ -1,0 +1,29 @@
+name: Sugerencia o pregunta nueva
+description: Proponer contenido, una mejora del simulador o una traducción
+title: "[Sugerencia] "
+labels: ["sugerencia"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Si proponés una pregunta nueva**, tiene que ser original tuya, escrita contra los objetivos publicados del blueprint, con un escenario inventado. No se acepta contenido del examen real, ni parafraseado ni de memoria.
+
+        Revisá las reglas de redacción en [CONTRIBUTING.md](../../blob/main/CONTRIBUTING.md): opciones del mismo largo, sin justificaciones adentro de la opción, distractores plausibles.
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options: ["Pregunta nueva", "Mejora de una guía", "Término para el glosario", "Mejora del simulador", "Traducción a otro idioma", "Otro"]
+    validations: { required: true }
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+    validations: { required: true }
+  - type: checkboxes
+    id: original
+    attributes:
+      label: Confirmación
+      options:
+        - label: Lo que aporto es de elaboración propia y no proviene de ningún examen real.
+          required: true

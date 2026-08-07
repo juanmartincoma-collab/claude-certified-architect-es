@@ -1,0 +1,48 @@
+name: Generar PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "profesional/**.md"
+      - "foundations/**.md"
+      - "glosario.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar pandoc y LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-lang-spanish
+
+      - name: Construir los PDF
+        run: |
+          mkdir -p pdf
+          construir () {
+            pandoc "$1" -o "pdf/$2" \
+              --pdf-engine=xelatex \
+              -V lang=es -V geometry:margin=2.4cm \
+              -V mainfont="DejaVu Serif" -V monofont="DejaVu Sans Mono" \
+              -V colorlinks=true -V linkcolor=[HTML]{E11D48} -V urlcolor=[HTML]{E11D48} \
+              --toc --toc-depth=2
+          }
+          construir profesional/guia.md        CCAR-P-guia.pdf
+          construir profesional/examen.md      CCAR-P-examen.pdf
+          construir profesional/respuestas.md  CCAR-P-respuestas.pdf
+          construir foundations/guia.md        CCAR-F-guia.pdf
+          construir foundations/examen.md      CCAR-F-examen.pdf
+          construir foundations/respuestas.md  CCAR-F-respuestas.pdf
+          construir glosario.md                glosario.pdf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdf
+          path: pdf/

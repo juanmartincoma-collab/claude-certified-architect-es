@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juanmartincoma-collab.github.io/claude-certified-architect-es/sitemap.xml

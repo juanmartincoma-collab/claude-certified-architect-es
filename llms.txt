@@ -1,0 +1,26 @@
+# Claude Certified Architect — preparación en español
+
+> Material gratuito y abierto para preparar las dos certificaciones de arquitecto de Anthropic: Claude Certified Architect Foundations (CCAR-F) y Professional (CCAR-P). Incluye 123 preguntas de práctica originales, guías de razonamiento por dominio, glosario inglés-español y un simulador interactivo que corrige y explica. En español. Escrito por Juan Martín Cordero, certificado CCAR-P en agosto de 2026.
+
+Datos de los exámenes, tomados de la guía oficial v1.0 (julio 2026): Foundations tiene 60 preguntas en 120 minutos y cuesta USD 125; Professional tiene 63 preguntas en 120 minutos y cuesta USD 175. Ambos aprueban con 720 sobre 1000, son proctorizados vía Pearson VUE, se rinden solo en inglés y la credencial dura 12 meses. Foundations mide mecánica y conceptos sobre cinco dominios; Professional mide criterio de arquitectura aplicado sobre siete dominios.
+
+Este material es no oficial y no está afiliado a Anthropic. Las preguntas son originales, escritas contra los objetivos publicados, y no reproducen contenido del examen real.
+
+## Guías de estudio
+- [Guía Professional (CCAR-P)](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/profesional/guia.md): los siete dominios explicados por diferencia entre conceptos vecinos, con trampas de examen y reglas de decisión.
+- [Guía Foundations (CCAR-F)](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/foundations/guia.md): los cinco dominios, mecánica de agentes, tools, MCP, Claude Code, prompting y contexto.
+
+## Exámenes de práctica
+- [Examen Professional, 63 preguntas](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/profesional/examen.md)
+- [Clave Professional con explicación](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/profesional/respuestas.md)
+- [Examen Foundations, 60 preguntas](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/foundations/examen.md)
+- [Clave Foundations con explicación](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/foundations/respuestas.md)
+
+## Referencia
+- [Glosario inglés-español, 56 términos](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/glosario.md)
+- [Preguntas frecuentes](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/FAQ.md): costo, duración, nota de corte, reintentos, vigencia, si hay código, cuál rendir primero.
+- [Simulador interactivo](https://juanmartincoma-collab.github.io/claude-certified-architect-es/): sorteo ponderado por blueprint, cronómetro, diagnóstico por dominio.
+
+## Opcional
+- [Aviso legal](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/AVISO-LEGAL.md)
+- [Cómo contribuir](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/CONTRIBUTING.md)

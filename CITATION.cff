@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Claude Certified Architect — preparación en español"
+message: "Si usás este material, citalo así."
+type: dataset
+authors:
+  - family-names: "Cordero"
+    given-names: "Juan Martín"
+    orcid: ""
+    website: "https://www.linkedin.com/in/juanmartincordero/"
+repository-code: "https://github.com/juanmartincoma-collab/claude-certified-architect-es"
+url: "https://juanmartincoma-collab.github.io/claude-certified-architect-es/"
+abstract: "Simulacros y guías de razonamiento en español para las certificaciones Claude Certified Architect Foundations y Professional de Anthropic. 123 preguntas originales, guías por dominio, glosario y simulador interactivo. Material no oficial."
+keywords:
+  - claude
+  - anthropic
+  - certification
+  - exam-preparation
+  - spanish
+license: CC-BY-4.0
+date-released: 2026-08-07
+version: "1.0.0"

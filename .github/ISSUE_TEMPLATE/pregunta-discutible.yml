@@ -1,0 +1,40 @@
+name: Pregunta discutible o con error
+description: Una pregunta admite dos respuestas, o la clave está equivocada
+title: "[Pregunta] "
+labels: ["pregunta", "revisar"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias. Este es el reporte más útil: si dos opciones se defienden, la pregunta está mal escrita y hay que arreglarla.
+
+        **No pegues contenido del examen real.** Ni preguntas, ni opciones, ni escenarios que recuerdes de haber rendido. Se rechaza y se borra.
+  - type: dropdown
+    id: examen
+    attributes:
+      label: Examen
+      options: ["Professional (CCAR-P)", "Foundations (CCAR-F)"]
+    validations: { required: true }
+  - type: input
+    id: numero
+    attributes:
+      label: Número de pregunta
+      placeholder: "24"
+    validations: { required: true }
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Qué pasa
+      options:
+        - Dos opciones se defienden por igual
+        - La clave marca la respuesta equivocada
+        - La explicación no convence o está incompleta
+        - Error de redacción o errata
+        - El dato del examen está desactualizado
+    validations: { required: true }
+  - type: textarea
+    id: detalle
+    attributes:
+      label: Tu razonamiento
+      description: Qué opción elegiste y por qué te parece defendible. Si podés, citá el objetivo del blueprint o la documentación que lo respalda.
+    validations: { required: true }
