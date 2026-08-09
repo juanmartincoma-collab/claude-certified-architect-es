@@ -45,8 +45,9 @@ Lo que ya existía en la comunidad cubre **Foundations** y está en inglés o tr
 | Guía de razonamiento | [foundations/guia.md](foundations/guia.md) | [profesional/guia.md](profesional/guia.md) |
 | Examen de práctica | [foundations/examen.md](foundations/examen.md) · 60 preguntas | [profesional/examen.md](profesional/examen.md) · 63 preguntas |
 | Clave con explicación | [foundations/respuestas.md](foundations/respuestas.md) | [profesional/respuestas.md](profesional/respuestas.md) |
+| Todo en PDF | [guía](pdf/CCAR-F-guia.pdf) · [examen](pdf/CCAR-F-examen.pdf) · [respuestas](pdf/CCAR-F-respuestas.pdf) | [guía](pdf/CCAR-P-guia.pdf) · [examen](pdf/CCAR-P-examen.pdf) · [respuestas](pdf/CCAR-P-respuestas.pdf) |
 
-Además: [glosario EN → ES](glosario.md) con los 56 términos del examen, y [preguntas frecuentes](FAQ.md).
+Además: [glosario EN → ES](glosario.md) con los 56 términos del examen ([en PDF](pdf/glosario.pdf)), y [preguntas frecuentes](FAQ.md).
 
 Las guías son lo que más se usa. No son resúmenes de la documentación: están organizadas por **la diferencia entre dos opciones parecidas**, que es donde el examen te pone a elegir. Cada concepto trae qué es, cómo funciona, cuándo aplica, cuándo **no**, y la trampa típica.
 
