@@ -1,6 +1,6 @@
 # Claude Certified Architect — preparación en español
 
-> Material gratuito y abierto para preparar las dos certificaciones de arquitecto de Anthropic: Claude Certified Architect Foundations (CCAR-F) y Professional (CCAR-P). Incluye 123 preguntas de práctica originales, guías de razonamiento por dominio, glosario inglés-español y un simulador interactivo que corrige y explica. En español. Escrito por Juan Martín Cordero, certificado CCAR-P en agosto de 2026.
+> Material gratuito y abierto para preparar las dos certificaciones de arquitecto de Anthropic: Claude Certified Architect Foundations (CCAR-F) y Professional (CCAR-P). Incluye 163 preguntas de práctica originales, guías de razonamiento por dominio, glosario inglés-español y un simulador interactivo que corrige y explica. En español. Escrito por Juan Martín Cordero, certificado CCAR-P en agosto de 2026.
 
 Datos de los exámenes, tomados de la guía oficial v1.0 (julio 2026): Foundations tiene 60 preguntas en 120 minutos y cuesta USD 125; Professional tiene 63 preguntas en 120 minutos y cuesta USD 175. Ambos aprueban con 720 sobre 1000, son proctorizados vía Pearson VUE, se rinden solo en inglés y la credencial dura 12 meses. Foundations mide mecánica y conceptos sobre cinco dominios; Professional mide criterio de arquitectura aplicado sobre siete dominios.
 
@@ -20,6 +20,16 @@ Este material es no oficial y no está afiliado a Anthropic. Las preguntas son o
 - [Glosario inglés-español, 56 términos](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/glosario.md)
 - [Preguntas frecuentes](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/FAQ.md): costo, duración, nota de corte, reintentos, vigencia, si hay código, cuál rendir primero.
 - [Simulador interactivo](https://juanmartincoma-collab.github.io/claude-certified-architect-es/): sorteo ponderado por blueprint, cronómetro, diagnóstico por dominio.
+
+## Versiones en PDF
+
+- [Guía CCAR-P en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/CCAR-P-guia.pdf): guía de razonamiento del nivel Professional, siete dominios.
+- [Examen CCAR-P en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/CCAR-P-examen.pdf): 63 preguntas de práctica con los pesos oficiales.
+- [Respuestas CCAR-P en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/CCAR-P-respuestas.pdf): clave comentada, ítem por ítem.
+- [Guía CCAR-F en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/CCAR-F-guia.pdf): guía de razonamiento del nivel Foundations, cinco dominios.
+- [Examen CCAR-F en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/CCAR-F-examen.pdf): 60 preguntas de práctica con los pesos oficiales.
+- [Respuestas CCAR-F en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/CCAR-F-respuestas.pdf): clave comentada, ítem por ítem.
+- [Glosario en PDF](https://juanmartincoma-collab.github.io/claude-certified-architect-es/pdf/glosario.pdf): 56 términos inglés-español del examen.
 
 ## Opcional
 - [Aviso legal](https://github.com/juanmartincoma-collab/claude-certified-architect-es/blob/main/AVISO-LEGAL.md)
