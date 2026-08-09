@@ -44,7 +44,7 @@ All questions are **original**, written against the objectives Anthropic publish
 
 Two design decisions worth knowing, because they change how much practice here is worth:
 
-**No length bias.** In many practice sets the correct answer is always the longest one, and you learn to exploit that instead of reasoning. Here the correct option is the longest in 23% of items and the shortest in 23%. Average spread between longest and shortest option within an item: nine characters.
+**No length bias.** In many practice sets the correct answer is always the longest one, and you learn to exploit that instead of reasoning. Here the correct option is the longest in 29% of items, against the 25% pure chance would give. Within an item, longest and shortest option differ by seven characters on average, so there is nothing to measure.
 
 **No tell-tale clauses.** No option carries its own justification. Every option is a flat assertion of the same length and grammatical shape.
 

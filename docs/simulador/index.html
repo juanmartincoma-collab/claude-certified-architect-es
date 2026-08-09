@@ -2586,7 +2586,9 @@ function renderResults(){
   const ml = app.querySelector("[data-mail]");
   if(ml) ml.addEventListener("click", () => {
     refreshCode();
-    const to = coordEl.value.trim();
+    // sin coordinador el correo se envía a uno mismo: sirve como respaldo del resultado
+    const to = coordEl.value.trim() || (app.querySelector("#mail")?.value || "").trim();
+    if(!to){ put(mailBody()); flash("poné un correo, o usá copiar código"); return; }
     const subj = `[CCAR] ${S.who||"sin nombre"} — ${ex.code} — ${sc}/1000`;
     const url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(mailBody())}`;
     if(url.length > 1900){

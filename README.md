@@ -64,7 +64,7 @@ Las preguntas son **originales**. Se escribieron contra los objetivos que Anthro
 
 Dos decisiones de diseño que vale la pena conocer, porque afectan cuánto te sirve practicar acá:
 
-**Sin sesgo de longitud.** En muchos simulacros la respuesta correcta es siempre la más larga, y uno aprende a explotar eso en vez de a razonar. Acá la correcta es la opción más larga en el 23% de los ítems y la más corta en el 23%: la longitud no dice nada. La diferencia media entre la opción más larga y la más corta de un mismo ítem es de nueve caracteres.
+**Sin sesgo de longitud.** En muchos simulacros la respuesta correcta es siempre la más larga, y uno aprende a explotar eso en vez de a razonar. Acá la correcta es la opción más larga en el 29% de los ítems, contra el 25% que daría el puro azar: medir no te sirve de nada. Las cuatro opciones de un ítem se llevan siete caracteres de diferencia entre la más larga y la más corta, así que la diferencia ni se ve.
 
 **Sin cláusulas delatoras.** Ninguna opción trae su propia justificación adentro. Todas son afirmaciones secas del mismo largo y la misma forma gramatical.
 
