@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Instalar pandoc y LaTeX
         run: |
@@ -42,7 +44,11 @@ jobs:
           construir foundations/respuestas.md  CCAR-F-respuestas.pdf
           construir glosario.md                glosario.pdf
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: pdf
-          path: pdf/
+      - name: Publicar los PDF en el repositorio
+        run: |
+          cp -f pdf/*.pdf docs/pdf/ 2>/dev/null || { mkdir -p docs/pdf && cp -f pdf/*.pdf docs/pdf/; }
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf docs/pdf
+          git diff --staged --quiet || git commit -m "Rebuild the PDF versions from the Markdown sources"
+          git push
