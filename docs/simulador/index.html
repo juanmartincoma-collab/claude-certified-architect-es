@@ -498,6 +498,11 @@ footer.credits{
 .ico{width:1em; height:1em; display:inline-block; vertical-align:-.14em; flex:none}
 .verdict .ico{width:1.05em; height:1.05em}
 
+/* El simulador se pinta por JS. Sin esto el contenedor vacío mide cero, la
+   ficha del autor sube al viewport y el primer render la empuja fuera:
+   un desplazamiento de 0,8 en una métrica cuyo umbral bueno es 0,1. */
+#app:empty{min-height:100vh}
+
 /* ---------- bio del autor ---------- */
 .author{
   display:grid; grid-template-columns:auto minmax(0,1fr); gap:20px; align-items:start;
