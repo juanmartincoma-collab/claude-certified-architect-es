@@ -4,6 +4,8 @@ Simulacros y guías de razonamiento para las dos certificaciones de arquitecto d
 
 Escrito por alguien que rindió el Professional y lo aprobó.
 
+El examen práctico en español del repositorio de referencia de la comunidad —[paullarionov/claude-certified-architect](https://github.com/paullarionov/claude-certified-architect), 4.4k estrellas— es aporte mío: lo traduje del inglés y se mergeó el 11 de agosto de 2026 ([PR #44](https://github.com/paullarionov/claude-certified-architect/pull/44)). El español era el único idioma con guía y sin examen de práctica.
+
 [![Licencia: CC BY 4.0](https://img.shields.io/badge/contenido-CC%20BY%204.0-blue.svg)](LICENSE)
 [![Código: MIT](https://img.shields.io/badge/código-MIT-green.svg)](LICENSE-CODE)
 [![Preguntas](https://img.shields.io/badge/preguntas-163-e11d48.svg)](#qué-hay-acá-adentro)

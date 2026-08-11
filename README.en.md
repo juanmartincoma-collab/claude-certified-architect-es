@@ -4,6 +4,8 @@ Practice exams and reasoning guides for Anthropic's two architect certifications
 
 Written by someone who sat the Professional exam and passed it.
 
+The Spanish practical test in the community reference repository —[paullarionov/claude-certified-architect](https://github.com/paullarionov/claude-certified-architect), 4.4k stars— is my contribution: I translated it from English and it was merged on 11 August 2026 ([PR #44](https://github.com/paullarionov/claude-certified-architect/pull/44)). Spanish was the only language with a guide and no practice test.
+
 ### ▶︎ [Open the simulator](https://juanmartincoma-collab.github.io/claude-certified-architect-es/simulador/)
 
 ---
